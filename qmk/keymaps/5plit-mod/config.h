@@ -5,8 +5,8 @@
 
 #define USE_I2C
 
-/* #define MASTER_LEFT */
-#define MASTER_RIGHT
+#define MASTER_LEFT
+/* #define MASTER_RIGHT */
 // #define EE_HANDS
 #define FORCE_NKRO
 #define COMBO_COUNT 30

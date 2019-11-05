@@ -1,0 +1,188 @@
+#include "fissure.h"
+#include "action_layer.h"
+#include "eeconfig.h"
+#include "keymap_steno.h"
+
+extern keymap_config_t keymap_config;
+
+void matrix_init_user() {
+    steno_set_mode(STENO_MODE_GEMINI);
+}
+
+/* enum combos { */
+/*     QA_1, */
+/*     WS_2, */
+/*     ED_3, */
+/*     RF_4, */
+/*     TG_5, */
+/*     YH_6, */
+/*     UJ_7, */
+/*     IK_8, */
+/*     OL_9, */
+/*     PS_0, */
+/*     AZ_1, */
+/*     SX_2, */
+/*     DC_3, */
+/*     FV_4, */
+/*     GB_5, */
+/*     HN_6, */
+/*     JM_7, */
+/*     _KC_8, */
+/*     LD_9, */
+/*     SS_0, */
+/*     Q1_1, */
+/*     W2_2, */
+/*     E3_3, */
+/*     R4_4, */
+/*     T5_5, */
+/*     Y6_6, */
+/*     U7_7, */
+/*     I8_8, */
+/*     O9_9, */
+/*     P0_0, */
+/* }; */
+
+/* const uint16_t PROGMEM qa_combo[] = {KC_Q, KC_A, COMBO_END}; */
+/* const uint16_t PROGMEM ws_combo[] = {KC_W, KC_S, COMBO_END}; */
+/* const uint16_t PROGMEM ed_combo[] = {KC_E, KC_D, COMBO_END}; */
+/* const uint16_t PROGMEM rf_combo[] = {KC_R, KC_F, COMBO_END}; */
+/* const uint16_t PROGMEM tg_combo[] = {KC_T, KC_G, COMBO_END}; */
+/* const uint16_t PROGMEM yh_combo[] = {KC_Y, KC_H, COMBO_END}; */
+/* const uint16_t PROGMEM uj_combo[] = {KC_U, KC_J, COMBO_END}; */
+/* const uint16_t PROGMEM ik_combo[] = {KC_I, KC_K, COMBO_END}; */
+/* const uint16_t PROGMEM ol_combo[] = {KC_O, KC_L, COMBO_END}; */
+/* const uint16_t PROGMEM ps_combo[] = {KC_P, KC_SCLN, COMBO_END}; */
+/* const uint16_t PROGMEM az_combo[] = {KC_A, KC_Z, COMBO_END}; */
+/* const uint16_t PROGMEM sx_combo[] = {KC_S, KC_X, COMBO_END}; */
+/* const uint16_t PROGMEM dc_combo[] = {KC_D, KC_C, COMBO_END}; */
+/* const uint16_t PROGMEM fv_combo[] = {KC_F, KC_V, COMBO_END}; */
+/* const uint16_t PROGMEM gb_combo[] = {KC_G, KC_B, COMBO_END}; */
+/* const uint16_t PROGMEM hn_combo[] = {KC_H, KC_N, COMBO_END}; */
+/* const uint16_t PROGMEM jm_combo[] = {KC_J, KC_M, COMBO_END}; */
+/* const uint16_t PROGMEM kc_combo[] = {KC_K, KC_COMM, COMBO_END}; */
+/* const uint16_t PROGMEM ld_combo[] = {KC_L, KC_DOT, COMBO_END}; */
+/* const uint16_t PROGMEM ss_combo[] = {KC_SCLN, KC_SLSH, COMBO_END}; */
+/* const uint16_t PROGMEM q1_combo[] = {KC_Q, KC_1, COMBO_END}; */
+/* const uint16_t PROGMEM w2_combo[] = {KC_W, KC_2, COMBO_END}; */
+/* const uint16_t PROGMEM e3_combo[] = {KC_E, KC_3, COMBO_END}; */
+/* const uint16_t PROGMEM r4_combo[] = {KC_R, KC_4, COMBO_END}; */
+/* const uint16_t PROGMEM t5_combo[] = {KC_T, KC_5, COMBO_END}; */
+/* const uint16_t PROGMEM y6_combo[] = {KC_Y, KC_6, COMBO_END}; */
+/* const uint16_t PROGMEM u7_combo[] = {KC_U, KC_7, COMBO_END}; */
+/* const uint16_t PROGMEM i8_combo[] = {KC_I, KC_8, COMBO_END}; */
+/* const uint16_t PROGMEM o9_combo[] = {KC_O, KC_9, COMBO_END}; */
+/* const uint16_t PROGMEM p0_combo[] = {KC_P, KC_0, COMBO_END}; */
+
+/* combo_t key_combos[COMBO_COUNT] = { */
+/*     [QA_1] = COMBO(qa_combo, KC_ESC), */
+/*     [WS_2] = COMBO(ws_combo, KC_TILD), */
+/*     [ED_3] = COMBO(ed_combo, KC_LCBR), */
+/*     [RF_4] = COMBO(rf_combo, KC_RCBR), */
+/*     [TG_5] = COMBO(tg_combo, KC_NO), */
+/*     [YH_6] = COMBO(yh_combo, KC_UNDS), */
+/*     [UJ_7] = COMBO(uj_combo, KC_PLUS), */
+/*     [IK_8] = COMBO(ik_combo, KC_DQUO), */
+/*     [OL_9] = COMBO(ol_combo, KC_PIPE), */
+/*     [PS_0] = COMBO(ps_combo, KC_BSPC), */
+/*     [AZ_1] = COMBO(az_combo, KC_TAB), */
+/*     [SX_2] = COMBO(sx_combo, KC_GRV), */
+/*     [DC_3] = COMBO(dc_combo, KC_LBRC), */
+/*     [FV_4] = COMBO(fv_combo, KC_RBRC), */
+/*     [GB_5] = COMBO(gb_combo, KC_NO), */
+/*     [HN_6] = COMBO(hn_combo, KC_MINS), */
+/*     [JM_7] = COMBO(jm_combo, KC_EQL), */
+/*     [_KC_8] = COMBO(kc_combo, KC_QUOT), */
+/*     [LD_9] = COMBO(ld_combo, KC_BSLS), */
+/*     [SS_0] = COMBO(ss_combo, KC_ENT), */
+/*     [Q1_1] = COMBO(q1_combo, KC_EXLM), */
+/*     [W2_2] = COMBO(w2_combo, KC_AT), */
+/*     [E3_3] = COMBO(e3_combo, KC_HASH), */
+/*     [R4_4] = COMBO(r4_combo, KC_DLR), */
+/*     [T5_5] = COMBO(t5_combo, KC_PERC), */
+/*     [Y6_6] = COMBO(y6_combo, KC_CIRC), */
+/*     [U7_7] = COMBO(u7_combo, KC_AMPR), */
+/*     [I8_8] = COMBO(i8_combo, KC_ASTR), */
+/*     [O9_9] = COMBO(o9_combo, KC_LPRN), */
+/*     [P0_0] = COMBO(p0_combo, KC_RPRN), */
+/* }; */
+
+#define KEYMAP( \
+    L00, L01, L02, L03, L04, 				R00, R01, R02, R03, R04, \
+    L10, L11, L12, L13, L14, 				R10, R11, R12, R13, R14, \
+    L20, L21, L22, L23, L24, 				R20, R21, R22, R23, R24, \
+    L30, L31, L32, L33, L34, 				R30, R31, R32, R33, R34, \
+                         L42, L43, L44, 			R40, R41, R42 \
+    ) \
+    { \
+        { L00, L01, L02, L03, L04 }, \
+        { L10, L11, L12, L13, L14 }, \
+        { L20, L21, L22, L23, L24 }, \
+        { L30, L31, L32, L33, L34 }, \
+        { KC_NO, KC_NO, L42, L43, L44 }, \
+        { R04, R03, R02, R01, R00 }, \
+        { R14, R13, R12, R11, R10 }, \
+        { R24, R23, R22, R21, R20 }, \
+        { R34, R33, R32, R31, R30 }, \
+        { KC_NO, KC_NO, R42, R41, R40 } \
+    }
+
+enum my_keys {
+    KC_SONG = SAFE_RANGE,
+    KC_STENO,
+};
+
+float ode_to_joy[][2] = SONG(ODE_TO_JOY);
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case KC_SONG:
+        if (record->event.pressed) {
+            PLAY_SONG(ode_to_joy);
+        }
+        return false; // Skip all further processing of this key
+    case KC_STENO:
+        sethsv(HSV_WHITE, &led[0]);
+        rgblight_set();
+        layer_move(1);
+        return true;
+    default:
+        return true; // Process all other keycodes normally
+    }
+}
+
+#define DEL MT(MOD_LGUI, KC_DEL)
+#define TAB MT(MOD_LCTL, KC_TAB)
+#define ESC LT(2, KC_ESC)
+#define ENT LT(3, KC_ENT)
+#define SPC MT(MOD_LSFT, KC_SPC)
+#define BKSP MT(MOD_LALT, KC_BSPC)
+
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+    KEYMAP(
+        KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, 
+		KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, 
+		KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, 
+		KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,
+		DEL, TAB, ESC, ENT, SPC, BKSP),
+
+    KEYMAP(
+        KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, 
+		STN_S1, STN_TL, STN_PL, STN_HL, STN_ST1, STN_FR, STN_PR, STN_LR, STN_TR, STN_DR, 
+		STN_S2, STN_KL, STN_WL, STN_RL, STN_ST2, STN_RR, STN_BR, STN_GR, STN_SR, STN_ZR, 
+		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, STN_ST3, KC_NO, KC_NO, KC_NO, KC_NO,
+		STN_A, STN_O, MO(2), STN_E, STN_U, KC_NO),
+
+	KEYMAP(
+		KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, 
+        KC_ESC, KC_TILD, _______, _______, _______, KC_UNDS, KC_PLUS, KC_DQUO, KC_PIPE, KC_BSPC,
+		KC_TAB, KC_GRV, _______, KC_LBRC, KC_LCBR, KC_RCBR, KC_RBRC, _______, _______, KC_ENT,
+        KC_F11, _______, _______, _______, _______, KC_MINS, KC_EQL, KC_QUOT, KC_BSLS, KC_F12,
+		_______, _______, _______, _______, _______, TG(1)),
+
+	KEYMAP(
+        KC_MUTE, KC_VOLD, KC_VOLU, KC_MPRV, KC_MPLY, KC_MNXT, _______, _______, KC_BRID, KC_BRIU, 
+		KC_ESC, CK_TOGG, AU_TOG, KC_SONG, RGB_TOG, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_BSPC,
+		KC_TAB, KC_BTN1, KC_BTN3, KC_BTN2, RGB_M_G, KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, KC_ENT,
+		_______, _______, _______, _______, _______, KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R, _______,
+		_______, _______, _______, _______, _______, _______),
+};
