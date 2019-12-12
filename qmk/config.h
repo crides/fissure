@@ -9,15 +9,15 @@
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    crides
 #define PRODUCT         fissure
-#define DESCRIPTION     46 key split keyboard
+#define DESCRIPTION     36 key split keyboard
 
 /* key matrix size */
 // Rows are doubled-up
-#define MATRIX_ROWS 10
+#define MATRIX_ROWS 8
 #define MATRIX_COLS 5
 
 // wiring of each half
-#define MATRIX_ROW_PINS { C6, D7, E6, B4, B5 }
+#define MATRIX_ROW_PINS { D7, E6, B4, B5 }
 #define MATRIX_COL_PINS { F4, F5, F6, F7, B1 }
 /* #define MATRIX_COL_PINS { B1, F7, F6, F5, F4 } */
 

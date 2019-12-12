@@ -3,14 +3,14 @@
 
 #include "config_common.h"
 
-#define USE_I2C
+#define USE_SERIAL
 
 #define MASTER_LEFT
 /* #define MASTER_RIGHT */
 // #define EE_HANDS
 #define FORCE_NKRO
 #define COMBO_COUNT 30
-#define TAPPING_TERM 200
+#define TAPPING_TERM 100
 /* #define B6_AUDIO */
 /* #define NO_MUSIC_MODE */
 /* #define AUDIO_CLICKY */
