@@ -670,12 +670,8 @@ Text GLabel 9500 5300 0    50   BiDi ~ 0
 COL1
 Text GLabel 9500 5400 0    50   BiDi ~ 0
 COL2
-Text GLabel 9500 5500 0    50   BiDi ~ 0
-COL3
 Text GLabel 9500 5600 0    50   BiDi ~ 0
 COL4
-Text GLabel 9500 5700 0    50   BiDi ~ 0
-COL5
 Text GLabel 9250 3750 2    50   Input ~ 0
 GND
 Text GLabel 9250 3650 2    50   Input ~ 0
@@ -809,17 +805,6 @@ SDA
 Text GLabel 8200 5350 2    50   BiDi ~ 0
 SCL
 $Comp
-L Connector_Generic:Conn_01x06 BLUE1
-U 1 1 5E31DBC8
-P 9150 4950
-F 0 "BLUE1" H 9230 4942 50  0000 L CNN
-F 1 "Conn_01x06" H 9230 4851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9150 4950 50  0001 C CNN
-F 3 "~" H 9150 4950 50  0001 C CNN
-	1    9150 4950
-	1    0    0    -1  
-$EndComp
-$Comp
 L promicro:ProMicro U3
 U 1 1 5E332FC5
 P 10200 5450
@@ -846,4 +831,19 @@ Connection ~ 7450 2400
 Wire Wire Line
 	8350 2850 8350 2400
 Connection ~ 8350 2400
+Text GLabel 9500 5700 0    50   BiDi ~ 0
+COL5
+Text GLabel 9500 5500 0    50   BiDi ~ 0
+COL3
+$Comp
+L Connector_Generic:Conn_01x04 BLUE1
+U 1 1 5E469EEF
+P 9150 4950
+F 0 "BLUE1" H 9230 4942 50  0000 L CNN
+F 1 "Conn_01x04" H 9230 4851 50  0000 L CNN
+F 2 "misc:HC06" H 9150 4950 50  0001 C CNN
+F 3 "~" H 9150 4950 50  0001 C CNN
+	1    9150 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
