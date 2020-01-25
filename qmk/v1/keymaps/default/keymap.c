@@ -148,7 +148,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         STN_N1,                  STN_N2,       STN_N3,         STN_N4,       STN_N5,       STN_N6,        STN_N7,       STN_N8,       STN_N9,     STN_NA,
 		STN_S1,                  STN_TL,       STN_PL,         STN_HL,       STN_ST1,      STN_FR,        STN_PR,       STN_LR,       STN_TR,     STN_DR,
 		STN_S2,                  STN_KL,       STN_WL,         STN_RL,       STN_ST2,      STN_RR,        STN_BR,       STN_GR,       STN_SR,     STN_ZR,
-		STN_A,                   STN_O,        MO(_SYMBOL1),   STN_E,        STN_U,        XXXXXXX),
+		STN_A,                   STN_O,        MO(_SYMBOL2),   STN_E,        STN_U,        XXXXXXX),
 
     [_GAME] = KEYMAP(
 		KC_Q,                    KC_W,         KC_E,           KC_R,         KC_T,         KC_Y,          KC_U,         KC_I,         KC_O,       KC_P,
@@ -160,13 +160,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LGUI(KC_1),              LGUI(KC_2),   LGUI(KC_3),     LGUI(KC_4),   LGUI(KC_5),   LGUI(KC_6),    LGUI(KC_7),   LGUI(KC_8),   KC_F11,     KC_F12,
         KC_1,                    KC_2,         KC_3,           KC_4,         KC_5,         KC_6,          KC_7,         KC_8,         KC_9,       KC_0,
 		KC_F1,                   KC_F2,        KC_F3,          KC_F4,        KC_F5,        KC_F6,         KC_F7,        KC_F8,        KC_F9,      KC_F10,
-		_______,                 _______,      MO(_FUNC),        _______,    _______,      TG(_STENO)),
+		_______,                 _______,      MO(_FUNC),        _______,    _______,      _______),
 
 	[_SYMBOL2] = KEYMAP(
-        KC_EXLM,                 KC_AT,        KC_CIRC,        KC_DLR,       XXXXXXX,      XXXXXXX,       KC_LBRC,      KC_RBRC,      KC_LCBR,    KC_RCBR,
-        KC_TILD,                 KC_GRV,       KC_AMPR,        KC_PIPE,      KC_PLUS,      KC_EQL,        KC_LPRN,      KC_RPRN,      KC_UNDS,    KC_COLN,
-        KC_DQUO,                 KC_QUOT,      KC_HASH,        KC_ASTR,      KC_PERC,      KC_BSLS,       KC_MINS,      KC_LT,        KC_GT,      KC_QUES,
-        _______,                 _______,      _______,      MO(_FUNC),      _______,      _______),
+        KC_TILD,                 KC_GRV,       KC_CIRC,        KC_DLR,       XXXXXXX,      XXXXXXX,       KC_LBRC,      KC_RBRC,      KC_LCBR,    KC_RCBR,
+        KC_DQUO,                 KC_QUOT,      KC_AMPR,        KC_PIPE,      KC_PLUS,      KC_EQL,        KC_LPRN,      KC_RPRN,      KC_UNDS,    KC_COLN,
+        KC_EXLM,                 KC_AT,        KC_HASH,        KC_ASTR,      KC_PERC,      KC_BSLS,       KC_MINS,      KC_LT,        KC_GT,      KC_QUES,
+        _______,                 _______,      _______,      MO(_FUNC),      _______,      TG(_STENO)),
 
 	[_FUNC] = KEYMAP(
 		KC_BRID,                 KC_MUTE,      KC_VOLD,        KC_VOLU,      KC_BRIU,      KC_MS_L,       KC_MS_D,      KC_MS_U,      KC_MS_R,    KC_PSCR,
