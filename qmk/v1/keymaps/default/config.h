@@ -4,8 +4,7 @@
 #include "config_common.h"
 
 #define FORCE_NKRO
-#define COMBO_COUNT 30
-#define TAPPING_TERM 120
+#define TAPPING_TERM 150
 
 // From micro_32
 #define PREVENT_STUCK_MODIFIERS
