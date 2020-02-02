@@ -11,16 +11,14 @@
 #define PRODUCT         Fissure
 #define DESCRIPTION     36 key split keyboard
 
-#define USE_I2C
-/* #define SOFT_SERIAL_PIN D0 */
+/* #define USE_I2C */
+#define SOFT_SERIAL_PIN D0
 #define EE_HANDS
 
 #define RGB_DI_PIN B5
 #define RGBLED_NUM 2
 #define RGBLED_SPLIT {1, 1}
 #define RGBLIGHT_SPLIT
-/* #define RGBLIGHT_ANIMATIONS */
-#define RGBLIGHT_EFFECT_RAINBOW_MOOD
 
 // Rows are doubled-up
 #define MATRIX_ROWS 8

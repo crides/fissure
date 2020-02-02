@@ -27,31 +27,38 @@
         { XXXXXXX, XXXXXXX, R42, R41, R40 } \
     }
 
+void set_hsv(uint8_t a, uint8_t b, uint8_t c) {
+    rgblight_sethsv(a, b, (uint8_t) c * 0.2);
+}
+
 void keyboard_pre_init_user() {
+    set_hsv(HSV_TEAL);
 }
 
 void suspend_power_down_user() {
-    /* rgblight_setrgb(RGB_TEAL); */
+    set_hsv(0, 0, 0);
 }
 
 void suspend_wakeup_init_user() {
-    /* rgblight_setrgb_at(26, 0, 13, 0); */
-    /* rgblight_setrgb_at(RGB_GOLD, 1); */
-    /* rgblight_set(); */
-    rgblight_mode(RGBLIGHT_MODE_RAINBOW_MOOD);
+    set_hsv(0, 0, 0);
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
     switch (biton32(state)) {
     case _STENO:
+        set_hsv(HSV_GOLD);
         break;
     case _SYMBOL1:
+        set_hsv(HSV_GREEN);
         break;
     case _SYMBOL2:
+        set_hsv(HSV_CYAN);
         break;
     case _FUNC:
+        set_hsv(HSV_MAGENTA);
         break;
     default: //  for any other layers, or the default layer
+        set_hsv(0, 0, 0);
         break;
     }
     return state;

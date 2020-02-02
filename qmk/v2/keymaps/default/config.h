@@ -4,7 +4,7 @@
 #include "config_common.h"
 
 #define FORCE_NKRO
-#define TAPPING_TERM 100
+#define TAPPING_TERM 150
 
 #define PREVENT_STUCK_MODIFIERS
 #define IGNORE_MOD_TAP_INTERRUPT
