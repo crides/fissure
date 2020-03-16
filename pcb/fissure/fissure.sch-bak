@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:fissure-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -28,7 +27,7 @@ F 3 "" H 10650 1000 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D5
+L fissure-rescue:DIODE-Simulation_SPICE D5
 U 1 1 5D8C1770
 P 11050 1150
 F 0 "D5" V 11004 1230 50  0000 L CNN
@@ -54,7 +53,7 @@ F 3 "" H 9700 1000 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D4
+L fissure-rescue:DIODE-Simulation_SPICE D4
 U 1 1 5D8E4DB6
 P 10100 1150
 F 0 "D4" V 10054 1230 50  0000 L CNN
@@ -80,7 +79,7 @@ F 3 "" H 8800 1000 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D3
+L fissure-rescue:DIODE-Simulation_SPICE D3
 U 1 1 5D8E522A
 P 9200 1150
 F 0 "D3" V 9154 1230 50  0000 L CNN
@@ -106,7 +105,7 @@ F 3 "" H 7850 1000 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D2
+L fissure-rescue:DIODE-Simulation_SPICE D2
 U 1 1 5D8E5716
 P 8250 1150
 F 0 "D2" V 8204 1230 50  0000 L CNN
@@ -132,7 +131,7 @@ F 3 "" H 6950 1000 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D1
+L fissure-rescue:DIODE-Simulation_SPICE D1
 U 1 1 5D8E5D9F
 P 7350 1150
 F 0 "D1" V 7304 1230 50  0000 L CNN
@@ -158,7 +157,7 @@ F 3 "" H 10650 1550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D10
+L fissure-rescue:DIODE-Simulation_SPICE D10
 U 1 1 5D8EAC5A
 P 11050 1700
 F 0 "D10" V 11004 1780 50  0000 L CNN
@@ -184,7 +183,7 @@ F 3 "" H 9700 1550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D9
+L fissure-rescue:DIODE-Simulation_SPICE D9
 U 1 1 5D8EAC69
 P 10100 1700
 F 0 "D9" V 10054 1780 50  0000 L CNN
@@ -210,7 +209,7 @@ F 3 "" H 8800 1550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D8
+L fissure-rescue:DIODE-Simulation_SPICE D8
 U 1 1 5D8EAC78
 P 9200 1700
 F 0 "D8" V 9154 1780 50  0000 L CNN
@@ -236,7 +235,7 @@ F 3 "" H 7850 1550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D7
+L fissure-rescue:DIODE-Simulation_SPICE D7
 U 1 1 5D8EAC87
 P 8250 1700
 F 0 "D7" V 8204 1780 50  0000 L CNN
@@ -262,7 +261,7 @@ F 3 "" H 6950 1550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D6
+L fissure-rescue:DIODE-Simulation_SPICE D6
 U 1 1 5D8EAC96
 P 7350 1700
 F 0 "D6" V 7304 1780 50  0000 L CNN
@@ -288,7 +287,7 @@ F 3 "" H 10650 2100 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D15
+L fissure-rescue:DIODE-Simulation_SPICE D15
 U 1 1 5D8EBF09
 P 11050 2250
 F 0 "D15" V 11004 2330 50  0000 L CNN
@@ -314,7 +313,7 @@ F 3 "" H 9700 2100 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D14
+L fissure-rescue:DIODE-Simulation_SPICE D14
 U 1 1 5D8EBF18
 P 10100 2250
 F 0 "D14" V 10054 2330 50  0000 L CNN
@@ -340,7 +339,7 @@ F 3 "" H 8800 2100 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D13
+L fissure-rescue:DIODE-Simulation_SPICE D13
 U 1 1 5D8EBF27
 P 9200 2250
 F 0 "D13" V 9154 2330 50  0000 L CNN
@@ -366,7 +365,7 @@ F 3 "" H 7850 2100 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D12
+L fissure-rescue:DIODE-Simulation_SPICE D12
 U 1 1 5D8EBF36
 P 8250 2250
 F 0 "D12" V 8204 2330 50  0000 L CNN
@@ -392,7 +391,7 @@ F 3 "" H 6950 2100 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D11
+L fissure-rescue:DIODE-Simulation_SPICE D11
 U 1 1 5D8EBF45
 P 7350 2250
 F 0 "D11" V 7304 2330 50  0000 L CNN
@@ -418,7 +417,7 @@ F 3 "" H 10650 2550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D18
+L fissure-rescue:DIODE-Simulation_SPICE D18
 U 1 1 5D8EFFBF
 P 11050 2700
 F 0 "D18" V 11004 2780 50  0000 L CNN
@@ -444,7 +443,7 @@ F 3 "" H 9700 2550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D17
+L fissure-rescue:DIODE-Simulation_SPICE D17
 U 1 1 5D8EFFCE
 P 10100 2700
 F 0 "D17" V 10054 2780 50  0000 L CNN
@@ -470,7 +469,7 @@ F 3 "" H 8800 2550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:DIODE D16
+L fissure-rescue:DIODE-Simulation_SPICE D16
 U 1 1 5D8EFFDD
 P 9200 2700
 F 0 "D16" V 9154 2780 50  0000 L CNN
@@ -610,129 +609,71 @@ Wire Wire Line
 	7550 2000 6650 2000
 Wire Wire Line
 	6650 2100 6650 2000
-$Comp
-L BAT-HLD-001-THM:BAT-HLD-001-THM U2
-U 1 1 5DCBBAFB
-P 8450 3650
-F 0 "U2" H 8850 3915 50  0000 C CNN
-F 1 "BAT-HLD-001-THM" H 8850 3824 50  0000 C CNN
-F 2 "misc:BATHLD001THM" H 9100 3750 50  0001 L CNN
-F 3 "http://www.mouser.com/datasheet/2/238/BAT-HLD-001-THM Diagram-1175214.pdf" H 9100 3650 50  0001 L CNN
-F 4 "Coin Cell Battery Holders Bat Hld CR2032/2025 Through-hole Mount" H 9100 3550 50  0001 L CNN "Description"
-F 5 "4.2" H 9100 3450 50  0001 L CNN "Height"
-F 6 "Linx Technologies" H 9100 3350 50  0001 L CNN "Manufacturer_Name"
-F 7 "BAT-HLD-001-THM" H 9100 3250 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "712-BAT-HLD-001-THM" H 9100 3150 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=712-BAT-HLD-001-THM" H 9100 3050 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 9100 2950 50  0001 L CNN "RS Part Number"
-F 11 "" H 9100 2850 50  0001 L CNN "RS Price/Stock"
-	1    8450 3650
-	1    0    0    -1  
-$EndComp
 Connection ~ 9400 2450
 Wire Wire Line
 	10350 2450 9400 2450
-Text GLabel 9500 4700 0    50   Output ~ 0
+Text GLabel 5150 2900 0    50   Output ~ 0
 TX
-Text GLabel 9500 4800 0    50   Input ~ 0
+Text GLabel 5150 3000 0    50   Input ~ 0
 RX
-Text GLabel 9500 5100 0    50   Output ~ 0
+Text GLabel 5150 3400 0    50   Output ~ 0
 SDA
-Text GLabel 9500 5200 0    50   Output ~ 0
+Text GLabel 5150 3300 0    50   Output ~ 0
 SCL
-Text GLabel 10900 5500 2    50   Output ~ 0
+Text GLabel 6550 3700 2    50   Output ~ 0
 SCLK
-Text GLabel 10900 5600 2    50   Input ~ 0
+Text GLabel 6550 3800 2    50   Input ~ 0
 MISO
-Text GLabel 10900 5700 2    50   Output ~ 0
+Text GLabel 6550 3900 2    50   Output ~ 0
 MOSI
-Text GLabel 10900 5800 2    50   Output ~ 0
+Text GLabel 6550 4000 2    50   Output ~ 0
 CS
-Text GLabel 10900 4800 2    50   Input ~ 0
+Text GLabel 6550 3000 2    50   Input ~ 0
 GND
-Text GLabel 9500 4900 0    50   Input ~ 0
+Text GLabel 5150 3100 0    50   Input ~ 0
 GND
-Text GLabel 9500 5000 0    50   Input ~ 0
+Text GLabel 5150 3200 0    50   Input ~ 0
 GND
-Text GLabel 10900 4700 2    50   Input ~ 0
+Text GLabel 6550 2900 2    50   Input ~ 0
 RAW
-Text GLabel 10900 5000 2    50   Input ~ 0
+Text GLabel 6550 3200 2    50   Input ~ 0
 VCC
-Text GLabel 10900 5100 2    50   BiDi ~ 0
+Text GLabel 6550 3300 2    50   BiDi ~ 0
 ROW1
-Text GLabel 10900 5200 2    50   BiDi ~ 0
+Text GLabel 6550 3400 2    50   BiDi ~ 0
 ROW2
-Text GLabel 10900 5300 2    50   BiDi ~ 0
+Text GLabel 6550 3500 2    50   BiDi ~ 0
 ROW3
-Text GLabel 10900 5400 2    50   BiDi ~ 0
+Text GLabel 6550 3600 2    50   BiDi ~ 0
 ROW4
-Text GLabel 9500 5300 0    50   BiDi ~ 0
+Text GLabel 5150 3500 0    50   BiDi ~ 0
 COL1
-Text GLabel 9500 5400 0    50   BiDi ~ 0
+Text GLabel 5150 3600 0    50   BiDi ~ 0
 COL2
-Text GLabel 9500 5600 0    50   BiDi ~ 0
+Text GLabel 5150 3800 0    50   BiDi ~ 0
 COL4
-Text GLabel 9250 3750 2    50   Input ~ 0
-GND
-Text GLabel 9250 3650 2    50   Input ~ 0
-VCC
-Text GLabel 8450 3650 0    50   Input ~ 0
-VCC
-Text GLabel 8450 3750 0    50   Input ~ 0
-VCC
-Text GLabel 8450 3850 0    50   Input ~ 0
-VCC
 $Comp
-L BAT-HLD-001-THM:BAT-HLD-001-THM U4
-U 1 1 5E1B203E
-P 8450 4250
-F 0 "U4" H 8850 4515 50  0000 C CNN
-F 1 "BAT-HLD-001-THM" H 8850 4424 50  0000 C CNN
-F 2 "misc:BATHLD001THM" H 9100 4350 50  0001 L CNN
-F 3 "http://www.mouser.com/datasheet/2/238/BAT-HLD-001-THM Diagram-1175214.pdf" H 9100 4250 50  0001 L CNN
-F 4 "Coin Cell Battery Holders Bat Hld CR2032/2025 Through-hole Mount" H 9100 4150 50  0001 L CNN "Description"
-F 5 "4.2" H 9100 4050 50  0001 L CNN "Height"
-F 6 "Linx Technologies" H 9100 3950 50  0001 L CNN "Manufacturer_Name"
-F 7 "BAT-HLD-001-THM" H 9100 3850 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "712-BAT-HLD-001-THM" H 9100 3750 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=712-BAT-HLD-001-THM" H 9100 3650 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 9100 3550 50  0001 L CNN "RS Part Number"
-F 11 "" H 9100 3450 50  0001 L CNN "RS Price/Stock"
-	1    8450 4250
-	1    0    0    -1  
-$EndComp
-Text GLabel 9250 4350 2    50   Input ~ 0
-GND
-Text GLabel 9250 4250 2    50   Input ~ 0
-VCC
-Text GLabel 8450 4250 0    50   Input ~ 0
-VCC
-Text GLabel 8450 4350 0    50   Input ~ 0
-VCC
-Text GLabel 8450 4450 0    50   Input ~ 0
-VCC
-$Comp
-L RF:NRF24L01_Breakout U1
+L fissure-rescue:NRF24L01_Breakout-RF U1
 U 1 1 5D8C37D2
-P 7050 3800
-F 0 "U1" H 7430 3846 50  0000 L CNN
-F 1 "NRF24L01_Breakout" H 7430 3755 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 7200 4400 50  0001 L CIN
-F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 7050 3700 50  0001 C CNN
-	1    7050 3800
+P 3700 1450
+F 0 "U1" H 4080 1496 50  0000 L CNN
+F 1 "NRF24L01_Breakout" H 4080 1405 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 3850 2050 50  0001 L CIN
+F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 3700 1350 50  0001 C CNN
+	1    3700 1450
 	-1   0    0    1   
 $EndComp
-Text GLabel 7550 3900 2    50   Input ~ 0
+Text GLabel 4200 1550 2    50   Input ~ 0
 SCLK
-Text GLabel 7550 4000 2    50   Output ~ 0
+Text GLabel 4200 1650 2    50   Output ~ 0
 MISO
-Text GLabel 7550 4100 2    50   Input ~ 0
+Text GLabel 4200 1750 2    50   Input ~ 0
 MOSI
-Text GLabel 7550 3800 2    50   Input ~ 0
+Text GLabel 4200 1450 2    50   Input ~ 0
 CS
-Text GLabel 7050 3200 1    50   Input ~ 0
+Text GLabel 3700 850  1    50   Input ~ 0
 GND
-Text GLabel 7050 4400 3    50   Input ~ 0
+Text GLabel 3700 2050 3    50   Input ~ 0
 VCC
 Text GLabel 6650 900  0    50   BiDi ~ 0
 ROW1
@@ -758,61 +699,53 @@ Connection ~ 11150 2400
 Wire Wire Line
 	10200 2400 10200 2850
 Connection ~ 10200 2400
-Text GLabel 8950 4850 0    50   Input ~ 0
-VCC
-Text GLabel 8950 4950 0    50   Input ~ 0
-GND
-Text GLabel 8950 5050 0    50   Output ~ 0
-TX
-Text GLabel 8950 5150 0    50   Input ~ 0
-RX
 $Comp
-L Connector:AudioJack4 J1
+L fissure-rescue:AudioJack4-Connector J1
 U 1 1 5E2F9701
-P 7000 5150
-F 0 "J1" H 6957 5475 50  0000 C CNN
-F 1 "AudioJack4" H 6957 5384 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_PJ320D_Horizontal" H 7000 5150 50  0001 C CNN
-F 3 "~" H 7000 5150 50  0001 C CNN
-	1    7000 5150
+P 2800 2650
+F 0 "J1" H 2757 2975 50  0000 C CNN
+F 1 "AudioJack4" H 2757 2884 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_PJ320D_Horizontal" H 2800 2650 50  0001 C CNN
+F 3 "~" H 2800 2650 50  0001 C CNN
+	1    2800 2650
 	1    0    0    -1  
 $EndComp
-Text GLabel 7200 5050 2    50   BiDi ~ 0
+Text GLabel 3000 2550 2    50   BiDi ~ 0
 GND
-Text GLabel 7200 5150 2    50   BiDi ~ 0
+Text GLabel 3000 2650 2    50   BiDi ~ 0
 VCC
-Text GLabel 7200 5250 2    50   BiDi ~ 0
+Text GLabel 3000 2750 2    50   BiDi ~ 0
 SDA
-Text GLabel 7200 5350 2    50   BiDi ~ 0
+Text GLabel 3000 2850 2    50   BiDi ~ 0
 SCL
 $Comp
-L Connector:AudioJack4 J2
+L fissure-rescue:AudioJack4-Connector J2
 U 1 1 5E307AA7
-P 8000 5150
-F 0 "J2" H 7957 5475 50  0000 C CNN
-F 1 "AudioJack4" H 7957 5384 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_PJ320D_Horizontal" H 8000 5150 50  0001 C CNN
-F 3 "~" H 8000 5150 50  0001 C CNN
-	1    8000 5150
+P 3800 2650
+F 0 "J2" H 3757 2975 50  0000 C CNN
+F 1 "AudioJack4" H 3757 2884 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_PJ320D_Horizontal" H 3800 2650 50  0001 C CNN
+F 3 "~" H 3800 2650 50  0001 C CNN
+	1    3800 2650
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 5050 2    50   BiDi ~ 0
+Text GLabel 4000 2550 2    50   BiDi ~ 0
 GND
-Text GLabel 8200 5150 2    50   BiDi ~ 0
+Text GLabel 4000 2650 2    50   BiDi ~ 0
 VCC
-Text GLabel 8200 5250 2    50   BiDi ~ 0
+Text GLabel 4000 2750 2    50   BiDi ~ 0
 SDA
-Text GLabel 8200 5350 2    50   BiDi ~ 0
+Text GLabel 4000 2850 2    50   BiDi ~ 0
 SCL
 $Comp
 L promicro:ProMicro U3
 U 1 1 5E332FC5
-P 10200 5450
-F 0 "U3" H 10200 6593 60  0000 C CNN
-F 1 "ProMicro" H 10200 6487 60  0000 C CNN
-F 2 "Keebio-Parts:ArduinoProMicro" H 10200 6381 60  0000 C CNN
-F 3 "" H 10300 4400 60  0000 C CNN
-	1    10200 5450
+P 5850 3650
+F 0 "U3" H 5850 4793 60  0000 C CNN
+F 1 "ProMicro" H 5850 4687 60  0000 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro" H 5850 4581 60  0000 C CNN
+F 3 "" H 5950 2600 60  0000 C CNN
+	1    5850 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -831,19 +764,95 @@ Connection ~ 7450 2400
 Wire Wire Line
 	8350 2850 8350 2400
 Connection ~ 8350 2400
-Text GLabel 9500 5700 0    50   BiDi ~ 0
+Text GLabel 5150 3900 0    50   BiDi ~ 0
 COL5
-Text GLabel 9500 5500 0    50   BiDi ~ 0
+Text GLabel 5150 3700 0    50   BiDi ~ 0
 COL3
 $Comp
-L Connector_Generic:Conn_01x04 BLUE1
-U 1 1 5E469EEF
-P 9150 4950
-F 0 "BLUE1" H 9230 4942 50  0000 L CNN
-F 1 "Conn_01x04" H 9230 4851 50  0000 L CNN
-F 2 "misc:HC06" H 9150 4950 50  0001 C CNN
-F 3 "~" H 9150 4950 50  0001 C CNN
-	1    9150 4950
+L keyboard_parts:SW_PUSH SW1
+U 1 1 5E0174FE
+P 5150 2350
+F 0 "SW1" H 5150 2711 50  0000 C CNN
+F 1 "SW_PUSH" H 5150 2620 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5150 2521 60  0000 C CNN
+F 3 "" H 5150 2350 60  0000 C CNN
+	1    5150 2350
 	1    0    0    -1  
 $EndComp
+Text GLabel 4850 2350 0    50   Input ~ 0
+GND
+Text GLabel 6550 3100 2    50   Input ~ 0
+RST
+Text GLabel 5450 2350 2    50   Input ~ 0
+RST
+Text GLabel 4200 1250 2    50   Input ~ 0
+CE
+Text GLabel 4200 1150 2    50   Input ~ 0
+IRQ
+$Comp
+L fissure-rescue:SK6812MINI-LED D21
+U 1 1 5E04F5E9
+P 2750 3650
+F 0 "D21" H 3094 3696 50  0000 L CNN
+F 1 "SK6812MINI" H 3094 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 2800 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 2850 3275 50  0001 L TNN
+	1    2750 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:SK6812MINI-LED D20
+U 1 1 5E04FFE5
+P 3850 3500
+F 0 "D20" H 4194 3546 50  0000 L CNN
+F 1 "SK6812MINI" H 4194 3455 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 3900 3200 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 3950 3125 50  0001 L TNN
+	1    3850 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 4000 0    50   BiDi ~ 0
+RGB
+Text GLabel 3550 3500 0    50   BiDi ~ 0
+RGB
+Text GLabel 2450 3650 0    50   BiDi ~ 0
+RGB
+Text GLabel 3850 3800 3    50   Input ~ 0
+GND
+Text GLabel 2750 3950 3    50   Input ~ 0
+GND
+Text GLabel 3850 3200 1    50   Input ~ 0
+VCC
+Text GLabel 2750 3350 1    50   Input ~ 0
+VCC
+$Comp
+L fissure-rescue:R-Device R1
+U 1 1 5E399FB3
+P 4450 2950
+F 0 "R1" H 4520 2996 50  0000 L CNN
+F 1 "R" H 4520 2905 50  0000 L CNN
+F 2 "canadian_footprints:D_SOD123_axial-dual" V 4380 2950 50  0001 C CNN
+F 3 "~" H 4450 2950 50  0001 C CNN
+	1    4450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:R-Device R2
+U 1 1 5E39A4D3
+P 4650 2950
+F 0 "R2" H 4720 2996 50  0000 L CNN
+F 1 "R" H 4720 2905 50  0000 L CNN
+F 2 "canadian_footprints:D_SOD123_axial-dual" V 4580 2950 50  0001 C CNN
+F 3 "~" H 4650 2950 50  0001 C CNN
+	1    4650 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4550 2800 1    50   Input ~ 0
+VCC
+Text GLabel 4450 3100 3    50   Output ~ 0
+SDA
+Text GLabel 4650 3100 3    50   Output ~ 0
+SCL
+Wire Wire Line
+	4450 2800 4650 2800
 $EndSCHEMATC
