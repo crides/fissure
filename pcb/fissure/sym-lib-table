@@ -1,9 +1,6 @@
 (sym_lib_table
-  (lib (name canadian_parts)(type Legacy)(uri /home/steven/Desktop/Fissure/libs/KiCad_Libs-master/canadian_schematics/canadian_parts.lib)(options "")(descr ""))
-  (lib (name keyboard_parts)(type Legacy)(uri /home/steven/Desktop/Fissure/libs/KiCad_Libs-master/canadian_schematics/keyboard_parts.lib)(options "")(descr ""))
-  (lib (name ProMicro)(type Legacy)(uri /home/steven/Desktop/Fissure/libs/KiCad_Libs-master/canadian_schematics/ProMicro.lib)(options "")(descr ""))
-  (lib (name promicro)(type Legacy)(uri /home/steven/Desktop/Fissure/libs/ProMicroKiCad-master/promicro_library/promicro.lib)(options "")(descr ""))
-  (lib (name BAT-HLD-001-THM)(type Legacy)(uri /home/steven/Desktop/Fissure/libs/misc/BAT-HLD-001-THM.lib)(options "")(descr ""))
-  (lib (name ABM8AIG-8.000MHZ-1Z-T)(type Legacy)(uri /home/steven/Desktop/Fissure/libs/misc/ABM8AIG-8.000MHZ-1Z-T.lib)(options "")(descr ""))
+  (lib (name canadian_parts)(type Legacy)(uri ${KIPRJMOD}/../libs/KiCad_Libs-master/canadian_schematics/canadian_parts.lib)(options "")(descr ""))
+  (lib (name keyboard_parts)(type Legacy)(uri ${KIPRJMOD}/../libs/KiCad_Libs-master/canadian_schematics/keyboard_parts.lib)(options "")(descr ""))
+  (lib (name promicro)(type Legacy)(uri ${KIPRJMOD}/../libs/ProMicroKiCad-master/promicro_library/promicro.lib)(options "")(descr ""))
   (lib (name fissure-rescue)(type Legacy)(uri ${KIPRJMOD}/fissure-rescue.lib)(options "")(descr ""))
 )

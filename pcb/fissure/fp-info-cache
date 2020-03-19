@@ -1,4 +1,4 @@
-17285698999459024
+17274608643232024
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76795,55 +76795,6 @@ Kailh "Choc" PG1350 keyswitch reversible socket mount
 kailh,choc
 0
 4
-2
-misc
-1806dual
-Diode SMD 1806 (4516 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.modelithics.com/models/Vendor/MuRata/BLM41P.pdf), generated with kicad-footprint-generator
-diode
-0
-4
-2
-misc
-ABM8AIG8000MHZ1ZT
-ABM8AIG-8.000MHZ-1Z-T-1
-Crystal or Oscillator
-0
-4
-4
-misc
-BATHLD001THM
-BAT-HLD-001-THM-1
-Undefined or Miscellaneous
-0
-5
-5
-misc
-CEM-1203(42)
-
-
-0
-2
-2
-misc
-HC-05
-
-
-0
-34
-34
-misc
-HC06
-Through hole straight pin header, 1x06, 2.54mm pitch, single row
-Through hole pin header THT 1x06 2.54mm single row
-0
-4
-4
-misc
-LEDC3227X110N
-150121M153000-1
-LED
-0
-2
 2
 promicro
 ProMicro
