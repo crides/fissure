@@ -1,14 +1,12 @@
 #include "fissure.h"
 #include "action_layer.h"
 #include "eeconfig.h"
-#include "keymap_steno.h"
 
 // Layers
 #define _BASE   0
-#define _STENO  1
-#define _SYMBOL1 2
-#define _SYMBOL2 3
-#define _FUNC 4
+#define _SYMBOL1 1
+#define _SYMBOL2 2
+#define _FUNC 3
 
 #define KEYMAP( \
     L10, L11, L12, L13, L14, 				R10, R11, R12, R13, R14, \
@@ -45,9 +43,6 @@ void suspend_wakeup_init_user() {
 
 layer_state_t layer_state_set_user(layer_state_t state) {
     switch (biton32(state)) {
-    case _STENO:
-        set_hsv(HSV_GOLD);
-        break;
     case _SYMBOL1:
         set_hsv(HSV_GREEN);
         break;
@@ -67,20 +62,18 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     // If console is enabled, it will print the matrix position and status of each key pressed
 #ifdef CONSOLE_ENABLE
-    uprintf("KL: kc: %u, col: %u, row: %u, pressed: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed);
+    /* uprintf("KL: kc: %u, col: %u, row: %u, pressed: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed); */
+    // For keylogging
+    uprintf("[kl] %u:%u %c\n", record->event.key.row, record->event.key.col, record->event.pressed ? 'p' : 'P');
 #endif 
     return true;
-}
-
-void matrix_init_user() {
-    steno_set_mode(STENO_MODE_GEMINI);
 }
 
 #define DEL MT(MOD_LGUI, KC_DEL)
 #define TAB MT(MOD_LCTL, KC_TAB)
 #define ESC LT(_SYMBOL2, KC_ESC)
 #define ENT LT(_SYMBOL1, KC_ENT)
-#define SPC MT(MOD_RSFT, KC_SPC)
+#define SPC MT(MOD_LSFT, KC_SPC)
 #define BKSP MT(MOD_LALT, KC_BSPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -89,12 +82,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_A,                    KC_S,         KC_D,           KC_F,         KC_G,         KC_H,          KC_J,         KC_K,         KC_L,       KC_SCLN,
 		KC_Z,                    KC_X,         KC_C,           KC_V,         KC_B,         KC_N,          KC_M,         KC_COMM,      KC_DOT,     KC_SLSH,
 		DEL,                     TAB,          ESC,            ENT,          SPC,          BKSP),
-
-    [_STENO] = KEYMAP(
-        STN_N1,                  STN_N2,       STN_N3,         STN_N4,       STN_N5,       STN_N6,        STN_N7,       STN_N8,       STN_N9,     STN_NA,
-		STN_S1,                  STN_TL,       STN_PL,         STN_HL,       STN_ST1,      STN_FR,        STN_PR,       STN_LR,       STN_TR,     STN_DR,
-		STN_S2,                  STN_KL,       STN_WL,         STN_RL,       STN_ST2,      STN_RR,        STN_BR,       STN_GR,       STN_SR,     STN_ZR,
-		STN_A,                   STN_O,        MO(_SYMBOL2),   STN_E,        STN_U,        XXXXXXX),
 
 	[_SYMBOL1] = KEYMAP(
         LGUI(KC_1),              LGUI(KC_2),   LGUI(KC_3),     LGUI(KC_4),   LGUI(KC_5),   LGUI(KC_6),    LGUI(KC_7),   LGUI(KC_8),   KC_F11,     KC_F12,
@@ -106,7 +93,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TILD,                 KC_GRV,       KC_CIRC,        KC_DLR,       XXXXXXX,      XXXXXXX,       KC_LBRC,      KC_RBRC,      KC_LCBR,    KC_RCBR,
         KC_DQUO,                 KC_QUOT,      KC_AMPR,        KC_PIPE,      KC_PLUS,      KC_EQL,        KC_LPRN,      KC_RPRN,      KC_UNDS,    KC_COLN,
         KC_EXLM,                 KC_AT,        KC_HASH,        KC_ASTR,      KC_PERC,      KC_BSLS,       KC_MINS,      KC_LT,        KC_GT,      KC_QUES,
-        _______,                 _______,      _______,      MO(_FUNC),      _______,      TG(_STENO)),
+        _______,                 _______,      _______,      MO(_FUNC),      _______,      _______),
 
 	[_FUNC] = KEYMAP(
 		KC_BRID,                 KC_MUTE,      KC_VOLD,        KC_VOLU,      KC_BRIU,      KC_MS_L,       KC_MS_D,      KC_MS_U,      KC_MS_R,    KC_PSCR,
