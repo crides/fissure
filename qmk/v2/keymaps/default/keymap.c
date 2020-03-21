@@ -90,9 +90,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		_______,                 _______,      MO(_FUNC),        _______,    _______,      _______),
 
 	[_SYMBOL2] = KEYMAP(
-        KC_TILD,                 KC_GRV,       KC_CIRC,        KC_DLR,       XXXXXXX,      XXXXXXX,       KC_LBRC,      KC_RBRC,      KC_LCBR,    KC_RCBR,
+        KC_TILD,                 KC_GRV,       KC_CIRC,        KC_DLR,       KC_PERC,      KC_BSLS,       KC_LBRC,      KC_RBRC,      KC_LCBR,    KC_RCBR,
         KC_DQUO,                 KC_QUOT,      KC_AMPR,        KC_PIPE,      KC_PLUS,      KC_EQL,        KC_LPRN,      KC_RPRN,      KC_UNDS,    KC_COLN,
-        KC_EXLM,                 KC_AT,        KC_HASH,        KC_ASTR,      KC_PERC,      KC_BSLS,       KC_MINS,      KC_LT,        KC_GT,      KC_QUES,
+        KC_EXLM,                 KC_AT,        KC_HASH,        KC_ASTR,      XXXXXXX,      XXXXXXX,       KC_MINS,      KC_LT,        KC_GT,      KC_QUES,
         _______,                 _______,      _______,      MO(_FUNC),      _______,      _______),
 
 	[_FUNC] = KEYMAP(
