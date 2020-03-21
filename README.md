@@ -23,6 +23,8 @@ My keymap is available [here](http://www.keyboard-layout-editor.com/#/gists/f470
 
 This version used Pro Micro as the controller and I<sup>2</sup>C as the communication protocol beteen the halves, as I based my design mostly on the 5plit, differing only on the key layout.
 
+As the keyboard has no cases, I have to put something else under the PCB. I wanted to follow what [u/reverse_bias](https://www.reddit.com/user/reverse_bias/) did in his [Mitosis build](https://imgur.com/a/mwTFj) (tl;dr laser cutting adhesive neopreneto leave space for the switch pins but also provide sound dampening), but as it turns out, laser cutting neoprene is a bad idea. So I ended up putting the adhesive neoprene sheets on the underside of the PCB without any modification. This worked fine, except there are bumps on the neoprene caused by the switches, which, after extensive use, left marks on the neoprene.
+
 The first version used Kailh Choc Brown switches. They felt good at first, but later on they felt more and more inconsistent. I could sometimes feel the bump, but other times it just feels like it's linear.
 
 ## Version 2
@@ -36,6 +38,8 @@ To resolve the issue, I first removed the number bar from my layout, both in fir
 The second issue is related to portability. As I bring my keyboard with my laptop, setting up the keyboards (plugging in the cables etc.) takes up quite some time. So I began to look into wireless solutions, and I put a bluetooth and a nrf24 wireless module footprint onto the PCB. I didn't have the wireless design ready to go yet, but this board was also meant to be an experimental version, so it doesn't matter that much if the design is not perfect. I also put a CR2032 coin cell holder hoping that I can use it for power when in wireless mode.
 
 The last things I added are a NeoPixel RGB LED for layer and debug information, and a reset button. On version 1 there's no physical reset button, and every time I flash the firmware I have to find some metal to short the reset and ground pins :).
+
+The last issue was the underside for the PCB. In version 1 the result was Ok but not great. In version 2 I tried to stack 2 PCBs together for one half. This way the switch pins are completely embed in the PCB, but it also meant that soldering and making sure the soldered connection works well can be difficult. But if we ignore the rare connection issues the underside now is completely flat.
 
 ![](v2-gerber.png)
 
