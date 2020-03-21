@@ -1,13 +1,13 @@
 Fissure
 =======
 
-A 36/46-key split keyboard that combined the ideas of [5plit](https://oddrocketkeyboards.blogspot.com/2018/05/5plit-v2.html) and [for science](https://github.com/peej/for-science-keyboard). The current design is version 2.1. You can find keymaps and gerber files for both versions if you want to build your own.
+A 36/46-key split keyboard that combined the ideas of [5plit](https://oddrocketkeyboards.blogspot.com/2018/05/5plit-v2.html) and [for science](https://github.com/peej/for-science-keyboard). The current design is version 2.1. You can find keymaps and gerber files for both versions if you want to build your own. The firmware of this keyboard is based on [QMK firmware](https://github.com/qmk/qmk_firmware).
 
 # Background
 
 ## Version 1
 
-I got interested in (weird/uncommon) keyboard designs in 11th grade, when I saw one of my friends using his tablet with a keyboard cover and tapping the keys while the keyboard is folded back under the tablet. I thought he was actually using the keyboard, and I came up with the idea of a back-typing keyboard. I have thought about making functional back-typing keyboards and one-handed keyboards, but I never made a usable prototype. Later, I discovered the Mechanical Keyboards sub reddit, and I decided that I want to make this keyboard.
+I got interested in (weird/uncommon) keyboard designs in 11th grade, when I saw one of my friends using his tablet with a keyboard cover and tapping the keys while the keyboard is folded back under the tablet. I thought he was actually using the keyboard, and I came up with the idea of a back-typing keyboard. I have thought about making functional back-typing keyboards and one-handed keyboards, but I never made a usable prototype. Later, I discovered the [Mechanical Keyboards sub reddit](https://reddit.com/r/MechanicalKeyboards), and I decided that I want to make this keyboard.
 
 I settled on the 46 key layout to give myself a bit more flexibility to change between different layouts, and I used a orthogonal layout as I felt it was a more standard layout so it should be easier for me to get used to.
 
@@ -21,7 +21,7 @@ Only firmware and gerber files are currently available, as I lost my design file
 
 My keymap is available [here](http://www.keyboard-layout-editor.com/#/gists/f470cb5798ff4dc8b27f680a605061f3). It was the result after experimenting with many different layouts, but at the same time I try to make it easier to remember and get used to. I based this layout loosely off of normal QWERTY keyboards. Notice the number bar at the top, the symbols when shifted and function keys when raised. I also put all outside non-printable keys (e.g. Enter, Backspace, Escape) on a second layer, and only modifiers and space on the thumb clusters. I was aware of the Mod-Tap feature at the time, which allows the user to get one key when the key is tapped shortly and when the key is held down for longer. I was afraid I wasn't going to get used to that quickly. For the rest of the symbols, notice that I put the shifted ones above the non-shifted ones (except for the brackets for programming reasons), hoping that I can remember them easier.
 
-This version used Pro Micro as the controller and I^2^C as the communication protocol beteen the halves, as I based my design mostly on the 5plit, differing only on the key layout.
+This version used Pro Micro as the controller and I<sup>2</sup>C as the communication protocol beteen the halves, as I based my design mostly on the 5plit, differing only on the key layout.
 
 The first version used Kailh Choc Brown switches. They felt good at first, but later on they felt more and more inconsistent. I could sometimes feel the bump, but other times it just feels like it's linear.
 
