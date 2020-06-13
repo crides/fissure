@@ -3,7 +3,6 @@
 
 #include "config_common.h"
 
-#define FORCE_NKRO
 #define TAPPING_TERM 150
 
 #define PREVENT_STUCK_MODIFIERS
