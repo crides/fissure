@@ -612,22 +612,10 @@ Wire Wire Line
 Connection ~ 9400 2450
 Wire Wire Line
 	10350 2450 9400 2450
-Text GLabel 5150 2900 0    50   Output ~ 0
-TX
-Text GLabel 5150 3000 0    50   Input ~ 0
-RX
 Text GLabel 5150 3400 0    50   Output ~ 0
 SDA
 Text GLabel 5150 3300 0    50   Output ~ 0
 SCL
-Text GLabel 6550 3700 2    50   Output ~ 0
-SCLK
-Text GLabel 6550 3800 2    50   Input ~ 0
-MISO
-Text GLabel 6550 3900 2    50   Output ~ 0
-MOSI
-Text GLabel 6550 4000 2    50   Output ~ 0
-CS
 Text GLabel 6550 3000 2    50   Input ~ 0
 GND
 Text GLabel 5150 3100 0    50   Input ~ 0
@@ -638,43 +626,20 @@ Text GLabel 6550 2900 2    50   Input ~ 0
 RAW
 Text GLabel 6550 3200 2    50   Input ~ 0
 VCC
-Text GLabel 6550 3300 2    50   BiDi ~ 0
-ROW1
-Text GLabel 6550 3400 2    50   BiDi ~ 0
-ROW2
-Text GLabel 6550 3500 2    50   BiDi ~ 0
-ROW3
-Text GLabel 6550 3600 2    50   BiDi ~ 0
-ROW4
 Text GLabel 5150 3500 0    50   BiDi ~ 0
-COL1
+ROW1
 Text GLabel 5150 3600 0    50   BiDi ~ 0
-COL2
+ROW2
+Text GLabel 5150 3700 0    50   BiDi ~ 0
+ROW3
 Text GLabel 5150 3800 0    50   BiDi ~ 0
+ROW4
+Text GLabel 5150 2900 0    50   BiDi ~ 0
+COL1
+Text GLabel 5150 3000 0    50   BiDi ~ 0
+COL2
+Text GLabel 6550 3800 2    50   BiDi ~ 0
 COL4
-$Comp
-L fissure-rescue:NRF24L01_Breakout-RF U1
-U 1 1 5D8C37D2
-P 3700 1450
-F 0 "U1" H 4080 1496 50  0000 L CNN
-F 1 "NRF24L01_Breakout" H 4080 1405 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 3850 2050 50  0001 L CIN
-F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 3700 1350 50  0001 C CNN
-	1    3700 1450
-	-1   0    0    1   
-$EndComp
-Text GLabel 4200 1550 2    50   Input ~ 0
-SCLK
-Text GLabel 4200 1650 2    50   Output ~ 0
-MISO
-Text GLabel 4200 1750 2    50   Input ~ 0
-MOSI
-Text GLabel 4200 1450 2    50   Input ~ 0
-CS
-Text GLabel 3700 850  1    50   Input ~ 0
-GND
-Text GLabel 3700 2050 3    50   Input ~ 0
-VCC
 Text GLabel 6650 900  0    50   BiDi ~ 0
 ROW1
 Text GLabel 6650 1450 0    50   BiDi ~ 0
@@ -705,7 +670,7 @@ U 1 1 5E2F9701
 P 2800 2650
 F 0 "J1" H 2757 2975 50  0000 C CNN
 F 1 "AudioJack4" H 2757 2884 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320A" H 2800 2650 50  0001 C CNN
+F 2 "Keebio-Parts:TRRS-PJ-320D" H 2800 2650 50  0001 C CNN
 F 3 "~" H 2800 2650 50  0001 C CNN
 	1    2800 2650
 	1    0    0    -1  
@@ -724,7 +689,7 @@ U 1 1 5E307AA7
 P 3800 2650
 F 0 "J2" H 3757 2975 50  0000 C CNN
 F 1 "AudioJack4" H 3757 2884 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320A" H 3800 2650 50  0001 C CNN
+F 2 "Keebio-Parts:TRRS-PJ-320D" H 3800 2650 50  0001 C CNN
 F 3 "~" H 3800 2650 50  0001 C CNN
 	1    3800 2650
 	1    0    0    -1  
@@ -764,9 +729,9 @@ Connection ~ 7450 2400
 Wire Wire Line
 	8350 2850 8350 2400
 Connection ~ 8350 2400
-Text GLabel 5150 3900 0    50   BiDi ~ 0
+Text GLabel 6550 3900 2    50   BiDi ~ 0
 COL5
-Text GLabel 5150 3700 0    50   BiDi ~ 0
+Text GLabel 6550 3700 2    50   BiDi ~ 0
 COL3
 $Comp
 L keyboard_parts:SW_PUSH SW1
@@ -785,10 +750,6 @@ Text GLabel 6550 3100 2    50   Input ~ 0
 RST
 Text GLabel 5450 2350 2    50   Input ~ 0
 RST
-Text GLabel 4200 1250 2    50   Input ~ 0
-CE
-Text GLabel 4200 1150 2    50   Input ~ 0
-IRQ
 $Comp
 L fissure-rescue:SK6812MINI-LED D21
 U 1 1 5E04F5E9
@@ -811,7 +772,7 @@ F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 	1    3850 3500
 	1    0    0    -1  
 $EndComp
-Text GLabel 5150 4000 0    50   BiDi ~ 0
+Text GLabel 6550 4000 2    50   BiDi ~ 0
 RGB
 Text GLabel 3550 3500 0    50   BiDi ~ 0
 RGB
@@ -855,4 +816,54 @@ Text GLabel 4650 3100 3    50   Output ~ 0
 SCL
 Wire Wire Line
 	4450 2800 4650 2800
+$Comp
+L symbols:joystick J4
+U 1 1 5EF1DD70
+P 3900 4500
+F 0 "J4" H 3958 4915 50  0000 C CNN
+F 1 "joystick" H 3958 4824 50  0000 C CNN
+F 2 "footprints:joystick" H 3900 4000 50  0001 C CNN
+F 3 "" H 3900 4000 50  0001 C CNN
+	1    3900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:joystick J3
+U 1 1 5EF1EEE5
+P 3000 4500
+F 0 "J3" H 3058 4915 50  0000 C CNN
+F 1 "joystick" H 3058 4824 50  0000 C CNN
+F 2 "footprints:joystick" H 3000 4000 50  0001 C CNN
+F 3 "" H 3000 4000 50  0001 C CNN
+	1    3000 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3350 4600 2    50   Input ~ 0
+GND
+Text GLabel 4250 4600 2    50   Input ~ 0
+GND
+Text GLabel 3350 4400 2    50   Input ~ 0
+VCC
+Text GLabel 4250 4400 2    50   Input ~ 0
+VCC
+Text GLabel 3800 4850 3    50   Input ~ 0
+VCC
+Text GLabel 2900 4850 3    50   Input ~ 0
+VCC
+Text GLabel 3100 4850 3    50   Input ~ 0
+GND
+Text GLabel 4000 4850 3    50   Input ~ 0
+GND
+Text GLabel 4250 4500 2    50   BiDi ~ 0
+X
+Text GLabel 3000 4850 3    50   BiDi ~ 0
+X
+Text GLabel 3350 4500 2    50   BiDi ~ 0
+Y
+Text GLabel 3900 4850 3    50   BiDi ~ 0
+Y
+Text GLabel 5150 4000 0    50   BiDi ~ 0
+X
+Text GLabel 5150 3900 0    50   BiDi ~ 0
+Y
 $EndSCHEMATC
