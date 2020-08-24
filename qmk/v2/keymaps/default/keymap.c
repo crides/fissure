@@ -8,10 +8,10 @@
 #define _RAISE 2
 
 #define KEYMAP( \
-    L10, L11, L12, L13, L14, 				R10, R11, R12, R13, R14, \
-    L20, L21, L22, L23, L24, 				R20, R21, R22, R23, R24, \
-    L30, L31, L32, L33, L34, 				R30, R31, R32, R33, R34, \
-                         L42, L43, L44, 			R40, R41, R42 \
+    L10, L11, L12, L13, L14,                 R10, R11, R12, R13, R14, \
+    L20, L21, L22, L23, L24,                 R20, R21, R22, R23, R24, \
+    L30, L31, L32, L33, L34,                 R30, R31, R32, R33, R34, \
+                         L42, L43, L44,             R40, R41, R42 \
     ) \
     { \
         { L10, L11, L12, L13, L14 }, \
@@ -40,10 +40,6 @@ void suspend_wakeup_init_user() {
     set_hsv(0, 0, 0);
 }
 
-enum keycodes {
-    KC_TEST = SAFE_RANGE,
-};
-
 layer_state_t layer_state_set_user(layer_state_t state) {
     switch (biton32(state)) {
     case _LOWER:
@@ -60,9 +56,6 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    if (keycode == KC_TEST && record->event.pressed) {
-        return false;
-    }
     // If console is enabled, it will print the matrix position and status of each key pressed
 #ifdef CONSOLE_ENABLE
     /* uprintf("KL: kc: %u, col: %u, row: %u, pressed: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed); */
@@ -79,36 +72,65 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #define SPC MT(MOD_LSFT, KC_SPC)
 #define BKSP MT(MOD_LALT, KC_BSPC)
 
-const uint16_t PROGMEM combos[COMBO_COUNT][3] = {
-    {KC_W, KC_E, COMBO_END},
-    {KC_E, KC_R, COMBO_END},
-    {KC_A, KC_S, COMBO_END},
-    {KC_S, KC_D, COMBO_END},
-    {KC_D, KC_F, COMBO_END},
-    {KC_Z, KC_X, COMBO_END},
-    {KC_X, KC_C, COMBO_END},
-    {KC_C, KC_V, COMBO_END},
-    {KC_W, KC_S, COMBO_END},
-    {KC_S, KC_X, COMBO_END},
-    {KC_E, KC_D, COMBO_END},
-    {KC_D, KC_C, COMBO_END},
-    {KC_R, KC_F, COMBO_END},
-    {KC_F, KC_V, COMBO_END},
-    {KC_U, KC_I, COMBO_END},
-    {KC_I, KC_O, COMBO_END},
-    {KC_J, KC_K, COMBO_END},
-    {KC_K, KC_L, COMBO_END},
-    {KC_L, KC_SCLN, COMBO_END},
-    {KC_M, KC_COMM, COMBO_END},
-    {KC_COMM, KC_DOT, COMBO_END},
-    {KC_U, KC_J, COMBO_END},
-    {KC_J, KC_M, COMBO_END},
-    {KC_I, KC_K, COMBO_END},
-    {KC_K, KC_COMM, COMBO_END},
-    {KC_O, KC_L, COMBO_END},
-    {KC_L, KC_DOT, COMBO_END},
-    {KC_DOT, KC_SLSH, COMBO_END},
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+    [_BASE] = KEYMAP(
+        KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,      KC_Y,     KC_U,        KC_I,       KC_O,        KC_P,
+        KC_A,     KC_S,     KC_D,     KC_F,     KC_G,      KC_H,     KC_J,        KC_K,       KC_L,     KC_SCLN,
+        KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_N,     KC_M,     KC_COMM,     KC_DOT,     KC_SLSH,
+         DEL,      TAB,      ESC,      ENT,      SPC,     BKSP),
+
+    /* [_BASE] = KEYMAP( */
+    /*     KC_Q,  KC_W,  KC_F,  KC_P,  KC_B,   KC_J,  KC_L,     KC_U,    KC_Y,  KC_SCLN, */
+    /*     KC_A,  KC_R,  KC_S,  KC_T,  KC_G,   KC_M,  KC_N,     KC_E,    KC_I,     KC_O, */
+    /*     KC_Z,  KC_X,  KC_C,  KC_D,  KC_V,   KC_K,  KC_H,  KC_COMM,  KC_DOT,  KC_SLSH, */
+    /*      DEL,   TAB,   ESC,   ENT,   SPC,  BKSP), */
+
+    [_LOWER] = KEYMAP(
+        G(KC_1),  G(KC_2),  G(KC_3),  G(KC_4),  G(KC_5),   G(KC_6),  G(KC_7),  G(KC_8),  KC_F11,  KC_F12,
+           KC_1,     KC_2,     KC_3,     KC_4,     KC_5,      KC_6,     KC_7,     KC_8,    KC_9,    KC_0,
+          KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,     KC_F6,    KC_F7,    KC_F8,   KC_F9,  KC_F10,
+        _______,  _______,  _______,  _______,  _______,  _______),
+
+    [_RAISE] = KEYMAP(
+        KC_BRID,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_BRIU,     KC_HOME,     KC_PGDN,   KC_PGUP,       KC_END,  KC_PSCR,
+        XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,     KC_LEFT,     KC_DOWN,     KC_UP,     KC_RIGHT,  XXXXXXX,
+        XXXXXXX,  KC_MPRV,  KC_MPLY,  KC_MNXT,  XXXXXXX,  C(KC_LEFT),  C(KC_DOWN),  C(KC_UP),  C(KC_RIGHT),  XXXXXXX,
+        _______,  _______,  _______,  _______,  _______,    _______),
 };
+
+const uint16_t PROGMEM combos[COMBO_COUNT][3] = {
+#define K(r, c) (keymaps[0][r][c])
+    {K(0, 1), K(0, 2), COMBO_END},
+    {K(0, 2), K(0, 3), COMBO_END},
+    {K(1, 0), K(1, 1), COMBO_END},
+    {K(1, 1), K(1, 2), COMBO_END},
+    {K(1, 2), K(1, 3), COMBO_END},
+    {K(2, 0), K(2, 1), COMBO_END},
+    {K(2, 1), K(2, 2), COMBO_END},
+    {K(2, 2), K(2, 3), COMBO_END},
+    {K(0, 1), K(1, 1), COMBO_END},
+    {K(1, 1), K(2, 1), COMBO_END},
+    {K(0, 2), K(1, 2), COMBO_END},
+    {K(1, 2), K(2, 2), COMBO_END},
+    {K(0, 3), K(1, 3), COMBO_END},
+    {K(1, 3), K(2, 3), COMBO_END},
+    {K(4, 3), K(4, 2), COMBO_END},
+    {K(4, 2), K(4, 1), COMBO_END},
+    {K(5, 3), K(5, 2), COMBO_END},
+    {K(5, 2), K(5, 1), COMBO_END},
+    {K(5, 1), K(5, 0), COMBO_END},
+    {K(6, 3), K(6, 2), COMBO_END},
+    {K(6, 2), K(6, 1), COMBO_END},
+    {K(4, 3), K(5, 3), COMBO_END},
+    {K(5, 3), K(6, 3), COMBO_END},
+    {K(4, 2), K(5, 2), COMBO_END},
+    {K(5, 2), K(6, 2), COMBO_END},
+    {K(4, 1), K(5, 1), COMBO_END},
+    {K(5, 1), K(6, 1), COMBO_END},
+    {K(6, 1), K(6, 0), COMBO_END},
+#undef K
+};
+
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(combos[0], KC_BSLS),
     COMBO(combos[1], KC_LBRC),
@@ -138,24 +160,4 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(combos[25], KC_QUOT),
     COMBO(combos[26], KC_GT),
     COMBO(combos[27], KC_QUES),
-};
-
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [_BASE] = KEYMAP(
-		KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,      KC_Y,     KC_U,        KC_I,       KC_O,        KC_P,
-		KC_A,     KC_S,     KC_D,     KC_F,     KC_G,      KC_H,     KC_J,        KC_K,       KC_L,     KC_SCLN,
-		KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_N,     KC_M,     KC_COMM,     KC_DOT,     KC_SLSH,
-		 DEL,      TAB,      ESC,      ENT,      SPC,     BKSP),
-
-	[_LOWER] = KEYMAP(
-        G(KC_1),   G(KC_2),   G(KC_3),   G(KC_4),   G(KC_5),    G(KC_6),   G(KC_7),   G(KC_8),   KC_F11,   KC_F12,
-           KC_1,      KC_2,      KC_3,      KC_4,      KC_5,       KC_6,      KC_7,      KC_8,     KC_9,     KC_0,
-		  KC_F1,     KC_F2,     KC_F3,     KC_F4,     KC_F5,      KC_F6,     KC_F7,     KC_F8,    KC_F9,   KC_F10,
-		_______,   _______,   _______,   _______,   _______,   _______),
-
-	[_RAISE] = KEYMAP(
-		KC_BRID,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_BRIU,     KC_HOME,     KC_PGDN,   KC_PGUP,       KC_END,  KC_PSCR,
-		XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,     KC_LEFT,     KC_DOWN,     KC_UP,     KC_RIGHT,  XXXXXXX,
-		XXXXXXX,  KC_MPRV,  KC_MPLY,  KC_MNXT,  XXXXXXX,  C(KC_LEFT),  C(KC_DOWN),  C(KC_UP),  C(KC_RIGHT),  XXXXXXX,
-		_______,  _______,  _______,  _______,  _______,    _______),
 };
