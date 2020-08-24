@@ -14,856 +14,1328 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	11050 1000 10950 1000
+	10100 1050 10000 1050
 $Comp
 L canadian_parts:KEYSW K5
 U 1 1 5D8C21F6
-P 10650 1000
-F 0 "K5" H 10650 1233 60  0000 C CNN
-F 1 "KEYSW" H 10650 900 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 10650 1000 60  0001 C CNN
-F 3 "" H 10650 1000 60  0000 C CNN
-	1    10650 1000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D5
-U 1 1 5D8C1770
-P 11050 1150
-F 0 "D5" V 11004 1230 50  0000 L CNN
-F 1 "DIODE" V 11095 1230 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 11050 1150 50  0001 C CNN
-F 3 "~" H 11050 1150 50  0001 C CNN
-F 4 "Y" H 11050 1150 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 11050 1150 50  0001 L CNN "Spice_Primitive"
-	1    11050 1150
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	10100 1000 10000 1000
-$Comp
-L canadian_parts:KEYSW K4
-U 1 1 5D8E4DAE
-P 9700 1000
-F 0 "K4" H 9700 1233 60  0000 C CNN
-F 1 "KEYSW" H 9700 900 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 9700 1000 60  0001 C CNN
-F 3 "" H 9700 1000 60  0000 C CNN
-	1    9700 1000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D4
-U 1 1 5D8E4DB6
-P 10100 1150
-F 0 "D4" V 10054 1230 50  0000 L CNN
-F 1 "DIODE" V 10145 1230 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 10100 1150 50  0001 C CNN
-F 3 "~" H 10100 1150 50  0001 C CNN
-F 4 "Y" H 10100 1150 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 10100 1150 50  0001 L CNN "Spice_Primitive"
-	1    10100 1150
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	9200 1000 9100 1000
-$Comp
-L canadian_parts:KEYSW K3
-U 1 1 5D8E5222
-P 8800 1000
-F 0 "K3" H 8800 1233 60  0000 C CNN
-F 1 "KEYSW" H 8800 900 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8800 1000 60  0001 C CNN
-F 3 "" H 8800 1000 60  0000 C CNN
-	1    8800 1000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D3
-U 1 1 5D8E522A
-P 9200 1150
-F 0 "D3" V 9154 1230 50  0000 L CNN
-F 1 "DIODE" V 9245 1230 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 9200 1150 50  0001 C CNN
-F 3 "~" H 9200 1150 50  0001 C CNN
-F 4 "Y" H 9200 1150 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 9200 1150 50  0001 L CNN "Spice_Primitive"
-	1    9200 1150
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	8250 1000 8150 1000
-$Comp
-L canadian_parts:KEYSW K2
-U 1 1 5D8E570E
-P 7850 1000
-F 0 "K2" H 7850 1233 60  0000 C CNN
-F 1 "KEYSW" H 7850 900 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7850 1000 60  0001 C CNN
-F 3 "" H 7850 1000 60  0000 C CNN
-	1    7850 1000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D2
-U 1 1 5D8E5716
-P 8250 1150
-F 0 "D2" V 8204 1230 50  0000 L CNN
-F 1 "DIODE" V 8295 1230 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 8250 1150 50  0001 C CNN
-F 3 "~" H 8250 1150 50  0001 C CNN
-F 4 "Y" H 8250 1150 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 8250 1150 50  0001 L CNN "Spice_Primitive"
-	1    8250 1150
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	7350 1000 7250 1000
-$Comp
-L canadian_parts:KEYSW K1
-U 1 1 5D8E5D97
-P 6950 1000
-F 0 "K1" H 6950 1233 60  0000 C CNN
-F 1 "KEYSW" H 6950 900 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6950 1000 60  0001 C CNN
-F 3 "" H 6950 1000 60  0000 C CNN
-	1    6950 1000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D1
-U 1 1 5D8E5D9F
-P 7350 1150
-F 0 "D1" V 7304 1230 50  0000 L CNN
-F 1 "DIODE" V 7395 1230 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 7350 1150 50  0001 C CNN
-F 3 "~" H 7350 1150 50  0001 C CNN
-F 4 "Y" H 7350 1150 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 7350 1150 50  0001 L CNN "Spice_Primitive"
-	1    7350 1150
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	11050 1550 10950 1550
-$Comp
-L canadian_parts:KEYSW K10
-U 1 1 5D8EAC52
-P 10650 1550
-F 0 "K10" H 10650 1783 60  0000 C CNN
-F 1 "KEYSW" H 10650 1450 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 10650 1550 60  0001 C CNN
-F 3 "" H 10650 1550 60  0000 C CNN
-	1    10650 1550
+P 9700 1050
+F 0 "K5" H 9700 1283 60  0000 C CNN
+F 1 "KEYSW" H 9700 950 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 9700 1050 60  0001 C CNN
+F 3 "" H 9700 1050 60  0000 C CNN
+	1    9700 1050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L fissure-rescue:DIODE-Simulation_SPICE D10
-U 1 1 5D8EAC5A
-P 11050 1700
-F 0 "D10" V 11004 1780 50  0000 L CNN
-F 1 "DIODE" V 11095 1780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 11050 1700 50  0001 C CNN
-F 3 "~" H 11050 1700 50  0001 C CNN
-F 4 "Y" H 11050 1700 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 11050 1700 50  0001 L CNN "Spice_Primitive"
-	1    11050 1700
+U 1 1 5D8C1770
+P 10100 1200
+F 0 "D10" V 10054 1280 50  0000 L CNN
+F 1 "DIODE" V 10145 1280 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 10100 1200 50  0001 C CNN
+F 3 "~" H 10100 1200 50  0001 C CNN
+F 4 "Y" H 10100 1200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10100 1200 50  0001 L CNN "Spice_Primitive"
+	1    10100 1200
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	10100 1550 10000 1550
+	9200 1050 9100 1050
 $Comp
-L canadian_parts:KEYSW K9
-U 1 1 5D8EAC61
-P 9700 1550
-F 0 "K9" H 9700 1783 60  0000 C CNN
-F 1 "KEYSW" H 9700 1450 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 9700 1550 60  0001 C CNN
-F 3 "" H 9700 1550 60  0000 C CNN
-	1    9700 1550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D9
-U 1 1 5D8EAC69
-P 10100 1700
-F 0 "D9" V 10054 1780 50  0000 L CNN
-F 1 "DIODE" V 10145 1780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 10100 1700 50  0001 C CNN
-F 3 "~" H 10100 1700 50  0001 C CNN
-F 4 "Y" H 10100 1700 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 10100 1700 50  0001 L CNN "Spice_Primitive"
-	1    10100 1700
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	9200 1550 9100 1550
-$Comp
-L canadian_parts:KEYSW K8
-U 1 1 5D8EAC70
-P 8800 1550
-F 0 "K8" H 8800 1783 60  0000 C CNN
-F 1 "KEYSW" H 8800 1450 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8800 1550 60  0001 C CNN
-F 3 "" H 8800 1550 60  0000 C CNN
-	1    8800 1550
+L canadian_parts:KEYSW K4
+U 1 1 5D8E4DAE
+P 8800 1050
+F 0 "K4" H 8800 1283 60  0000 C CNN
+F 1 "KEYSW" H 8800 950 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8800 1050 60  0001 C CNN
+F 3 "" H 8800 1050 60  0000 C CNN
+	1    8800 1050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L fissure-rescue:DIODE-Simulation_SPICE D8
-U 1 1 5D8EAC78
-P 9200 1700
-F 0 "D8" V 9154 1780 50  0000 L CNN
-F 1 "DIODE" V 9245 1780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 9200 1700 50  0001 C CNN
-F 3 "~" H 9200 1700 50  0001 C CNN
-F 4 "Y" H 9200 1700 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 9200 1700 50  0001 L CNN "Spice_Primitive"
-	1    9200 1700
+U 1 1 5D8E4DB6
+P 9200 1200
+F 0 "D8" V 9154 1280 50  0000 L CNN
+F 1 "DIODE" V 9245 1280 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 9200 1200 50  0001 C CNN
+F 3 "~" H 9200 1200 50  0001 C CNN
+F 4 "Y" H 9200 1200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9200 1200 50  0001 L CNN "Spice_Primitive"
+	1    9200 1200
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8250 1550 8150 1550
+	8300 1050 8200 1050
 $Comp
-L canadian_parts:KEYSW K7
-U 1 1 5D8EAC7F
-P 7850 1550
-F 0 "K7" H 7850 1783 60  0000 C CNN
-F 1 "KEYSW" H 7850 1450 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7850 1550 60  0001 C CNN
-F 3 "" H 7850 1550 60  0000 C CNN
-	1    7850 1550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D7
-U 1 1 5D8EAC87
-P 8250 1700
-F 0 "D7" V 8204 1780 50  0000 L CNN
-F 1 "DIODE" V 8295 1780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 8250 1700 50  0001 C CNN
-F 3 "~" H 8250 1700 50  0001 C CNN
-F 4 "Y" H 8250 1700 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 8250 1700 50  0001 L CNN "Spice_Primitive"
-	1    8250 1700
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	7350 1550 7250 1550
-$Comp
-L canadian_parts:KEYSW K6
-U 1 1 5D8EAC8E
-P 6950 1550
-F 0 "K6" H 6950 1783 60  0000 C CNN
-F 1 "KEYSW" H 6950 1450 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6950 1550 60  0001 C CNN
-F 3 "" H 6950 1550 60  0000 C CNN
-	1    6950 1550
+L canadian_parts:KEYSW K3
+U 1 1 5D8E5222
+P 7900 1050
+F 0 "K3" H 7900 1283 60  0000 C CNN
+F 1 "KEYSW" H 7900 950 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7900 1050 60  0001 C CNN
+F 3 "" H 7900 1050 60  0000 C CNN
+	1    7900 1050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L fissure-rescue:DIODE-Simulation_SPICE D6
-U 1 1 5D8EAC96
-P 7350 1700
-F 0 "D6" V 7304 1780 50  0000 L CNN
-F 1 "DIODE" V 7395 1780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 7350 1700 50  0001 C CNN
-F 3 "~" H 7350 1700 50  0001 C CNN
-F 4 "Y" H 7350 1700 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 7350 1700 50  0001 L CNN "Spice_Primitive"
-	1    7350 1700
+U 1 1 5D8E522A
+P 8300 1200
+F 0 "D6" V 8254 1280 50  0000 L CNN
+F 1 "DIODE" V 8345 1280 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 8300 1200 50  0001 C CNN
+F 3 "~" H 8300 1200 50  0001 C CNN
+F 4 "Y" H 8300 1200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8300 1200 50  0001 L CNN "Spice_Primitive"
+	1    8300 1200
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	11050 2100 10950 2100
+	7350 1050 7250 1050
 $Comp
-L canadian_parts:KEYSW K15
-U 1 1 5D8EBF01
-P 10650 2100
-F 0 "K15" H 10650 2333 60  0000 C CNN
-F 1 "KEYSW" H 10650 2000 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 10650 2100 60  0001 C CNN
-F 3 "" H 10650 2100 60  0000 C CNN
-	1    10650 2100
+L canadian_parts:KEYSW K2
+U 1 1 5D8E570E
+P 6950 1050
+F 0 "K2" H 6950 1283 60  0000 C CNN
+F 1 "KEYSW" H 6950 950 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6950 1050 60  0001 C CNN
+F 3 "" H 6950 1050 60  0000 C CNN
+	1    6950 1050
 	-1   0    0    -1  
 $EndComp
 $Comp
-L fissure-rescue:DIODE-Simulation_SPICE D15
-U 1 1 5D8EBF09
-P 11050 2250
-F 0 "D15" V 11004 2330 50  0000 L CNN
-F 1 "DIODE" V 11095 2330 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 11050 2250 50  0001 C CNN
-F 3 "~" H 11050 2250 50  0001 C CNN
-F 4 "Y" H 11050 2250 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 11050 2250 50  0001 L CNN "Spice_Primitive"
-	1    11050 2250
+L fissure-rescue:DIODE-Simulation_SPICE D4
+U 1 1 5D8E5716
+P 7350 1200
+F 0 "D4" V 7304 1280 50  0000 L CNN
+F 1 "DIODE" V 7395 1280 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7350 1200 50  0001 C CNN
+F 3 "~" H 7350 1200 50  0001 C CNN
+F 4 "Y" H 7350 1200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7350 1200 50  0001 L CNN "Spice_Primitive"
+	1    7350 1200
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	10100 2100 10000 2100
-$Comp
-L canadian_parts:KEYSW K14
-U 1 1 5D8EBF10
-P 9700 2100
-F 0 "K14" H 9700 2333 60  0000 C CNN
-F 1 "KEYSW" H 9700 2000 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 9700 2100 60  0001 C CNN
-F 3 "" H 9700 2100 60  0000 C CNN
-	1    9700 2100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D14
-U 1 1 5D8EBF18
-P 10100 2250
-F 0 "D14" V 10054 2330 50  0000 L CNN
-F 1 "DIODE" V 10145 2330 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 10100 2250 50  0001 C CNN
-F 3 "~" H 10100 2250 50  0001 C CNN
-F 4 "Y" H 10100 2250 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 10100 2250 50  0001 L CNN "Spice_Primitive"
-	1    10100 2250
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	9200 2100 9100 2100
-$Comp
-L canadian_parts:KEYSW K13
-U 1 1 5D8EBF1F
-P 8800 2100
-F 0 "K13" H 8800 2333 60  0000 C CNN
-F 1 "KEYSW" H 8800 2000 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8800 2100 60  0001 C CNN
-F 3 "" H 8800 2100 60  0000 C CNN
-	1    8800 2100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D13
-U 1 1 5D8EBF27
-P 9200 2250
-F 0 "D13" V 9154 2330 50  0000 L CNN
-F 1 "DIODE" V 9245 2330 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 9200 2250 50  0001 C CNN
-F 3 "~" H 9200 2250 50  0001 C CNN
-F 4 "Y" H 9200 2250 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 9200 2250 50  0001 L CNN "Spice_Primitive"
-	1    9200 2250
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	8250 2100 8150 2100
-$Comp
-L canadian_parts:KEYSW K12
-U 1 1 5D8EBF2E
-P 7850 2100
-F 0 "K12" H 7850 2333 60  0000 C CNN
-F 1 "KEYSW" H 7850 2000 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7850 2100 60  0001 C CNN
-F 3 "" H 7850 2100 60  0000 C CNN
-	1    7850 2100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D12
-U 1 1 5D8EBF36
-P 8250 2250
-F 0 "D12" V 8204 2330 50  0000 L CNN
-F 1 "DIODE" V 8295 2330 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 8250 2250 50  0001 C CNN
-F 3 "~" H 8250 2250 50  0001 C CNN
-F 4 "Y" H 8250 2250 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 8250 2250 50  0001 L CNN "Spice_Primitive"
-	1    8250 2250
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	7350 2100 7250 2100
 $Comp
 L canadian_parts:KEYSW K11
-U 1 1 5D8EBF3D
-P 6950 2100
-F 0 "K11" H 6950 2333 60  0000 C CNN
-F 1 "KEYSW" H 6950 2000 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6950 2100 60  0001 C CNN
-F 3 "" H 6950 2100 60  0000 C CNN
-	1    6950 2100
+U 1 1 5D8E5D97
+P 6050 2150
+F 0 "K11" H 6050 2383 60  0000 C CNN
+F 1 "KEYSW" H 6050 2050 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6050 2150 60  0001 C CNN
+F 3 "" H 6050 2150 60  0000 C CNN
+	1    6050 2150
 	-1   0    0    -1  
 $EndComp
 $Comp
-L fissure-rescue:DIODE-Simulation_SPICE D11
-U 1 1 5D8EBF45
-P 7350 2250
-F 0 "D11" V 7304 2330 50  0000 L CNN
-F 1 "DIODE" V 7395 2330 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 7350 2250 50  0001 C CNN
-F 3 "~" H 7350 2250 50  0001 C CNN
-F 4 "Y" H 7350 2250 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 7350 2250 50  0001 L CNN "Spice_Primitive"
-	1    7350 2250
+L fissure-rescue:DIODE-Simulation_SPICE D22
+U 1 1 5D8E5D9F
+P 6450 2300
+F 0 "D22" V 6404 2380 50  0000 L CNN
+F 1 "DIODE" V 6495 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6450 2300 50  0001 C CNN
+F 3 "~" H 6450 2300 50  0001 C CNN
+F 4 "Y" H 6450 2300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6450 2300 50  0001 L CNN "Spice_Primitive"
+	1    6450 2300
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	11050 2550 10950 2550
+	10100 1600 10000 1600
 $Comp
-L canadian_parts:KEYSW K18
-U 1 1 5D8EFFB7
-P 10650 2550
-F 0 "K18" H 10650 2783 60  0000 C CNN
-F 1 "KEYSW" H 10650 2450 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 10650 2550 60  0001 C CNN
-F 3 "" H 10650 2550 60  0000 C CNN
-	1    10650 2550
+L canadian_parts:KEYSW K10
+U 1 1 5D8EAC52
+P 9700 1600
+F 0 "K10" H 9700 1833 60  0000 C CNN
+F 1 "KEYSW" H 9700 1500 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 9700 1600 60  0001 C CNN
+F 3 "" H 9700 1600 60  0000 C CNN
+	1    9700 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D20
+U 1 1 5D8EAC5A
+P 10100 1750
+F 0 "D20" V 10054 1830 50  0000 L CNN
+F 1 "DIODE" V 10145 1830 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 10100 1750 50  0001 C CNN
+F 3 "~" H 10100 1750 50  0001 C CNN
+F 4 "Y" H 10100 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10100 1750 50  0001 L CNN "Spice_Primitive"
+	1    10100 1750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9200 1600 9100 1600
+$Comp
+L canadian_parts:KEYSW K9
+U 1 1 5D8EAC61
+P 8800 1600
+F 0 "K9" H 8800 1833 60  0000 C CNN
+F 1 "KEYSW" H 8800 1500 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8800 1600 60  0001 C CNN
+F 3 "" H 8800 1600 60  0000 C CNN
+	1    8800 1600
 	-1   0    0    -1  
 $EndComp
 $Comp
 L fissure-rescue:DIODE-Simulation_SPICE D18
-U 1 1 5D8EFFBF
-P 11050 2700
-F 0 "D18" V 11004 2780 50  0000 L CNN
-F 1 "DIODE" V 11095 2780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 11050 2700 50  0001 C CNN
-F 3 "~" H 11050 2700 50  0001 C CNN
-F 4 "Y" H 11050 2700 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 11050 2700 50  0001 L CNN "Spice_Primitive"
-	1    11050 2700
+U 1 1 5D8EAC69
+P 9200 1750
+F 0 "D18" V 9154 1830 50  0000 L CNN
+F 1 "DIODE" V 9245 1830 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 9200 1750 50  0001 C CNN
+F 3 "~" H 9200 1750 50  0001 C CNN
+F 4 "Y" H 9200 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9200 1750 50  0001 L CNN "Spice_Primitive"
+	1    9200 1750
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	10100 2550 10000 2550
+	8300 1600 8200 1600
 $Comp
-L canadian_parts:KEYSW K17
-U 1 1 5D8EFFC6
-P 9700 2550
-F 0 "K17" H 9700 2783 60  0000 C CNN
-F 1 "KEYSW" H 9700 2450 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 9700 2550 60  0001 C CNN
-F 3 "" H 9700 2550 60  0000 C CNN
-	1    9700 2550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:DIODE-Simulation_SPICE D17
-U 1 1 5D8EFFCE
-P 10100 2700
-F 0 "D17" V 10054 2780 50  0000 L CNN
-F 1 "DIODE" V 10145 2780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 10100 2700 50  0001 C CNN
-F 3 "~" H 10100 2700 50  0001 C CNN
-F 4 "Y" H 10100 2700 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 10100 2700 50  0001 L CNN "Spice_Primitive"
-	1    10100 2700
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	9200 2550 9100 2550
-$Comp
-L canadian_parts:KEYSW K16
-U 1 1 5D8EFFD5
-P 8800 2550
-F 0 "K16" H 8800 2783 60  0000 C CNN
-F 1 "KEYSW" H 8800 2450 60  0001 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8800 2550 60  0001 C CNN
-F 3 "" H 8800 2550 60  0000 C CNN
-	1    8800 2550
+L canadian_parts:KEYSW K8
+U 1 1 5D8EAC70
+P 7900 1600
+F 0 "K8" H 7900 1833 60  0000 C CNN
+F 1 "KEYSW" H 7900 1500 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7900 1600 60  0001 C CNN
+F 3 "" H 7900 1600 60  0000 C CNN
+	1    7900 1600
 	-1   0    0    -1  
 $EndComp
 $Comp
 L fissure-rescue:DIODE-Simulation_SPICE D16
-U 1 1 5D8EFFDD
-P 9200 2700
-F 0 "D16" V 9154 2780 50  0000 L CNN
-F 1 "DIODE" V 9245 2780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 9200 2700 50  0001 C CNN
-F 3 "~" H 9200 2700 50  0001 C CNN
-F 4 "Y" H 9200 2700 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 9200 2700 50  0001 L CNN "Spice_Primitive"
-	1    9200 2700
+U 1 1 5D8EAC78
+P 8300 1750
+F 0 "D16" V 8254 1830 50  0000 L CNN
+F 1 "DIODE" V 8345 1830 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 8300 1750 50  0001 C CNN
+F 3 "~" H 8300 1750 50  0001 C CNN
+F 4 "Y" H 8300 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8300 1750 50  0001 L CNN "Spice_Primitive"
+	1    8300 1750
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	11150 1300 11050 1300
+	7350 1600 7250 1600
+$Comp
+L canadian_parts:KEYSW K7
+U 1 1 5D8EAC7F
+P 6950 1600
+F 0 "K7" H 6950 1833 60  0000 C CNN
+F 1 "KEYSW" H 6950 1500 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6950 1600 60  0001 C CNN
+F 3 "" H 6950 1600 60  0000 C CNN
+	1    6950 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D14
+U 1 1 5D8EAC87
+P 7350 1750
+F 0 "D14" V 7304 1830 50  0000 L CNN
+F 1 "DIODE" V 7395 1830 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7350 1750 50  0001 C CNN
+F 3 "~" H 7350 1750 50  0001 C CNN
+F 4 "Y" H 7350 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7350 1750 50  0001 L CNN "Spice_Primitive"
+	1    7350 1750
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	11050 1850 11150 1850
-Connection ~ 11150 1850
+	6450 1050 6350 1050
+$Comp
+L canadian_parts:KEYSW K1
+U 1 1 5D8EAC8E
+P 6050 1050
+F 0 "K1" H 6050 1283 60  0000 C CNN
+F 1 "KEYSW" H 6050 950 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6050 1050 60  0001 C CNN
+F 3 "" H 6050 1050 60  0000 C CNN
+	1    6050 1050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D2
+U 1 1 5D8EAC96
+P 6450 1200
+F 0 "D2" V 6404 1280 50  0000 L CNN
+F 1 "DIODE" V 6495 1280 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6450 1200 50  0001 C CNN
+F 3 "~" H 6450 1200 50  0001 C CNN
+F 4 "Y" H 6450 1200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6450 1200 50  0001 L CNN "Spice_Primitive"
+	1    6450 1200
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	11150 1850 11150 1300
+	10100 2150 10000 2150
+$Comp
+L canadian_parts:KEYSW K15
+U 1 1 5D8EBF01
+P 9700 2150
+F 0 "K15" H 9700 2383 60  0000 C CNN
+F 1 "KEYSW" H 9700 2050 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 9700 2150 60  0001 C CNN
+F 3 "" H 9700 2150 60  0000 C CNN
+	1    9700 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D30
+U 1 1 5D8EBF09
+P 10100 2300
+F 0 "D30" V 10054 2380 50  0000 L CNN
+F 1 "DIODE" V 10145 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 10100 2300 50  0001 C CNN
+F 3 "~" H 10100 2300 50  0001 C CNN
+F 4 "Y" H 10100 2300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10100 2300 50  0001 L CNN "Spice_Primitive"
+	1    10100 2300
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	11050 2400 11150 2400
+	9200 2150 9100 2150
+$Comp
+L canadian_parts:KEYSW K14
+U 1 1 5D8EBF10
+P 8800 2150
+F 0 "K14" H 8800 2383 60  0000 C CNN
+F 1 "KEYSW" H 8800 2050 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8800 2150 60  0001 C CNN
+F 3 "" H 8800 2150 60  0000 C CNN
+	1    8800 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D28
+U 1 1 5D8EBF18
+P 9200 2300
+F 0 "D28" V 9154 2380 50  0000 L CNN
+F 1 "DIODE" V 9245 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 9200 2300 50  0001 C CNN
+F 3 "~" H 9200 2300 50  0001 C CNN
+F 4 "Y" H 9200 2300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9200 2300 50  0001 L CNN "Spice_Primitive"
+	1    9200 2300
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	11150 2400 11150 1850
+	8300 2150 8200 2150
+$Comp
+L canadian_parts:KEYSW K13
+U 1 1 5D8EBF1F
+P 7900 2150
+F 0 "K13" H 7900 2383 60  0000 C CNN
+F 1 "KEYSW" H 7900 2050 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7900 2150 60  0001 C CNN
+F 3 "" H 7900 2150 60  0000 C CNN
+	1    7900 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D26
+U 1 1 5D8EBF27
+P 8300 2300
+F 0 "D26" V 8254 2380 50  0000 L CNN
+F 1 "DIODE" V 8345 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 8300 2300 50  0001 C CNN
+F 3 "~" H 8300 2300 50  0001 C CNN
+F 4 "Y" H 8300 2300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8300 2300 50  0001 L CNN "Spice_Primitive"
+	1    8300 2300
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	10200 1300 10100 1300
+	7350 2150 7250 2150
+$Comp
+L canadian_parts:KEYSW K12
+U 1 1 5D8EBF2E
+P 6950 2150
+F 0 "K12" H 6950 2383 60  0000 C CNN
+F 1 "KEYSW" H 6950 2050 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6950 2150 60  0001 C CNN
+F 3 "" H 6950 2150 60  0000 C CNN
+	1    6950 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D24
+U 1 1 5D8EBF36
+P 7350 2300
+F 0 "D24" V 7304 2380 50  0000 L CNN
+F 1 "DIODE" V 7395 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7350 2300 50  0001 C CNN
+F 3 "~" H 7350 2300 50  0001 C CNN
+F 4 "Y" H 7350 2300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7350 2300 50  0001 L CNN "Spice_Primitive"
+	1    7350 2300
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	10100 1850 10200 1850
-Connection ~ 10200 1850
+	6450 1600 6350 1600
+$Comp
+L canadian_parts:KEYSW K6
+U 1 1 5D8EBF3D
+P 6050 1600
+F 0 "K6" H 6050 1833 60  0000 C CNN
+F 1 "KEYSW" H 6050 1500 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6050 1600 60  0001 C CNN
+F 3 "" H 6050 1600 60  0000 C CNN
+	1    6050 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D12
+U 1 1 5D8EBF45
+P 6450 1750
+F 0 "D12" V 6404 1830 50  0000 L CNN
+F 1 "DIODE" V 6495 1830 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6450 1750 50  0001 C CNN
+F 3 "~" H 6450 1750 50  0001 C CNN
+F 4 "Y" H 6450 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6450 1750 50  0001 L CNN "Spice_Primitive"
+	1    6450 1750
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	10200 1850 10200 1300
+	9600 3950 9500 3950
+$Comp
+L canadian_parts:KEYSW K20
+U 1 1 5D8EFFB7
+P 9200 3950
+F 0 "K20" H 9200 4183 60  0000 C CNN
+F 1 "KEYSW" H 9200 3850 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 9200 3950 60  0001 C CNN
+F 3 "" H 9200 3950 60  0000 C CNN
+	1    9200 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D40
+U 1 1 5D8EFFBF
+P 9600 4100
+F 0 "D40" V 9554 4180 50  0000 L CNN
+F 1 "DIODE" V 9645 4180 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 9600 4100 50  0001 C CNN
+F 3 "~" H 9600 4100 50  0001 C CNN
+F 4 "Y" H 9600 4100 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9600 4100 50  0001 L CNN "Spice_Primitive"
+	1    9600 4100
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	10100 2400 10200 2400
+	8700 3950 8600 3950
+$Comp
+L canadian_parts:KEYSW K19
+U 1 1 5D8EFFC6
+P 8300 3950
+F 0 "K19" H 8300 4183 60  0000 C CNN
+F 1 "KEYSW" H 8300 3850 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8300 3950 60  0001 C CNN
+F 3 "" H 8300 3950 60  0000 C CNN
+	1    8300 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D38
+U 1 1 5D8EFFCE
+P 8700 4100
+F 0 "D38" V 8654 4180 50  0000 L CNN
+F 1 "DIODE" V 8745 4180 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 8700 4100 50  0001 C CNN
+F 3 "~" H 8700 4100 50  0001 C CNN
+F 4 "Y" H 8700 4100 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8700 4100 50  0001 L CNN "Spice_Primitive"
+	1    8700 4100
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	10200 2400 10200 1850
+	7800 3950 7700 3950
+$Comp
+L canadian_parts:KEYSW K18
+U 1 1 5D8EFFD5
+P 7400 3950
+F 0 "K18" H 7400 4183 60  0000 C CNN
+F 1 "KEYSW" H 7400 3850 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7400 3950 60  0001 C CNN
+F 3 "" H 7400 3950 60  0000 C CNN
+	1    7400 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D36
+U 1 1 5D8EFFDD
+P 7800 4100
+F 0 "D36" V 7754 4180 50  0000 L CNN
+F 1 "DIODE" V 7845 4180 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7800 4100 50  0001 C CNN
+F 3 "~" H 7800 4100 50  0001 C CNN
+F 4 "Y" H 7800 4100 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7800 4100 50  0001 L CNN "Spice_Primitive"
+	1    7800 4100
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	9300 1300 9200 1300
+	10200 1350 10100 1350
 Wire Wire Line
-	9200 1850 9300 1850
-Connection ~ 9300 1850
+	10100 1900 10200 1900
+Connection ~ 10200 1900
 Wire Wire Line
-	9300 1850 9300 1300
+	10200 1900 10200 1350
 Wire Wire Line
-	9300 2400 9200 2400
+	10100 2450 10200 2450
 Wire Wire Line
-	9300 2400 9300 1850
+	10200 2450 10200 1900
 Wire Wire Line
-	9200 2850 9300 2850
+	9300 1350 9200 1350
 Wire Wire Line
-	8350 1300 8250 1300
+	9200 1900 9300 1900
+Connection ~ 9300 1900
 Wire Wire Line
-	8250 1850 8350 1850
-Connection ~ 8350 1850
+	9300 1900 9300 1350
 Wire Wire Line
-	8350 1850 8350 1300
+	9200 2450 9300 2450
 Wire Wire Line
-	8250 2400 8350 2400
+	9300 2450 9300 1900
 Wire Wire Line
-	8350 2400 8350 1850
+	8400 1350 8300 1350
 Wire Wire Line
-	7450 1300 7350 1300
+	8300 1900 8400 1900
+Connection ~ 8400 1900
 Wire Wire Line
-	7350 1850 7450 1850
-Connection ~ 7450 1850
+	8400 1900 8400 1350
 Wire Wire Line
-	7450 1850 7450 1300
+	8400 2450 8300 2450
 Wire Wire Line
-	7450 2400 7350 2400
+	8400 2450 8400 1900
 Wire Wire Line
-	7450 2400 7450 1850
+	7800 4250 7900 4250
 Wire Wire Line
-	10350 2550 10350 2450
+	7450 1350 7350 1350
 Wire Wire Line
-	9400 2550 9400 2450
+	7350 1900 7450 1900
+Connection ~ 7450 1900
 Wire Wire Line
-	9400 2450 8500 2450
+	7450 1900 7450 1350
 Wire Wire Line
-	8500 2550 8500 2450
+	7350 2450 7450 2450
 Wire Wire Line
-	10350 2100 10350 2000
+	7450 2450 7450 1900
 Wire Wire Line
-	10350 2000 9400 2000
+	6450 1350 6550 1350
 Wire Wire Line
-	10350 1450 10350 1550
+	6550 1900 6450 1900
 Wire Wire Line
-	9400 1550 9400 1450
-Connection ~ 9400 1450
+	6550 1900 6550 1350
 Wire Wire Line
-	9400 1450 10350 1450
+	8900 3950 8900 3850
 Wire Wire Line
-	8500 1550 8500 1450
-Connection ~ 8500 1450
+	8000 3950 8000 3850
 Wire Wire Line
-	8500 1450 9400 1450
+	7100 3950 7100 3850
 Wire Wire Line
-	7550 1550 7550 1450
+	9400 2150 9400 2050
 Wire Wire Line
-	8500 1450 7550 1450
-Connection ~ 7550 1450
+	9400 2050 8500 2050
 Wire Wire Line
-	6650 1550 6650 1450
+	9400 1500 9400 1600
 Wire Wire Line
-	7550 1450 6650 1450
+	8500 1600 8500 1500
+Connection ~ 8500 1500
 Wire Wire Line
-	10350 1000 10350 900 
+	7600 1600 7600 1500
+Connection ~ 7600 1500
 Wire Wire Line
-	10350 900  9400 900 
+	6650 1600 6650 1500
 Wire Wire Line
-	9400 1000 9400 900 
-Connection ~ 9400 900 
+	7600 1500 6650 1500
 Wire Wire Line
-	9400 900  8500 900 
+	9400 1050 9400 950 
 Wire Wire Line
-	8500 1000 8500 900 
-Connection ~ 8500 900 
+	9400 950  8500 950 
 Wire Wire Line
-	8500 900  7550 900 
+	8500 1050 8500 950 
+Connection ~ 8500 950 
 Wire Wire Line
-	7550 1000 7550 900 
-Connection ~ 7550 900 
+	7600 1050 7600 950 
+Connection ~ 7600 950 
 Wire Wire Line
-	7550 900  6650 900 
+	7600 950  6650 950 
 Wire Wire Line
-	6650 1000 6650 900 
+	6650 1050 6650 950 
+Connection ~ 6650 950 
 Wire Wire Line
-	7550 2100 7550 2000
-Connection ~ 7550 2000
+	6650 950  5750 950 
 Wire Wire Line
-	8500 2100 8500 2000
-Connection ~ 8500 2000
+	6650 2150 6650 2050
 Wire Wire Line
-	8500 2000 7550 2000
+	7600 2150 7600 2050
+Connection ~ 7600 2050
 Wire Wire Line
-	9400 2100 9400 2000
-Connection ~ 9400 2000
+	7600 2050 6650 2050
 Wire Wire Line
-	9400 2000 8500 2000
+	8500 2150 8500 2050
+Connection ~ 8500 2050
+Connection ~ 8000 3850
 Wire Wire Line
-	7550 2000 6650 2000
-Wire Wire Line
-	6650 2100 6650 2000
-Connection ~ 9400 2450
-Wire Wire Line
-	10350 2450 9400 2450
-Text GLabel 5150 3400 0    50   Output ~ 0
+	8900 3850 8200 3850
+Text GLabel 3500 3650 0    50   Output ~ 0
 SDA
-Text GLabel 5150 3300 0    50   Output ~ 0
+Text GLabel 3500 3550 0    50   Output ~ 0
 SCL
-Text GLabel 6550 3000 2    50   Input ~ 0
+Text GLabel 4900 3250 2    50   Input ~ 0
 GND
-Text GLabel 5150 3100 0    50   Input ~ 0
+Text GLabel 3500 3350 0    50   Input ~ 0
 GND
-Text GLabel 5150 3200 0    50   Input ~ 0
+Text GLabel 3500 3450 0    50   Input ~ 0
 GND
-Text GLabel 6550 2900 2    50   Input ~ 0
+Text GLabel 4900 3150 2    50   Input ~ 0
 RAW
-Text GLabel 6550 3200 2    50   Input ~ 0
+Text GLabel 4900 3450 2    50   Input ~ 0
 VCC
-Text GLabel 5150 3500 0    50   BiDi ~ 0
+Text GLabel 3500 3750 0    50   BiDi ~ 0
 ROW1
-Text GLabel 5150 3600 0    50   BiDi ~ 0
+Text GLabel 3500 3850 0    50   BiDi ~ 0
 ROW2
-Text GLabel 5150 3700 0    50   BiDi ~ 0
+Text GLabel 3500 3950 0    50   BiDi ~ 0
 ROW3
-Text GLabel 5150 3800 0    50   BiDi ~ 0
+Text GLabel 3500 4050 0    50   BiDi ~ 0
 ROW4
-Text GLabel 5150 2900 0    50   BiDi ~ 0
+Text GLabel 4900 3550 2    50   BiDi ~ 0
 COL1
-Text GLabel 5150 3000 0    50   BiDi ~ 0
+Text GLabel 4900 3650 2    50   BiDi ~ 0
 COL2
-Text GLabel 6550 3800 2    50   BiDi ~ 0
+Text GLabel 4900 3850 2    50   BiDi ~ 0
 COL4
-Text GLabel 6650 900  0    50   BiDi ~ 0
+Text GLabel 5750 950  0    50   BiDi ~ 0
 ROW1
-Text GLabel 6650 1450 0    50   BiDi ~ 0
+Text GLabel 5750 1500 0    50   BiDi ~ 0
 ROW2
-Text GLabel 6650 2000 0    50   BiDi ~ 0
+Text GLabel 5750 2050 0    50   BiDi ~ 0
 ROW3
-Text GLabel 6650 2450 0    50   BiDi ~ 0
+Text GLabel 5750 2550 0    50   BiDi ~ 0
 ROW4
-Text GLabel 7450 2850 3    50   BiDi ~ 0
+Text GLabel 6550 2950 3    50   BiDi ~ 0
 COL1
-Text GLabel 8350 2850 3    50   BiDi ~ 0
+Text GLabel 7450 2950 3    50   BiDi ~ 0
 COL2
-Text GLabel 9300 2850 3    50   BiDi ~ 0
+Text GLabel 7900 4250 3    50   BiDi ~ 0
 COL3
-Text GLabel 10200 2850 3    50   BiDi ~ 0
+Text GLabel 8800 4250 3    50   BiDi ~ 0
 COL4
-Text GLabel 11150 2850 3    50   BiDi ~ 0
+Text GLabel 9700 4250 3    50   BiDi ~ 0
 COL5
-Wire Wire Line
-	11150 2850 11150 2400
-Connection ~ 11150 2400
-Wire Wire Line
-	10200 2400 10200 2850
-Connection ~ 10200 2400
 $Comp
 L Connector:AudioJack4 J1
 U 1 1 5E2F9701
-P 2800 2650
-F 0 "J1" H 2757 2975 50  0000 C CNN
-F 1 "AudioJack4" H 2757 2884 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320D" H 2800 2650 50  0001 C CNN
-F 3 "~" H 2800 2650 50  0001 C CNN
-	1    2800 2650
+P 1150 2900
+F 0 "J1" H 1107 3225 50  0000 C CNN
+F 1 "AudioJack4" H 1107 3134 50  0000 C CNN
+F 2 "Keebio-Parts:TRRS-PJ-320D" H 1150 2900 50  0001 C CNN
+F 3 "~" H 1150 2900 50  0001 C CNN
+	1    1150 2900
 	1    0    0    -1  
 $EndComp
-Text GLabel 3000 2550 2    50   BiDi ~ 0
+Text GLabel 1350 2800 2    50   BiDi ~ 0
 GND
-Text GLabel 3000 2650 2    50   BiDi ~ 0
+Text GLabel 1350 2900 2    50   BiDi ~ 0
 VCC
-Text GLabel 3000 2750 2    50   BiDi ~ 0
+Text GLabel 1350 3000 2    50   BiDi ~ 0
 SDA
-Text GLabel 3000 2850 2    50   BiDi ~ 0
+Text GLabel 1350 3100 2    50   BiDi ~ 0
 SCL
 $Comp
 L fissure-rescue:AudioJack4-Connector J2
 U 1 1 5E307AA7
-P 3800 2650
-F 0 "J2" H 3757 2975 50  0000 C CNN
-F 1 "AudioJack4" H 3757 2884 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320D" H 3800 2650 50  0001 C CNN
-F 3 "~" H 3800 2650 50  0001 C CNN
-	1    3800 2650
+P 2150 2900
+F 0 "J2" H 2107 3225 50  0000 C CNN
+F 1 "AudioJack4" H 2107 3134 50  0000 C CNN
+F 2 "Keebio-Parts:TRRS-PJ-320D" H 2150 2900 50  0001 C CNN
+F 3 "~" H 2150 2900 50  0001 C CNN
+	1    2150 2900
 	1    0    0    -1  
 $EndComp
-Text GLabel 4000 2550 2    50   BiDi ~ 0
+Text GLabel 2350 2800 2    50   BiDi ~ 0
 GND
-Text GLabel 4000 2650 2    50   BiDi ~ 0
+Text GLabel 2350 2900 2    50   BiDi ~ 0
 VCC
-Text GLabel 4000 2750 2    50   BiDi ~ 0
+Text GLabel 2350 3000 2    50   BiDi ~ 0
 SDA
-Text GLabel 4000 2850 2    50   BiDi ~ 0
+Text GLabel 2350 3100 2    50   BiDi ~ 0
 SCL
 $Comp
-L promicro:ProMicro U3
+L promicro:ProMicro U1
 U 1 1 5E332FC5
-P 5850 3650
-F 0 "U3" H 5850 4793 60  0000 C CNN
-F 1 "ProMicro" H 5850 4687 60  0000 C CNN
-F 2 "Keebio-Parts:ArduinoProMicro" H 5850 4581 60  0000 C CNN
-F 3 "" H 5950 2600 60  0000 C CNN
-	1    5850 3650
+P 4200 3900
+F 0 "U1" H 4200 5043 60  0000 C CNN
+F 1 "ProMicro" H 4200 4937 60  0000 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro" H 4200 4831 60  0000 C CNN
+F 3 "" H 4300 2850 60  0000 C CNN
+	1    4200 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11050 2850 11150 2850
+	9600 4250 9700 4250
 Wire Wire Line
-	10100 2850 10200 2850
-Wire Wire Line
-	9300 2850 9300 2400
-Connection ~ 9300 2400
-Wire Wire Line
-	8500 2450 6650 2450
-Connection ~ 8500 2450
-Wire Wire Line
-	7450 2400 7450 2850
-Connection ~ 7450 2400
-Wire Wire Line
-	8350 2850 8350 2400
-Connection ~ 8350 2400
-Text GLabel 6550 3900 2    50   BiDi ~ 0
+	8700 4250 8800 4250
+Text GLabel 4900 3950 2    50   BiDi ~ 0
 COL5
-Text GLabel 6550 3700 2    50   BiDi ~ 0
+Text GLabel 4900 3750 2    50   BiDi ~ 0
 COL3
 $Comp
 L keyboard_parts:SW_PUSH SW1
 U 1 1 5E0174FE
-P 5150 2350
-F 0 "SW1" H 5150 2711 50  0000 C CNN
-F 1 "SW_PUSH" H 5150 2620 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5150 2521 60  0000 C CNN
-F 3 "" H 5150 2350 60  0000 C CNN
-	1    5150 2350
+P 3500 2600
+F 0 "SW1" H 3500 2961 50  0000 C CNN
+F 1 "SW_PUSH" H 3500 2870 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3500 2771 60  0000 C CNN
+F 3 "" H 3500 2600 60  0000 C CNN
+	1    3500 2600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4850 2350 0    50   Input ~ 0
+Text GLabel 3200 2600 0    50   Input ~ 0
 GND
-Text GLabel 6550 3100 2    50   Input ~ 0
+Text GLabel 4900 3350 2    50   Input ~ 0
 RST
-Text GLabel 5450 2350 2    50   Input ~ 0
+Text GLabel 3800 2600 2    50   Input ~ 0
 RST
 $Comp
-L fissure-rescue:SK6812MINI-LED D21
+L fissure-rescue:SK6812MINI-LED D42
 U 1 1 5E04F5E9
-P 2750 3650
-F 0 "D21" H 3094 3696 50  0000 L CNN
-F 1 "SK6812MINI" H 3094 3605 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 2800 3350 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 2850 3275 50  0001 L TNN
-	1    2750 3650
+P 1100 3900
+F 0 "D42" H 1444 3946 50  0000 L CNN
+F 1 "SK6812MINI" H 1444 3855 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 1150 3600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 1200 3525 50  0001 L TNN
+	1    1100 3900
 	1    0    0    -1  
 $EndComp
 $Comp
-L fissure-rescue:SK6812MINI-LED D20
+L fissure-rescue:SK6812MINI-LED D41
 U 1 1 5E04FFE5
-P 3850 3500
-F 0 "D20" H 4194 3546 50  0000 L CNN
-F 1 "SK6812MINI" H 4194 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 3900 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 3950 3125 50  0001 L TNN
-	1    3850 3500
+P 2200 3750
+F 0 "D41" H 2544 3796 50  0000 L CNN
+F 1 "SK6812MINI" H 2544 3705 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 2250 3450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 2300 3375 50  0001 L TNN
+	1    2200 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 6550 4000 2    50   BiDi ~ 0
+Text GLabel 4900 4250 2    50   BiDi ~ 0
 RGB
-Text GLabel 3550 3500 0    50   BiDi ~ 0
+Text GLabel 1900 3750 0    50   BiDi ~ 0
 RGB
-Text GLabel 2450 3650 0    50   BiDi ~ 0
+Text GLabel 800  3900 0    50   BiDi ~ 0
 RGB
-Text GLabel 3850 3800 3    50   Input ~ 0
+Text GLabel 2200 4050 3    50   Input ~ 0
 GND
-Text GLabel 2750 3950 3    50   Input ~ 0
+Text GLabel 1100 4200 3    50   Input ~ 0
 GND
-Text GLabel 3850 3200 1    50   Input ~ 0
+Text GLabel 2200 3450 1    50   Input ~ 0
 VCC
-Text GLabel 2750 3350 1    50   Input ~ 0
+Text GLabel 1100 3600 1    50   Input ~ 0
 VCC
 $Comp
 L fissure-rescue:R-Device R1
 U 1 1 5E399FB3
-P 4450 2950
-F 0 "R1" H 4520 2996 50  0000 L CNN
-F 1 "R" H 4520 2905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4380 2950 50  0001 C CNN
-F 3 "~" H 4450 2950 50  0001 C CNN
-	1    4450 2950
+P 2800 3200
+F 0 "R1" H 2870 3246 50  0000 L CNN
+F 1 "R" H 2870 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2730 3200 50  0001 C CNN
+F 3 "~" H 2800 3200 50  0001 C CNN
+	1    2800 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L fissure-rescue:R-Device R2
 U 1 1 5E39A4D3
-P 4650 2950
-F 0 "R2" H 4720 2996 50  0000 L CNN
-F 1 "R" H 4720 2905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4580 2950 50  0001 C CNN
-F 3 "~" H 4650 2950 50  0001 C CNN
-	1    4650 2950
+P 3000 3200
+F 0 "R2" H 3070 3246 50  0000 L CNN
+F 1 "R" H 3070 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2930 3200 50  0001 C CNN
+F 3 "~" H 3000 3200 50  0001 C CNN
+	1    3000 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 4550 2800 1    50   Input ~ 0
+Text GLabel 2900 3050 1    50   Input ~ 0
 VCC
-Text GLabel 4450 3100 3    50   Output ~ 0
+Text GLabel 2800 3350 3    50   Output ~ 0
 SDA
-Text GLabel 4650 3100 3    50   Output ~ 0
+Text GLabel 3000 3350 3    50   Output ~ 0
 SCL
 Wire Wire Line
-	4450 2800 4650 2800
+	2800 3050 3000 3050
+Wire Wire Line
+	5750 1050 5750 950 
+Wire Wire Line
+	5750 1600 5750 1500
+Wire Wire Line
+	5750 2150 5750 2050
+Wire Wire Line
+	6450 2150 6350 2150
+Wire Wire Line
+	6450 2450 6550 2450
 $Comp
-L symbols:joystick J4
-U 1 1 5EF1DD70
-P 3900 4500
-F 0 "J4" H 3958 4915 50  0000 C CNN
-F 1 "joystick" H 3958 4824 50  0000 C CNN
-F 2 "footprints:joystick" H 3900 4000 50  0001 C CNN
-F 3 "" H 3900 4000 50  0001 C CNN
-	1    3900 4500
+L fissure-rescue:DIODE-Simulation_SPICE D11
+U 1 1 5F0C606E
+P 6350 1750
+F 0 "D11" V 6304 1830 50  0000 L CNN
+F 1 "DIODE" V 6395 1830 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6350 1750 50  0001 C CNN
+F 3 "~" H 6350 1750 50  0001 C CNN
+F 4 "Y" H 6350 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6350 1750 50  0001 L CNN "Spice_Primitive"
+	1    6350 1750
+	0    -1   1    0   
+$EndComp
+Connection ~ 6350 1600
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D21
+U 1 1 5F0C6463
+P 6350 2300
+F 0 "D21" V 6304 2380 50  0000 L CNN
+F 1 "DIODE" V 6395 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6350 2300 50  0001 C CNN
+F 3 "~" H 6350 2300 50  0001 C CNN
+F 4 "Y" H 6350 2300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6350 2300 50  0001 L CNN "Spice_Primitive"
+	1    6350 2300
+	0    -1   1    0   
+$EndComp
+Connection ~ 6350 2150
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D1
+U 1 1 5F0C7D12
+P 6350 1200
+F 0 "D1" V 6304 1280 50  0000 L CNN
+F 1 "DIODE" V 6395 1280 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6350 1200 50  0001 C CNN
+F 3 "~" H 6350 1200 50  0001 C CNN
+F 4 "Y" H 6350 1200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6350 1200 50  0001 L CNN "Spice_Primitive"
+	1    6350 1200
+	0    -1   1    0   
+$EndComp
+Connection ~ 6350 1050
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D3
+U 1 1 5F0C8C71
+P 7250 1200
+F 0 "D3" V 7204 1280 50  0000 L CNN
+F 1 "DIODE" V 7295 1280 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7250 1200 50  0001 C CNN
+F 3 "~" H 7250 1200 50  0001 C CNN
+F 4 "Y" H 7250 1200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7250 1200 50  0001 L CNN "Spice_Primitive"
+	1    7250 1200
+	0    -1   1    0   
+$EndComp
+Connection ~ 7250 1050
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D5
+U 1 1 5F0C91E2
+P 8200 1200
+F 0 "D5" V 8154 1280 50  0000 L CNN
+F 1 "DIODE" V 8245 1280 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 8200 1200 50  0001 C CNN
+F 3 "~" H 8200 1200 50  0001 C CNN
+F 4 "Y" H 8200 1200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8200 1200 50  0001 L CNN "Spice_Primitive"
+	1    8200 1200
+	0    -1   1    0   
+$EndComp
+Connection ~ 8200 1050
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D7
+U 1 1 5F0C9611
+P 9100 1200
+F 0 "D7" V 9054 1280 50  0000 L CNN
+F 1 "DIODE" V 9145 1280 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 9100 1200 50  0001 C CNN
+F 3 "~" H 9100 1200 50  0001 C CNN
+F 4 "Y" H 9100 1200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9100 1200 50  0001 L CNN "Spice_Primitive"
+	1    9100 1200
+	0    -1   1    0   
+$EndComp
+Connection ~ 9100 1050
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D9
+U 1 1 5F0CC6A5
+P 10000 1200
+F 0 "D9" V 9954 1280 50  0000 L CNN
+F 1 "DIODE" V 10045 1280 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 10000 1200 50  0001 C CNN
+F 3 "~" H 10000 1200 50  0001 C CNN
+F 4 "Y" H 10000 1200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10000 1200 50  0001 L CNN "Spice_Primitive"
+	1    10000 1200
+	0    -1   1    0   
+$EndComp
+Connection ~ 10000 1050
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D19
+U 1 1 5F0CCAAF
+P 10000 1750
+F 0 "D19" V 9954 1830 50  0000 L CNN
+F 1 "DIODE" V 10045 1830 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 10000 1750 50  0001 C CNN
+F 3 "~" H 10000 1750 50  0001 C CNN
+F 4 "Y" H 10000 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10000 1750 50  0001 L CNN "Spice_Primitive"
+	1    10000 1750
+	0    -1   1    0   
+$EndComp
+Connection ~ 10000 1600
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D17
+U 1 1 5F0CD087
+P 9100 1750
+F 0 "D17" V 9054 1830 50  0000 L CNN
+F 1 "DIODE" V 9145 1830 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 9100 1750 50  0001 C CNN
+F 3 "~" H 9100 1750 50  0001 C CNN
+F 4 "Y" H 9100 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9100 1750 50  0001 L CNN "Spice_Primitive"
+	1    9100 1750
+	0    -1   1    0   
+$EndComp
+Connection ~ 9100 1600
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D15
+U 1 1 5F0CD46D
+P 8200 1750
+F 0 "D15" V 8154 1830 50  0000 L CNN
+F 1 "DIODE" V 8245 1830 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 8200 1750 50  0001 C CNN
+F 3 "~" H 8200 1750 50  0001 C CNN
+F 4 "Y" H 8200 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8200 1750 50  0001 L CNN "Spice_Primitive"
+	1    8200 1750
+	0    -1   1    0   
+$EndComp
+Connection ~ 8200 1600
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D13
+U 1 1 5F0CDA3D
+P 7250 1750
+F 0 "D13" V 7204 1830 50  0000 L CNN
+F 1 "DIODE" V 7295 1830 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7250 1750 50  0001 C CNN
+F 3 "~" H 7250 1750 50  0001 C CNN
+F 4 "Y" H 7250 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7250 1750 50  0001 L CNN "Spice_Primitive"
+	1    7250 1750
+	0    -1   1    0   
+$EndComp
+Connection ~ 7250 1600
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D23
+U 1 1 5F0CDDE3
+P 7250 2300
+F 0 "D23" V 7204 2380 50  0000 L CNN
+F 1 "DIODE" V 7295 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7250 2300 50  0001 C CNN
+F 3 "~" H 7250 2300 50  0001 C CNN
+F 4 "Y" H 7250 2300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7250 2300 50  0001 L CNN "Spice_Primitive"
+	1    7250 2300
+	0    -1   1    0   
+$EndComp
+Connection ~ 7250 2150
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D25
+U 1 1 5F0CE286
+P 8200 2300
+F 0 "D25" V 8154 2380 50  0000 L CNN
+F 1 "DIODE" V 8245 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 8200 2300 50  0001 C CNN
+F 3 "~" H 8200 2300 50  0001 C CNN
+F 4 "Y" H 8200 2300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8200 2300 50  0001 L CNN "Spice_Primitive"
+	1    8200 2300
+	0    -1   1    0   
+$EndComp
+Connection ~ 8200 2150
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D27
+U 1 1 5F0CE7AD
+P 9100 2300
+F 0 "D27" V 9054 2380 50  0000 L CNN
+F 1 "DIODE" V 9145 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 9100 2300 50  0001 C CNN
+F 3 "~" H 9100 2300 50  0001 C CNN
+F 4 "Y" H 9100 2300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9100 2300 50  0001 L CNN "Spice_Primitive"
+	1    9100 2300
+	0    -1   1    0   
+$EndComp
+Connection ~ 9100 2150
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D29
+U 1 1 5F0CEC48
+P 10000 2300
+F 0 "D29" V 9954 2380 50  0000 L CNN
+F 1 "DIODE" V 10045 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 10000 2300 50  0001 C CNN
+F 3 "~" H 10000 2300 50  0001 C CNN
+F 4 "Y" H 10000 2300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10000 2300 50  0001 L CNN "Spice_Primitive"
+	1    10000 2300
+	0    -1   1    0   
+$EndComp
+Connection ~ 10000 2150
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D39
+U 1 1 5F0CF281
+P 9500 4100
+F 0 "D39" V 9454 4180 50  0000 L CNN
+F 1 "DIODE" V 9545 4180 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 9500 4100 50  0001 C CNN
+F 3 "~" H 9500 4100 50  0001 C CNN
+F 4 "Y" H 9500 4100 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9500 4100 50  0001 L CNN "Spice_Primitive"
+	1    9500 4100
+	0    -1   1    0   
+$EndComp
+Connection ~ 9500 3950
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D37
+U 1 1 5F0CF835
+P 8600 4100
+F 0 "D37" V 8554 4180 50  0000 L CNN
+F 1 "DIODE" V 8645 4180 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 8600 4100 50  0001 C CNN
+F 3 "~" H 8600 4100 50  0001 C CNN
+F 4 "Y" H 8600 4100 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8600 4100 50  0001 L CNN "Spice_Primitive"
+	1    8600 4100
+	0    -1   1    0   
+$EndComp
+Connection ~ 8600 3950
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D35
+U 1 1 5F0CFD07
+P 7700 4100
+F 0 "D35" V 7654 4180 50  0000 L CNN
+F 1 "DIODE" V 7745 4180 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7700 4100 50  0001 C CNN
+F 3 "~" H 7700 4100 50  0001 C CNN
+F 4 "Y" H 7700 4100 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7700 4100 50  0001 L CNN "Spice_Primitive"
+	1    7700 4100
+	0    -1   1    0   
+$EndComp
+Connection ~ 7700 3950
+Wire Wire Line
+	9600 4250 9500 4250
+Connection ~ 9600 4250
+Wire Wire Line
+	8700 4250 8600 4250
+Connection ~ 8700 4250
+Wire Wire Line
+	7800 4250 7700 4250
+Connection ~ 7800 4250
+Wire Wire Line
+	6350 2450 6450 2450
+Connection ~ 6450 2450
+Wire Wire Line
+	6350 1900 6450 1900
+Connection ~ 6450 1900
+Wire Wire Line
+	7250 2450 7350 2450
+Connection ~ 7350 2450
+Wire Wire Line
+	6350 1350 6450 1350
+Connection ~ 6450 1350
+Wire Wire Line
+	7250 1900 7350 1900
+Connection ~ 7350 1900
+Wire Wire Line
+	7250 1350 7350 1350
+Connection ~ 7350 1350
+Wire Wire Line
+	8200 1350 8300 1350
+Connection ~ 8300 1350
+Wire Wire Line
+	9100 1350 9200 1350
+Connection ~ 9200 1350
+Wire Wire Line
+	9100 1900 9200 1900
+Connection ~ 9200 1900
+Wire Wire Line
+	9100 2450 9200 2450
+Connection ~ 9200 2450
+Wire Wire Line
+	10000 2450 10100 2450
+Connection ~ 10100 2450
+Wire Wire Line
+	10000 1900 10100 1900
+Connection ~ 10100 1900
+Wire Wire Line
+	10000 1350 10100 1350
+Connection ~ 10100 1350
+Wire Wire Line
+	8200 1900 8300 1900
+Connection ~ 8300 1900
+Wire Wire Line
+	8200 2450 8300 2450
+Connection ~ 8300 2450
+Wire Wire Line
+	6550 1900 6550 2450
+Connection ~ 6550 1900
+Wire Wire Line
+	6650 2650 6650 2550
+Wire Wire Line
+	5750 2650 5750 2550
+Wire Wire Line
+	5750 2050 6650 2050
+Connection ~ 6650 2050
+Connection ~ 6650 1500
+Wire Wire Line
+	5750 1500 6650 1500
+Wire Wire Line
+	8500 1500 9400 1500
+Wire Wire Line
+	7100 3850 8000 3850
+Wire Wire Line
+	7600 1500 8500 1500
+Wire Wire Line
+	7600 950  8500 950 
+Wire Wire Line
+	7600 2050 8500 2050
+Text GLabel 4900 4050 2    50   BiDi ~ 0
+COL6
+Connection ~ 6450 2950
+Wire Wire Line
+	6450 2950 6550 2950
+Wire Wire Line
+	6350 2950 6450 2950
+Connection ~ 7350 2950
+Wire Wire Line
+	7250 2950 7350 2950
+Connection ~ 6350 2650
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D31
+U 1 1 5F4355CE
+P 6350 2800
+F 0 "D31" V 6304 2880 50  0000 L CNN
+F 1 "DIODE" V 6395 2880 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6350 2800 50  0001 C CNN
+F 3 "~" H 6350 2800 50  0001 C CNN
+F 4 "Y" H 6350 2800 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6350 2800 50  0001 L CNN "Spice_Primitive"
+	1    6350 2800
+	0    -1   1    0   
+$EndComp
+Connection ~ 7250 2650
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D33
+U 1 1 5F4355C5
+P 7250 2800
+F 0 "D33" V 7204 2880 50  0000 L CNN
+F 1 "DIODE" V 7295 2880 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7250 2800 50  0001 C CNN
+F 3 "~" H 7250 2800 50  0001 C CNN
+F 4 "Y" H 7250 2800 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7250 2800 50  0001 L CNN "Spice_Primitive"
+	1    7250 2800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6450 2650 6350 2650
+Wire Wire Line
+	7450 2950 7350 2950
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D34
+U 1 1 5F4355B7
+P 7350 2800
+F 0 "D34" V 7304 2880 50  0000 L CNN
+F 1 "DIODE" V 7395 2880 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7350 2800 50  0001 C CNN
+F 3 "~" H 7350 2800 50  0001 C CNN
+F 4 "Y" H 7350 2800 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7350 2800 50  0001 L CNN "Spice_Primitive"
+	1    7350 2800
+	0    -1   1    0   
+$EndComp
+$Comp
+L canadian_parts:KEYSW K17
+U 1 1 5F4355AF
+P 6950 2650
+F 0 "K17" H 6950 2883 60  0000 C CNN
+F 1 "KEYSW" H 6950 2550 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6950 2650 60  0001 C CNN
+F 3 "" H 6950 2650 60  0000 C CNN
+	1    6950 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2650 7250 2650
+$Comp
+L fissure-rescue:DIODE-Simulation_SPICE D32
+U 1 1 5F4355A8
+P 6450 2800
+F 0 "D32" V 6404 2880 50  0000 L CNN
+F 1 "DIODE" V 6495 2880 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6450 2800 50  0001 C CNN
+F 3 "~" H 6450 2800 50  0001 C CNN
+F 4 "Y" H 6450 2800 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6450 2800 50  0001 L CNN "Spice_Primitive"
+	1    6450 2800
+	0    -1   1    0   
+$EndComp
+$Comp
+L canadian_parts:KEYSW K16
+U 1 1 5F4355A0
+P 6050 2650
+F 0 "K16" H 6050 2883 60  0000 C CNN
+F 1 "KEYSW" H 6050 2550 60  0001 C CNN
+F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6050 2650 60  0001 C CNN
+F 3 "" H 6050 2650 60  0000 C CNN
+	1    6050 2650
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3500 4150 0    50   BiDi ~ 0
+Y
+Text GLabel 3500 4250 0    50   BiDi ~ 0
+X
+Wire Wire Line
+	8800 3750 8800 4250
+Wire Wire Line
+	5750 2550 6650 2550
+Wire Wire Line
+	7450 2950 7450 2450
+Connection ~ 7450 2450
+Wire Wire Line
+	6550 2450 6550 2950
+Connection ~ 6550 2450
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 5F441300
+P 9100 3100
+F 0 "J3" V 9064 2712 50  0000 R CNN
+F 1 "Conn_01x06" V 8973 2712 50  0000 R CNN
+F 2 "fissure:bridge-conn" H 9100 3100 50  0001 C CNN
+F 3 "~" H 9100 3100 50  0001 C CNN
+	1    9100 3100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5F444885
+P 8100 3250
+F 0 "J4" V 7972 3530 50  0000 L CNN
+F 1 "Conn_01x06" V 8063 3530 50  0000 L CNN
+F 2 "fissure:bridge-conn" H 8100 3250 50  0001 C CNN
+F 3 "~" H 8100 3250 50  0001 C CNN
+	1    8100 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5F44A12E
+P 6100 4000
+F 0 "J5" H 6180 4042 50  0000 L CNN
+F 1 "Conn_01x03" H 6180 3951 50  0000 L CNN
+F 2 "fissure:feet" H 6100 4000 50  0001 C CNN
+F 3 "~" H 6100 4000 50  0001 C CNN
+	1    6100 4000
 	1    0    0    -1  
 $EndComp
 $Comp
-L symbols:joystick J3
-U 1 1 5EF1EEE5
-P 3000 4500
-F 0 "J3" H 3058 4915 50  0000 C CNN
-F 1 "joystick" H 3058 4824 50  0000 C CNN
-F 2 "footprints:joystick" H 3000 4000 50  0001 C CNN
-F 3 "" H 3000 4000 50  0001 C CNN
-	1    3000 4500
+L Connector_Generic:Conn_01x03 J6
+U 1 1 5F44BFCA
+P 6650 4000
+F 0 "J6" H 6730 4042 50  0000 L CNN
+F 1 "Conn_01x03" H 6730 3951 50  0000 L CNN
+F 2 "fissure:feet-conn" H 6650 4000 50  0001 C CNN
+F 3 "~" H 6650 4000 50  0001 C CNN
+	1    6650 4000
 	1    0    0    -1  
 $EndComp
-Text GLabel 3350 4600 2    50   Input ~ 0
-GND
-Text GLabel 4250 4600 2    50   Input ~ 0
-GND
-Text GLabel 3350 4400 2    50   Input ~ 0
-VCC
-Text GLabel 4250 4400 2    50   Input ~ 0
-VCC
-Text GLabel 3800 4850 3    50   Input ~ 0
-VCC
-Text GLabel 2900 4850 3    50   Input ~ 0
-VCC
-Text GLabel 3100 4850 3    50   Input ~ 0
-GND
-Text GLabel 4000 4850 3    50   Input ~ 0
-GND
-Text GLabel 4250 4500 2    50   BiDi ~ 0
-X
-Text GLabel 3000 4850 3    50   BiDi ~ 0
-X
-Text GLabel 3350 4500 2    50   BiDi ~ 0
-Y
-Text GLabel 3900 4850 3    50   BiDi ~ 0
-Y
-Text GLabel 5150 4000 0    50   BiDi ~ 0
-X
-Text GLabel 5150 3900 0    50   BiDi ~ 0
-Y
+Wire Wire Line
+	7900 3450 7900 4250
+Wire Wire Line
+	8800 3750 8000 3750
+Wire Wire Line
+	8000 3750 8000 3450
+Wire Wire Line
+	8100 3450 8100 3650
+Wire Wire Line
+	8100 3650 9700 3650
+Wire Wire Line
+	9700 3650 9700 4250
+Wire Wire Line
+	8200 3850 8200 3450
+Connection ~ 8200 3850
+Wire Wire Line
+	8200 3850 8000 3850
+Wire Wire Line
+	6650 2550 9200 2550
+Wire Wire Line
+	9200 2550 9200 2900
+Connection ~ 6650 2550
+Wire Wire Line
+	8900 2900 8400 2900
+Wire Wire Line
+	8400 2900 8400 2450
+Connection ~ 8400 2450
+Wire Wire Line
+	9000 2900 9000 2750
+Wire Wire Line
+	9000 2750 9300 2750
+Wire Wire Line
+	9300 2750 9300 2450
+Connection ~ 9300 2450
+Wire Wire Line
+	9100 2900 9100 2800
+Wire Wire Line
+	9100 2800 10200 2800
+Wire Wire Line
+	10200 2800 10200 2450
+Connection ~ 10200 2450
+Text GLabel 8900 3200 3    50   BiDi ~ 0
+COL3
+Text GLabel 9100 3200 3    50   BiDi ~ 0
+COL5
+Text GLabel 9000 3200 3    50   BiDi ~ 0
+COL4
+Wire Wire Line
+	8900 3200 8900 2900
+Connection ~ 8900 2900
+Wire Wire Line
+	9000 3200 9000 2900
+Connection ~ 9000 2900
+Wire Wire Line
+	9100 2900 9100 3200
+Connection ~ 9100 2900
+$Comp
+L Connector_Generic:Conn_01x06 J7
+U 1 1 5F5947EB
+P 10450 3000
+F 0 "J7" V 10322 3280 50  0000 L CNN
+F 1 "Conn_01x06" V 10413 3280 50  0000 L CNN
+F 2 "fissure:bridge" H 10450 3000 50  0001 C CNN
+F 3 "~" H 10450 3000 50  0001 C CNN
+	1    10450 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J8
+U 1 1 5F5969C1
+P 10450 3400
+F 0 "J8" V 10414 3012 50  0000 R CNN
+F 1 "Conn_01x06" V 10323 3012 50  0000 R CNN
+F 2 "fissure:bridge" H 10450 3400 50  0001 C CNN
+F 3 "~" H 10450 3400 50  0001 C CNN
+	1    10450 3400
+	0    -1   1    0   
+$EndComp
+Text GLabel 8200 3550 2    50   BiDi ~ 0
+ROW4
 $EndSCHEMATC

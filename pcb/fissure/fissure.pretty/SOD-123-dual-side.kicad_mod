@@ -1,0 +1,8 @@
+(module SOD-123-dual-side (layer F.Cu) (tedit 5F0BBC7D)
+  (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value SOD-123-dual-side (at 0 -0.5) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)

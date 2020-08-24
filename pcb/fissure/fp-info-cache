@@ -1,4 +1,4 @@
-18718324786096136
+18726319338410905
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82319,6 +82319,41 @@ maple-inv
 0
 0
 0
+fissure
+SOD-123-dual-side
+
+
+0
+0
+0
+fissure
+bridge
+
+
+0
+18
+6
+fissure
+bridge-conn
+
+
+0
+6
+6
+fissure
+feet
+
+
+0
+9
+3
+fissure
+feet-conn
+
+
+0
+3
+3
 footprints
 LCD
 
