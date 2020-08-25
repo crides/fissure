@@ -597,19 +597,17 @@ Text GLabel 4900 3150 2    50   Input ~ 0
 RAW
 Text GLabel 4900 3450 2    50   Input ~ 0
 VCC
-Text GLabel 3500 3750 0    50   BiDi ~ 0
-ROW1
-Text GLabel 3500 3850 0    50   BiDi ~ 0
-ROW2
-Text GLabel 3500 3950 0    50   BiDi ~ 0
-ROW3
 Text GLabel 3500 4050 0    50   BiDi ~ 0
+ROW1
+Text GLabel 3500 3950 0    50   BiDi ~ 0
+ROW2
+Text GLabel 3500 3850 0    50   BiDi ~ 0
+ROW3
+Text GLabel 3500 3750 0    50   BiDi ~ 0
 ROW4
-Text GLabel 4900 3550 2    50   BiDi ~ 0
-COL1
-Text GLabel 4900 3650 2    50   BiDi ~ 0
+Text GLabel 3500 3250 0    50   BiDi ~ 0
 COL2
-Text GLabel 4900 3850 2    50   BiDi ~ 0
+Text GLabel 4900 3650 2    50   BiDi ~ 0
 COL4
 Text GLabel 5750 950  0    50   BiDi ~ 0
 ROW1
@@ -676,7 +674,7 @@ Wire Wire Line
 	9600 4250 9700 4250
 Wire Wire Line
 	8700 4250 8800 4250
-Text GLabel 4900 3950 2    50   BiDi ~ 0
+Text GLabel 4900 3550 2    50   BiDi ~ 0
 COL5
 Text GLabel 4900 3750 2    50   BiDi ~ 0
 COL3
@@ -719,7 +717,7 @@ F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 	1    2200 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 4900 4250 2    50   BiDi ~ 0
+Text GLabel 4900 3850 2    50   BiDi ~ 0
 RGB
 Text GLabel 1900 3750 0    50   BiDi ~ 0
 RGB
@@ -1102,8 +1100,6 @@ Wire Wire Line
 	7600 950  8500 950 
 Wire Wire Line
 	7600 2050 8500 2050
-Text GLabel 4900 4050 2    50   BiDi ~ 0
-COL6
 Connection ~ 6450 2950
 Wire Wire Line
 	6450 2950 6550 2950
@@ -1194,10 +1190,6 @@ F 3 "" H 6050 2650 60  0000 C CNN
 	1    6050 2650
 	-1   0    0    -1  
 $EndComp
-Text GLabel 3500 4150 0    50   BiDi ~ 0
-Y
-Text GLabel 3500 4250 0    50   BiDi ~ 0
-X
 Wire Wire Line
 	8800 3750 8800 4250
 Wire Wire Line
@@ -1208,28 +1200,6 @@ Connection ~ 7450 2450
 Wire Wire Line
 	6550 2450 6550 2950
 Connection ~ 6550 2450
-$Comp
-L Connector_Generic:Conn_01x06 J3
-U 1 1 5F441300
-P 9100 3100
-F 0 "J3" V 9064 2712 50  0000 R CNN
-F 1 "Conn_01x06" V 8973 2712 50  0000 R CNN
-F 2 "fissure:bridge-conn" H 9100 3100 50  0001 C CNN
-F 3 "~" H 9100 3100 50  0001 C CNN
-	1    9100 3100
-	0    -1   1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x06 J4
-U 1 1 5F444885
-P 8100 3250
-F 0 "J4" V 7972 3530 50  0000 L CNN
-F 1 "Conn_01x06" V 8063 3530 50  0000 L CNN
-F 2 "fissure:bridge-conn" H 8100 3250 50  0001 C CNN
-F 3 "~" H 8100 3250 50  0001 C CNN
-	1    8100 3250
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5F44A12E
@@ -1280,14 +1250,10 @@ Wire Wire Line
 	8400 2900 8400 2450
 Connection ~ 8400 2450
 Wire Wire Line
-	9000 2900 9000 2750
-Wire Wire Line
 	9000 2750 9300 2750
 Wire Wire Line
 	9300 2750 9300 2450
 Connection ~ 9300 2450
-Wire Wire Line
-	9100 2900 9100 2800
 Wire Wire Line
 	9100 2800 10200 2800
 Wire Wire Line
@@ -1301,33 +1267,146 @@ Text GLabel 9000 3200 3    50   BiDi ~ 0
 COL4
 Wire Wire Line
 	8900 3200 8900 2900
-Connection ~ 8900 2900
-Wire Wire Line
-	9000 3200 9000 2900
-Connection ~ 9000 2900
-Wire Wire Line
-	9100 2900 9100 3200
-Connection ~ 9100 2900
 $Comp
-L Connector_Generic:Conn_01x06 J7
-U 1 1 5F5947EB
-P 10450 3000
-F 0 "J7" V 10322 3280 50  0000 L CNN
-F 1 "Conn_01x06" V 10413 3280 50  0000 L CNN
-F 2 "fissure:bridge" H 10450 3000 50  0001 C CNN
-F 3 "~" H 10450 3000 50  0001 C CNN
-	1    10450 3000
+L steno:MT25QL128ABA1ESE U2
+U 1 1 5F4AD307
+P 4100 4750
+F 0 "U2" H 4175 5075 50  0000 C CNN
+F 1 "MT25QL128ABA1ESE" H 4175 4984 50  0000 C CNN
+F 2 "Package_SO:SOP-8_5.28x5.23mm_P1.27mm" H 4100 4250 50  0001 C CNN
+F 3 "" H 4100 4250 50  0001 C CNN
+	1    4100 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 3700 4650 0    50   BiDi ~ 0
+CS
+Text GLabel 3700 4750 0    50   BiDi ~ 0
+MISO_DQ1
+Text GLabel 3700 4850 0    50   BiDi ~ 0
+DQ2
+Text GLabel 4650 4950 2    50   BiDi ~ 0
+MOSI_DQ0
+Text GLabel 4650 4850 2    50   BiDi ~ 0
+SCLK
+Text GLabel 4650 4750 2    50   BiDi ~ 0
+DQ3
+Text GLabel 3700 4950 0    50   Input ~ 0
+GND
+Text GLabel 4650 4650 2    50   Input ~ 0
+VCC
+Text GLabel 4900 3950 2    50   BiDi ~ 0
+SCLK
+Text GLabel 4900 4050 2    50   BiDi ~ 0
+MISO_DQ1
+Text GLabel 4900 4150 2    50   BiDi ~ 0
+MOSI_DQ0
+Text GLabel 3500 3150 0    50   BiDi ~ 0
+COL1
+Text GLabel 4900 4250 2    50   BiDi ~ 0
+CS
+Text GLabel 3500 4150 0    50   BiDi ~ 0
+DQ2
+Text GLabel 3500 4250 0    50   BiDi ~ 0
+DQ3
+$Comp
+L Connector_Generic:Conn_01x04 J9
+U 1 1 5F52BEB4
+P 6200 4650
+F 0 "J9" H 6280 4642 50  0000 L CNN
+F 1 "Conn_01x04" H 6280 4551 50  0000 L CNN
+F 2 "steno:OLED" H 6200 4650 50  0001 C CNN
+F 3 "~" H 6200 4650 50  0001 C CNN
+	1    6200 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 4850 0    50   Input ~ 0
+GND
+Text GLabel 6000 4750 0    50   Input ~ 0
+VCC
+Text GLabel 6000 4650 0    50   Output ~ 0
+SCL
+Text GLabel 6000 4550 0    50   Output ~ 0
+SDA
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5F54CD2A
+P 8000 3250
+F 0 "J4" V 7964 2962 50  0000 R CNN
+F 1 "Conn_01x04" V 7873 2962 50  0000 R CNN
+F 2 "fissure:bridge-conn" H 8000 3250 50  0001 C CNN
+F 3 "~" H 8000 3250 50  0001 C CNN
+	1    8000 3250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J8
-U 1 1 5F5969C1
-P 10450 3400
-F 0 "J8" V 10414 3012 50  0000 R CNN
-F 1 "Conn_01x06" V 10323 3012 50  0000 R CNN
-F 2 "fissure:bridge" H 10450 3400 50  0001 C CNN
-F 3 "~" H 10450 3400 50  0001 C CNN
-	1    10450 3400
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5F557B6B
+P 9000 3100
+F 0 "J3" V 8872 2812 50  0000 R CNN
+F 1 "Conn_01x04" V 8963 2812 50  0000 R CNN
+F 2 "fissure:bridge-conn" H 9000 3100 50  0001 C CNN
+F 3 "~" H 9000 3100 50  0001 C CNN
+	1    9000 3100
 	0    -1   1    0   
 $EndComp
+Wire Wire Line
+	9000 2750 9000 2900
+Wire Wire Line
+	9100 2800 9100 2900
+Connection ~ 8900 2900
+Connection ~ 9000 2900
+Wire Wire Line
+	9000 2900 9000 3200
+Connection ~ 9100 2900
+Wire Wire Line
+	9100 2900 9100 3200
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 5F5772A1
+P 9850 3000
+F 0 "J7" V 9814 2712 50  0000 R CNN
+F 1 "Conn_01x04" V 9723 2712 50  0000 R CNN
+F 2 "fissure:bridge" H 9850 3000 50  0001 C CNN
+F 3 "~" H 9850 3000 50  0001 C CNN
+	1    9850 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5F577A14
+P 9850 3400
+F 0 "J8" V 9722 3112 50  0000 R CNN
+F 1 "Conn_01x04" V 9813 3112 50  0000 R CNN
+F 2 "fissure:bridge" H 9850 3400 50  0001 C CNN
+F 3 "~" H 9850 3400 50  0001 C CNN
+	1    9850 3400
+	0    -1   1    0   
+$EndComp
+$Comp
+L steno:MT25QL128ABA1ESE U3
+U 1 1 5F5CBFA1
+P 4100 5400
+F 0 "U3" H 4175 5725 50  0000 C CNN
+F 1 "MT25QL128ABA1ESE" H 4175 5634 50  0000 C CNN
+F 2 "Package_SO:SOP-8_5.28x5.23mm_P1.27mm" H 4100 4900 50  0001 C CNN
+F 3 "" H 4100 4900 50  0001 C CNN
+	1    4100 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3700 5300 0    50   BiDi ~ 0
+CS
+Text GLabel 3700 5400 0    50   BiDi ~ 0
+MISO_DQ1
+Text GLabel 3700 5500 0    50   BiDi ~ 0
+DQ2
+Text GLabel 4650 5600 2    50   BiDi ~ 0
+MOSI_DQ0
+Text GLabel 4650 5500 2    50   BiDi ~ 0
+SCLK
+Text GLabel 4650 5400 2    50   BiDi ~ 0
+DQ3
+Text GLabel 3700 5600 0    50   Input ~ 0
+GND
+Text GLabel 4650 5300 2    50   Input ~ 0
+VCC
 $EndSCHEMATC
