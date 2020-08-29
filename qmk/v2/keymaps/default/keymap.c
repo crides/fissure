@@ -2,6 +2,10 @@
 #include "action_layer.h"
 #include "eeconfig.h"
 
+#ifndef __AVR__
+#include "app_ble_func.h"
+#endif
+
 // Layers
 #define _BASE   0
 #define _LOWER 1
@@ -24,14 +28,22 @@
         { XXXXXXX, XXXXXXX, R42, R41, R40 } \
     }
 
+#ifdef __AVR__
 void set_hsv(uint8_t a, uint8_t b, uint8_t c) {
     rgblight_sethsv(a, b, (uint8_t) c * 0.2);
 }
+#endif
 
-void keyboard_pre_init_user() {
+void keyboard_pre_init_user(void) {
+#ifdef __AVR__
     set_hsv(HSV_TEAL);
+#else
+    set_usb_enabled(true);
+    debug_matrix=true;
+#endif
 }
 
+#ifdef __AVR__
 void suspend_power_down_user() {
     set_hsv(0, 0, 0);
 }
@@ -54,6 +66,14 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     }
     return state;
 }
+#else
+// Aliases
+#define C(kc) LCTL(kc)
+#define S(kc) LSFT(kc)
+#define A(kc) LALT(kc)
+#define G(kc) LGUI(kc)
+
+#endif
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     // If console is enabled, it will print the matrix position and status of each key pressed
