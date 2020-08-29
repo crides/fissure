@@ -583,31 +583,31 @@ Connection ~ 8500 2050
 Connection ~ 8000 3850
 Wire Wire Line
 	8900 3850 8200 3850
-Text GLabel 3500 3650 0    50   Output ~ 0
+Text GLabel 3600 3000 0    50   Output ~ 0
 SDA
-Text GLabel 3500 3550 0    50   Output ~ 0
+Text GLabel 3600 2900 0    50   Output ~ 0
 SCL
-Text GLabel 4900 3250 2    50   Input ~ 0
+Text GLabel 5000 2600 2    50   Input ~ 0
 GND
-Text GLabel 3500 3350 0    50   Input ~ 0
+Text GLabel 3600 2700 0    50   Input ~ 0
 GND
-Text GLabel 3500 3450 0    50   Input ~ 0
+Text GLabel 3600 2800 0    50   Input ~ 0
 GND
-Text GLabel 4900 3150 2    50   Input ~ 0
+Text GLabel 5000 2500 2    50   Input ~ 0
 RAW
-Text GLabel 4900 3450 2    50   Input ~ 0
+Text GLabel 5000 2800 2    50   Input ~ 0
 VCC
-Text GLabel 3500 3950 0    50   BiDi ~ 0
+Text GLabel 3600 3400 0    50   BiDi ~ 0
 ROW1
-Text GLabel 3500 3850 0    50   BiDi ~ 0
+Text GLabel 3600 3300 0    50   BiDi ~ 0
 ROW2
-Text GLabel 3500 3750 0    50   BiDi ~ 0
+Text GLabel 3600 3200 0    50   BiDi ~ 0
 ROW3
-Text GLabel 3500 4050 0    50   BiDi ~ 0
+Text GLabel 3600 3100 0    50   BiDi ~ 0
 ROW4
-Text GLabel 3500 3250 0    50   BiDi ~ 0
+Text GLabel 3600 2600 0    50   BiDi ~ 0
 COL2
-Text GLabel 4900 3650 2    50   BiDi ~ 0
+Text GLabel 5000 3000 2    50   BiDi ~ 0
 COL4
 Text GLabel 5750 950  0    50   BiDi ~ 0
 ROW1
@@ -659,41 +659,30 @@ Text GLabel 2350 3000 2    50   BiDi ~ 0
 SDA
 Text GLabel 2350 3100 2    50   BiDi ~ 0
 SCL
-$Comp
-L promicro:ProMicro U1
-U 1 1 5E332FC5
-P 4200 3900
-F 0 "U1" H 4200 5043 60  0000 C CNN
-F 1 "ProMicro" H 4200 4937 60  0000 C CNN
-F 2 "Keebio-Parts:ArduinoProMicro" H 4200 4831 60  0000 C CNN
-F 3 "" H 4300 2850 60  0000 C CNN
-	1    4200 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9600 4250 9700 4250
 Wire Wire Line
 	8700 4250 8800 4250
-Text GLabel 4900 3550 2    50   BiDi ~ 0
+Text GLabel 5000 2900 2    50   BiDi ~ 0
 COL5
-Text GLabel 4900 3750 2    50   BiDi ~ 0
+Text GLabel 5000 3100 2    50   BiDi ~ 0
 COL3
 $Comp
 L keyboard_parts:SW_PUSH SW1
 U 1 1 5E0174FE
-P 3500 2600
-F 0 "SW1" H 3500 2961 50  0000 C CNN
-F 1 "SW_PUSH" H 3500 2870 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3500 2771 60  0000 C CNN
-F 3 "" H 3500 2600 60  0000 C CNN
-	1    3500 2600
+P 2500 1350
+F 0 "SW1" H 2500 1711 50  0000 C CNN
+F 1 "SW_PUSH" H 2500 1620 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2500 1521 60  0000 C CNN
+F 3 "" H 2500 1350 60  0000 C CNN
+	1    2500 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 3200 2600 0    50   Input ~ 0
+Text GLabel 2200 1350 0    50   Input ~ 0
 GND
-Text GLabel 4900 3350 2    50   Input ~ 0
+Text GLabel 5000 2700 2    50   Input ~ 0
 RST
-Text GLabel 3800 2600 2    50   Input ~ 0
+Text GLabel 2800 1350 2    50   Input ~ 0
 RST
 $Comp
 L fissure-rescue:SK6812MINI-LED D42
@@ -717,7 +706,7 @@ F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 	1    2200 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 4900 3850 2    50   BiDi ~ 0
+Text GLabel 5000 3200 2    50   BiDi ~ 0
 RGB
 Text GLabel 1900 3750 0    50   BiDi ~ 0
 RGB
@@ -1294,19 +1283,19 @@ Text GLabel 3700 4950 0    50   Input ~ 0
 GND
 Text GLabel 4650 4650 2    50   Input ~ 0
 VCC
-Text GLabel 4900 3950 2    50   BiDi ~ 0
+Text GLabel 5000 3300 2    50   BiDi ~ 0
 SCLK
-Text GLabel 4900 4050 2    50   BiDi ~ 0
+Text GLabel 5000 3400 2    50   BiDi ~ 0
 MISO_DQ1
-Text GLabel 4900 4150 2    50   BiDi ~ 0
+Text GLabel 5000 3500 2    50   BiDi ~ 0
 MOSI_DQ0
-Text GLabel 3500 3150 0    50   BiDi ~ 0
+Text GLabel 3600 2500 0    50   BiDi ~ 0
 COL1
-Text GLabel 4900 4250 2    50   BiDi ~ 0
+Text GLabel 5000 3600 2    50   BiDi ~ 0
 CS
-Text GLabel 3500 4150 0    50   BiDi ~ 0
+Text GLabel 4250 4100 3    50   BiDi ~ 0
 DQ2
-Text GLabel 3500 4250 0    50   BiDi ~ 0
+Text GLabel 4450 4100 3    50   BiDi ~ 0
 DQ3
 $Comp
 L Connector_Generic:Conn_01x04 J9
@@ -1409,4 +1398,19 @@ Text GLabel 3700 5600 0    50   Input ~ 0
 GND
 Text GLabel 4650 5300 2    50   Input ~ 0
 VCC
+$Comp
+L nice_nano:nice_nano U1
+U 1 1 5F4B06BD
+P 4300 3050
+F 0 "U1" H 4300 3987 60  0000 C CNN
+F 1 "nice_nano" H 4300 3881 60  0000 C CNN
+F 2 "nice-nano-kicad:nice_nano" V 5350 550 60  0001 C CNN
+F 3 "" V 5350 550 60  0001 C CNN
+	1    4300 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 2400 0    50   Input ~ 0
+GND
+Text GLabel 5000 2400 2    50   Input ~ 0
+RAW
 $EndSCHEMATC

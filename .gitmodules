@@ -1,0 +1,3 @@
+[submodule "pcb/libs/nice-nano-kicad"]
+	path = pcb/libs/nice-nano-kicad
+	url = https://github.com/bstiq/nice-nano-kicad
