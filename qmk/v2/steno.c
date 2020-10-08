@@ -281,8 +281,13 @@ void oled_task_user(void) {
     sprintf(buf, "BAT: %u.%uV", volt / 100, volt % 100);
     oled_write_ln(buf, false);
 #endif
-    oled_write_ln(last_stroke, false);
-    oled_write_ln(last_trans, false);
+    if (IS_LAYER_ON(3)) {       // Steno layer
+        oled_write_ln(last_stroke, false);
+        oled_write_ln(last_trans, false);
+    } else {
+        oled_advance_page(true);
+        oled_advance_page(true);
+    }
 #else
     char buf[32];
     uint8_t button = !nrf_gpio_pin_read(BUTTON);
