@@ -1056,23 +1056,23 @@ Connection ~ 6550 2450
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5F44A12E
-P 6100 4000
-F 0 "J5" H 6180 4042 50  0000 L CNN
-F 1 "Conn_01x03" H 6180 3951 50  0000 L CNN
-F 2 "fissure:feet" H 6100 4000 50  0001 C CNN
-F 3 "~" H 6100 4000 50  0001 C CNN
-	1    6100 4000
+P 5200 3700
+F 0 "J5" H 5280 3742 50  0000 L CNN
+F 1 "Conn_01x03" H 5280 3651 50  0000 L CNN
+F 2 "fissure:feet" H 5200 3700 50  0001 C CNN
+F 3 "~" H 5200 3700 50  0001 C CNN
+	1    5200 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J6
 U 1 1 5F44BFCA
-P 6650 4000
-F 0 "J6" H 6730 4042 50  0000 L CNN
-F 1 "Conn_01x03" H 6730 3951 50  0000 L CNN
-F 2 "fissure:feet-conn" H 6650 4000 50  0001 C CNN
-F 3 "~" H 6650 4000 50  0001 C CNN
-	1    6650 4000
+P 5750 3700
+F 0 "J6" H 5830 3742 50  0000 L CNN
+F 1 "Conn_01x03" H 5830 3651 50  0000 L CNN
+F 2 "fissure:feet-conn" H 5750 3700 50  0001 C CNN
+F 3 "~" H 5750 3700 50  0001 C CNN
+	1    5750 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1307,9 +1307,9 @@ Text GLabel 3650 2450 0    50   Input ~ 0
 GND
 Text GLabel 5050 2350 2    50   Input ~ 0
 GND
-Text GLabel 3650 2650 0    50   Output ~ 0
-SCL
 Text GLabel 3650 2750 0    50   Output ~ 0
+SCL
+Text GLabel 3650 2650 0    50   Output ~ 0
 SDA
 Wire Wire Line
 	2900 1900 3100 1900
@@ -1466,4 +1466,26 @@ Text GLabel 2800 1300 0    50   Input ~ 0
 MCU_RAW
 Text GLabel 5050 2150 2    50   Input ~ 0
 RAW
+$Comp
+L Connector_Generic:Conn_01x03 J10
+U 1 1 5F82B727
+P 6250 3700
+F 0 "J10" H 6330 3742 50  0000 L CNN
+F 1 "Conn_01x03" H 6330 3651 50  0000 L CNN
+F 2 "fissure:feet" H 6250 3700 50  0001 C CNN
+F 3 "~" H 6250 3700 50  0001 C CNN
+	1    6250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J11
+U 1 1 5F82B72D
+P 6800 3700
+F 0 "J11" H 6880 3742 50  0000 L CNN
+F 1 "Conn_01x03" H 6880 3651 50  0000 L CNN
+F 2 "fissure:feet-conn" H 6800 3700 50  0001 C CNN
+F 3 "~" H 6800 3700 50  0001 C CNN
+	1    6800 3700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
