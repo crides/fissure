@@ -1,6 +1,7 @@
 #include "fissure.h"
 #include "action_layer.h"
 #include "eeconfig.h"
+#include "keymap_steno.h"
 
 #ifndef __AVR__
 #include "app_ble_func.h"
@@ -10,6 +11,7 @@
 #define _BASE   0
 #define _LOWER 1
 #define _RAISE 2
+#define _STENO 3
 
 #define KEYMAP( \
     L40, L10, L11, L12, L13, L14,                 R10, R11, R12, R13, R14, R44, \
@@ -28,16 +30,13 @@
         { R44, R43, R42, R41, R40 } \
     }
 
-/* #ifdef __AVR__ */
 void set_hsv(uint8_t a, uint8_t b, uint8_t c) {
-    rgblight_sethsv(a, b, (uint8_t) c * 0.2);
+    rgblight_sethsv(a, b, (uint8_t) c * 0.15);
 }
-/* #endif */
 
 void keyboard_pre_init_user(void) {
     set_hsv(HSV_TEAL);
-#ifdef __AVR__
-#else
+#ifndef __AVR__
     set_usb_enabled(true);
     debug_matrix=true;
 #endif
@@ -53,15 +52,10 @@ void suspend_wakeup_init_user() {
 
 uint32_t layer_state_set_user(uint32_t state) {
     switch (biton32(state)) {
-    case _LOWER:
-        set_hsv(HSV_GREEN);
-        break;
-    case _RAISE:
-        set_hsv(HSV_CYAN);
-        break;
-    default: //  for any other layers, or the default layer
-        set_hsv(0, 0, 0);
-        break;
+    case _LOWER: set_hsv(HSV_GREEN); break;
+    case _RAISE: set_hsv(HSV_CYAN); break;
+    case _STENO: set_hsv(HSV_ORANGE); break;
+    default: set_hsv(0, 0, 0); break;
     }
     return state;
 }
@@ -94,8 +88,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = KEYMAP(
-        XXXXXXX, KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,      KC_Y,     KC_U,        KC_I,       KC_O,        KC_P, KC_2,
-        XXXXXXX, KC_A,     KC_S,     KC_D,     KC_F,     KC_G,      KC_H,     KC_J,        KC_K,       KC_L,     KC_SCLN, KC_1,
+        XXXXXXX, KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,      KC_Y,     KC_U,        KC_I,       KC_O,        KC_P, XXXXXXX,
+        XXXXXXX, KC_A,     KC_S,     KC_D,     KC_F,     KC_G,      KC_H,     KC_J,        KC_K,       KC_L,     KC_SCLN, XXXXXXX,
                  KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_N,     KC_M,     KC_COMM,     KC_DOT,     KC_SLSH,
                   DEL,      TAB,      ESC,      ENT,      SPC,     BKSP),
 
@@ -113,9 +107,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RAISE] = KEYMAP(
         XXXXXXX, KC_BRID,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_BRIU,     KC_HOME,     KC_PGDN,   KC_PGUP,       KC_END,  KC_PSCR, XXXXXXX,
-        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,     KC_LEFT,     KC_DOWN,     KC_UP,     KC_RIGHT,  XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX,  TG(_STENO),  XXXXXXX,  XXXXXXX,  XXXXXXX,     KC_LEFT,     KC_DOWN,     KC_UP,     KC_RIGHT,  XXXXXXX, XXXXXXX,
                  XXXXXXX,  KC_MPRV,  KC_MPLY,  KC_MNXT,  XXXXXXX,  C(KC_LEFT),  C(KC_DOWN),  C(KC_UP),  C(KC_RIGHT),  XXXXXXX,
                  _______,  _______,  _______,  _______,  _______,    _______),
+
+    [_STENO] = KEYMAP(
+		XXXXXXX,  STN_S1,  STN_TL,  STN_PL,  STN_HL,  STN_ST1,  STN_ST3,  STN_FR,  STN_PR,  STN_LR,  STN_TR,  STN_DR,
+		XXXXXXX,  STN_S2,  STN_KL,  STN_WL,  STN_RL,  STN_ST2,  STN_ST4,  STN_RR,  STN_BR,  STN_GR,  STN_SR,  STN_ZR,
+                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
+              TG(_STENO),  STN_A,   STN_O,   STN_E,   STN_U,  STN_N2),
 };
 
 const uint16_t PROGMEM combos[COMBO_COUNT][3] = {

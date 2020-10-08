@@ -7,7 +7,7 @@
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
+#define PRODUCT_ID      0x6062
 #define DEVICE_VER      0x0202
 #define MANUFACTURER    Crides
 #define PRODUCT         Fissure-v2.2
@@ -41,6 +41,11 @@
 #define BLE_NUS_MAX_INTERVAL 30 // default 75
 #define BLE_HID_MAX_INTERVAL 30 // default 90
 #define BLE_HID_SLAVE_LATENCY 4 // default 4
+
+#define CONFIG_PIN_SCL 11
+#define CONFIG_PIN_SDA 12
+
+#define USE_BATTERY_PIN NRF_SAADC_INPUT_AIN5
 #endif
 
 #define DIODE_DIRECTION COL2ROW
@@ -50,5 +55,28 @@
 #define PREVENT_STUCK_MODIFIERS
 #define COMBO_COUNT 28
 #define COMBO_TERM 50
+
+// Steno stuff
+#define CUSTOM_STENO
+
+#define STENO_DEBUG
+/* #define DEBUG_FLASH */
+/* #define DEBUG_STROKE */
+#define DEBUG_HIST
+
+#define RAW_USAGE_PAGE  0xFF60
+#define RAW_USAGE_ID    0x61
+#define MATRIX_SCAN_MS 20
+
+#ifdef __AVR__
+#ifdef CUSTOM_STENO
+#undef VIRTSER_ENABLE
+#endif
+#endif
+
+#define THIS_DEVICE_ROWS MATRIX_ROWS
+#define THIS_DEVICE_COLS MATRIX_COLS
+#define IS_LEFT_HAND true
+#define ENABLE_STARTUP_ADV_NOLIST
 
 #endif

@@ -15,8 +15,17 @@ SPLIT_KEYBOARD = yes
 # NRFSDK_ROOT := $(NRFSDK15_ROOT) #Path to nRF SDK v15.0.0
 # CUSTOM_MATRIX = yes
 
+SRC += flash.c hist.c stroke.c steno.c
+
 MOUSEKEY_ENABLE = no
 EXTRAKEY_ENABLE = yes
 CONSOLE_ENABLE = no
 COMBO_ENABLE = yes
 RGBLIGHT_ENABLE = yes
+
+# Steno
+OLED_DRIVER_ENABLE = yes
+VIRTSER_ENABLE = no
+STENO_ENABLE = yes
+RAW_ENABLE = yes
+EXTRAFLAGS += -flto
