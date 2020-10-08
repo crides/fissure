@@ -583,32 +583,6 @@ Connection ~ 8500 2050
 Connection ~ 8000 3850
 Wire Wire Line
 	8900 3850 8200 3850
-Text GLabel 3600 3000 0    50   Output ~ 0
-SDA
-Text GLabel 3600 2900 0    50   Output ~ 0
-SCL
-Text GLabel 5000 2600 2    50   Input ~ 0
-GND
-Text GLabel 3600 2700 0    50   Input ~ 0
-GND
-Text GLabel 3600 2800 0    50   Input ~ 0
-GND
-Text GLabel 5000 2500 2    50   Input ~ 0
-RAW
-Text GLabel 5000 2800 2    50   Input ~ 0
-VCC
-Text GLabel 3600 3400 0    50   BiDi ~ 0
-ROW1
-Text GLabel 3600 3300 0    50   BiDi ~ 0
-ROW2
-Text GLabel 3600 3200 0    50   BiDi ~ 0
-ROW3
-Text GLabel 3600 3100 0    50   BiDi ~ 0
-ROW4
-Text GLabel 3600 2600 0    50   BiDi ~ 0
-COL2
-Text GLabel 5000 3000 2    50   BiDi ~ 0
-COL4
 Text GLabel 5750 950  0    50   BiDi ~ 0
 ROW1
 Text GLabel 5750 1500 0    50   BiDi ~ 0
@@ -621,135 +595,25 @@ Text GLabel 6550 2950 3    50   BiDi ~ 0
 COL1
 Text GLabel 7450 2950 3    50   BiDi ~ 0
 COL2
-$Comp
-L Connector:AudioJack4 J1
-U 1 1 5E2F9701
-P 1150 2900
-F 0 "J1" H 1107 3225 50  0000 C CNN
-F 1 "AudioJack4" H 1107 3134 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320D" H 1150 2900 50  0001 C CNN
-F 3 "~" H 1150 2900 50  0001 C CNN
-	1    1150 2900
-	1    0    0    -1  
-$EndComp
-Text GLabel 1350 2800 2    50   BiDi ~ 0
-GND
-Text GLabel 1350 2900 2    50   BiDi ~ 0
-VCC
-Text GLabel 1350 3000 2    50   BiDi ~ 0
-SDA
-Text GLabel 1350 3100 2    50   BiDi ~ 0
-SCL
-$Comp
-L fissure-rescue:AudioJack4-Connector J2
-U 1 1 5E307AA7
-P 2150 2900
-F 0 "J2" H 2107 3225 50  0000 C CNN
-F 1 "AudioJack4" H 2107 3134 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320D" H 2150 2900 50  0001 C CNN
-F 3 "~" H 2150 2900 50  0001 C CNN
-	1    2150 2900
-	1    0    0    -1  
-$EndComp
-Text GLabel 2350 2800 2    50   BiDi ~ 0
-GND
-Text GLabel 2350 2900 2    50   BiDi ~ 0
-VCC
-Text GLabel 2350 3000 2    50   BiDi ~ 0
-SDA
-Text GLabel 2350 3100 2    50   BiDi ~ 0
-SCL
 Wire Wire Line
 	9600 4250 9700 4250
 Wire Wire Line
 	8700 4250 8800 4250
-Text GLabel 5000 2900 2    50   BiDi ~ 0
-COL5
-Text GLabel 5000 3100 2    50   BiDi ~ 0
-COL3
 $Comp
 L keyboard_parts:SW_PUSH SW1
 U 1 1 5E0174FE
-P 2500 1350
-F 0 "SW1" H 2500 1711 50  0000 C CNN
-F 1 "SW_PUSH" H 2500 1620 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2500 1521 60  0000 C CNN
-F 3 "" H 2500 1350 60  0000 C CNN
-	1    2500 1350
+P 1300 950
+F 0 "SW1" H 1300 1311 50  0000 C CNN
+F 1 "SW_PUSH" H 1300 1220 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQP7C" H 1300 1121 60  0000 C CNN
+F 3 "" H 1300 950 60  0000 C CNN
+	1    1300 950 
 	1    0    0    -1  
 $EndComp
-Text GLabel 2200 1350 0    50   Input ~ 0
+Text GLabel 1600 950  2    50   Input ~ 0
 GND
-Text GLabel 5000 2700 2    50   Input ~ 0
+Text GLabel 1000 1400 0    50   Input ~ 0
 RST
-Text GLabel 2800 1350 2    50   Input ~ 0
-RST
-$Comp
-L fissure-rescue:SK6812MINI-LED D42
-U 1 1 5E04F5E9
-P 1100 3900
-F 0 "D42" H 1444 3946 50  0000 L CNN
-F 1 "SK6812MINI" H 1444 3855 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 1150 3600 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 1200 3525 50  0001 L TNN
-	1    1100 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:SK6812MINI-LED D41
-U 1 1 5E04FFE5
-P 2200 3750
-F 0 "D41" H 2544 3796 50  0000 L CNN
-F 1 "SK6812MINI" H 2544 3705 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 2250 3450 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 2300 3375 50  0001 L TNN
-	1    2200 3750
-	1    0    0    -1  
-$EndComp
-Text GLabel 5000 3200 2    50   BiDi ~ 0
-RGB
-Text GLabel 1900 3750 0    50   BiDi ~ 0
-RGB
-Text GLabel 800  3900 0    50   BiDi ~ 0
-RGB
-Text GLabel 2200 4050 3    50   Input ~ 0
-GND
-Text GLabel 1100 4200 3    50   Input ~ 0
-GND
-Text GLabel 2200 3450 1    50   Input ~ 0
-VCC
-Text GLabel 1100 3600 1    50   Input ~ 0
-VCC
-$Comp
-L fissure-rescue:R-Device R1
-U 1 1 5E399FB3
-P 2800 3200
-F 0 "R1" H 2870 3246 50  0000 L CNN
-F 1 "R" H 2870 3155 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2730 3200 50  0001 C CNN
-F 3 "~" H 2800 3200 50  0001 C CNN
-	1    2800 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L fissure-rescue:R-Device R2
-U 1 1 5E39A4D3
-P 3000 3200
-F 0 "R2" H 3070 3246 50  0000 L CNN
-F 1 "R" H 3070 3155 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2930 3200 50  0001 C CNN
-F 3 "~" H 3000 3200 50  0001 C CNN
-	1    3000 3200
-	1    0    0    -1  
-$EndComp
-Text GLabel 2900 3050 1    50   Input ~ 0
-VCC
-Text GLabel 2800 3350 3    50   Output ~ 0
-SDA
-Text GLabel 3000 3350 3    50   Output ~ 0
-SCL
-Wire Wire Line
-	2800 3050 3000 3050
 Wire Wire Line
 	5750 1050 5750 950 
 Wire Wire Line
@@ -1259,44 +1123,30 @@ Wire Wire Line
 $Comp
 L steno:MT25QL128ABA1ESE U2
 U 1 1 5F4AD307
-P 4100 4750
-F 0 "U2" H 4175 5075 50  0000 C CNN
-F 1 "MT25QL128ABA1ESE" H 4175 4984 50  0000 C CNN
-F 2 "Package_SO:SOP-8_5.28x5.23mm_P1.27mm" H 4100 4250 50  0001 C CNN
-F 3 "" H 4100 4250 50  0001 C CNN
-	1    4100 4750
+P 4350 850
+F 0 "U2" H 4425 1175 50  0000 C CNN
+F 1 "MT25QL128ABA1ESE" H 4425 1084 50  0000 C CNN
+F 2 "Package_SO:SOP-8_5.28x5.23mm_P1.27mm" H 4350 350 50  0001 C CNN
+F 3 "" H 4350 350 50  0001 C CNN
+	1    4350 850 
 	1    0    0    -1  
 $EndComp
-Text GLabel 3700 4650 0    50   BiDi ~ 0
+Text GLabel 3950 750  0    50   BiDi ~ 0
 CS
-Text GLabel 3700 4750 0    50   BiDi ~ 0
+Text GLabel 3950 850  0    50   BiDi ~ 0
 MISO_DQ1
-Text GLabel 3700 4850 0    50   BiDi ~ 0
+Text GLabel 3950 950  0    50   BiDi ~ 0
 DQ2
-Text GLabel 4650 4950 2    50   BiDi ~ 0
+Text GLabel 4900 1050 2    50   BiDi ~ 0
 MOSI_DQ0
-Text GLabel 4650 4850 2    50   BiDi ~ 0
+Text GLabel 4900 950  2    50   BiDi ~ 0
 SCLK
-Text GLabel 4650 4750 2    50   BiDi ~ 0
+Text GLabel 4900 850  2    50   BiDi ~ 0
 DQ3
-Text GLabel 3700 4950 0    50   Input ~ 0
+Text GLabel 3950 1050 0    50   Input ~ 0
 GND
-Text GLabel 4650 4650 2    50   Input ~ 0
+Text GLabel 4900 750  2    50   Input ~ 0
 VCC
-Text GLabel 5000 3300 2    50   BiDi ~ 0
-SCLK
-Text GLabel 5000 3400 2    50   BiDi ~ 0
-MISO_DQ1
-Text GLabel 5000 3500 2    50   BiDi ~ 0
-MOSI_DQ0
-Text GLabel 3600 2500 0    50   BiDi ~ 0
-COL1
-Text GLabel 5000 3600 2    50   BiDi ~ 0
-CS
-Text GLabel 4250 4100 3    50   BiDi ~ 0
-DQ2
-Text GLabel 4450 4100 3    50   BiDi ~ 0
-DQ3
 $Comp
 L Connector_Generic:Conn_01x04 J9
 U 1 1 5F52BEB4
@@ -1374,45 +1224,246 @@ $EndComp
 $Comp
 L steno:MT25QL128ABA1ESE U3
 U 1 1 5F5CBFA1
-P 4100 5400
-F 0 "U3" H 4175 5725 50  0000 C CNN
-F 1 "MT25QL128ABA1ESE" H 4175 5634 50  0000 C CNN
-F 2 "Package_SO:SOP-8_5.28x5.23mm_P1.27mm" H 4100 4900 50  0001 C CNN
-F 3 "" H 4100 4900 50  0001 C CNN
-	1    4100 5400
+P 4350 1500
+F 0 "U3" H 4425 1825 50  0000 C CNN
+F 1 "MT25QL128ABA1ESE" H 4425 1734 50  0000 C CNN
+F 2 "Package_SO:SOP-8_5.28x5.23mm_P1.27mm" H 4350 1000 50  0001 C CNN
+F 3 "" H 4350 1000 50  0001 C CNN
+	1    4350 1500
 	1    0    0    -1  
 $EndComp
-Text GLabel 3700 5300 0    50   BiDi ~ 0
+Text GLabel 3950 1400 0    50   BiDi ~ 0
 CS
-Text GLabel 3700 5400 0    50   BiDi ~ 0
+Text GLabel 3950 1500 0    50   BiDi ~ 0
 MISO_DQ1
-Text GLabel 3700 5500 0    50   BiDi ~ 0
+Text GLabel 3950 1600 0    50   BiDi ~ 0
 DQ2
-Text GLabel 4650 5600 2    50   BiDi ~ 0
+Text GLabel 4900 1700 2    50   BiDi ~ 0
 MOSI_DQ0
-Text GLabel 4650 5500 2    50   BiDi ~ 0
+Text GLabel 4900 1600 2    50   BiDi ~ 0
 SCLK
-Text GLabel 4650 5400 2    50   BiDi ~ 0
+Text GLabel 4900 1500 2    50   BiDi ~ 0
 DQ3
-Text GLabel 3700 5600 0    50   Input ~ 0
+Text GLabel 3950 1700 0    50   Input ~ 0
 GND
-Text GLabel 4650 5300 2    50   Input ~ 0
+Text GLabel 4900 1400 2    50   Input ~ 0
 VCC
+Text GLabel 4100 3850 3    50   Input ~ 0
+GND
+Text GLabel 3650 2150 0    50   Input ~ 0
+GND
 $Comp
 L nice_nano:nice_nano U1
 U 1 1 5F4B06BD
-P 4300 3050
-F 0 "U1" H 4300 3987 60  0000 C CNN
-F 1 "nice_nano" H 4300 3881 60  0000 C CNN
-F 2 "nice-nano-kicad:nice_nano" V 5350 550 60  0001 C CNN
-F 3 "" V 5350 550 60  0001 C CNN
-	1    4300 3050
+P 4350 2800
+F 0 "U1" H 4350 3737 60  0000 C CNN
+F 1 "nice_nano" H 4350 3631 60  0000 C CNN
+F 2 "nice-nano-kicad:nice_nano" V 5400 300 60  0001 C CNN
+F 3 "" V 5400 300 60  0001 C CNN
+	1    4350 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 3600 2400 0    50   Input ~ 0
-GND
-Text GLabel 5000 2400 2    50   Input ~ 0
+Text GLabel 4500 3850 3    50   BiDi ~ 0
+DQ3
+Text GLabel 4300 3850 3    50   BiDi ~ 0
+DQ2
+Text GLabel 5050 3350 2    50   BiDi ~ 0
+CS
+Text GLabel 3650 2250 0    50   BiDi ~ 0
+COL1
+Text GLabel 5050 3250 2    50   BiDi ~ 0
+MOSI_DQ0
+Text GLabel 5050 3150 2    50   BiDi ~ 0
+MISO_DQ1
+Text GLabel 5050 3050 2    50   BiDi ~ 0
+SCLK
+Text GLabel 5050 2950 2    50   BiDi ~ 0
+RGB
+Text GLabel 5050 2450 2    50   Input ~ 0
+RST
+Text GLabel 5050 2650 2    50   BiDi ~ 0
+COL3
+Text GLabel 5050 2850 2    50   BiDi ~ 0
+COL5
+Text GLabel 5050 2750 2    50   BiDi ~ 0
+COL4
+Text GLabel 3650 2350 0    50   BiDi ~ 0
+COL2
+Text GLabel 3650 2850 0    50   BiDi ~ 0
+ROW4
+Text GLabel 3650 2950 0    50   BiDi ~ 0
+ROW3
+Text GLabel 3650 3050 0    50   BiDi ~ 0
+ROW2
+Text GLabel 3650 3150 0    50   BiDi ~ 0
+ROW1
+Text GLabel 5050 2550 2    50   Input ~ 0
+VCC
+Text GLabel 3200 950  2    50   Input ~ 0
 RAW
-Text GLabel 4050 4100 3    50   Input ~ 0
+Text GLabel 3650 2550 0    50   Input ~ 0
 GND
+Text GLabel 3650 2450 0    50   Input ~ 0
+GND
+Text GLabel 5050 2350 2    50   Input ~ 0
+GND
+Text GLabel 3650 2650 0    50   Output ~ 0
+SCL
+Text GLabel 3650 2750 0    50   Output ~ 0
+SDA
+Wire Wire Line
+	2900 1900 3100 1900
+Text GLabel 3100 2200 3    50   Output ~ 0
+SCL
+Text GLabel 2900 2200 3    50   Output ~ 0
+SDA
+Text GLabel 3000 1900 1    50   Input ~ 0
+VCC
+$Comp
+L fissure-rescue:R-Device R2
+U 1 1 5E39A4D3
+P 3100 2050
+F 0 "R2" H 3170 2096 50  0000 L CNN
+F 1 "R" H 3170 2005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3030 2050 50  0001 C CNN
+F 3 "~" H 3100 2050 50  0001 C CNN
+	1    3100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:R-Device R1
+U 1 1 5E399FB3
+P 2900 2050
+F 0 "R1" H 2970 2096 50  0000 L CNN
+F 1 "R" H 2970 2005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2830 2050 50  0001 C CNN
+F 3 "~" H 2900 2050 50  0001 C CNN
+	1    2900 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 2600 1    50   Input ~ 0
+VCC
+Text GLabel 2150 2450 1    50   Input ~ 0
+VCC
+Text GLabel 1050 3200 3    50   Input ~ 0
+GND
+Text GLabel 2150 3050 3    50   Input ~ 0
+GND
+Text GLabel 750  2900 0    50   BiDi ~ 0
+RGB
+Text GLabel 1850 2750 0    50   BiDi ~ 0
+RGB
+$Comp
+L fissure-rescue:SK6812MINI-LED D41
+U 1 1 5E04FFE5
+P 2150 2750
+F 0 "D41" H 2494 2796 50  0000 L CNN
+F 1 "SK6812MINI" H 2494 2705 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 2200 2450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 2250 2375 50  0001 L TNN
+	1    2150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L fissure-rescue:SK6812MINI-LED D42
+U 1 1 5E04F5E9
+P 1050 2900
+F 0 "D42" H 1394 2946 50  0000 L CNN
+F 1 "SK6812MINI" H 1394 2855 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 1100 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 1150 2525 50  0001 L TNN
+	1    1050 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 2100 2    50   BiDi ~ 0
+SCL
+Text GLabel 2300 2000 2    50   BiDi ~ 0
+SDA
+Text GLabel 2300 1900 2    50   BiDi ~ 0
+VCC
+Text GLabel 2300 1800 2    50   BiDi ~ 0
+GND
+$Comp
+L fissure-rescue:AudioJack4-Connector J2
+U 1 1 5E307AA7
+P 2100 1900
+F 0 "J2" H 2057 2225 50  0000 C CNN
+F 1 "AudioJack4" H 2057 2134 50  0000 C CNN
+F 2 "Keebio-Parts:TRRS-PJ-320D" H 2100 1900 50  0001 C CNN
+F 3 "~" H 2100 1900 50  0001 C CNN
+	1    2100 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1300 2100 2    50   BiDi ~ 0
+SCL
+Text GLabel 1300 2000 2    50   BiDi ~ 0
+SDA
+Text GLabel 1300 1900 2    50   BiDi ~ 0
+VCC
+Text GLabel 1300 1800 2    50   BiDi ~ 0
+GND
+$Comp
+L Connector:AudioJack4 J1
+U 1 1 5E2F9701
+P 1100 1900
+F 0 "J1" H 1057 2225 50  0000 C CNN
+F 1 "AudioJack4" H 1057 2134 50  0000 C CNN
+F 2 "Keebio-Parts:TRRS-PJ-320D" H 1100 1900 50  0001 C CNN
+F 3 "~" H 1100 1900 50  0001 C CNN
+	1    1100 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 3350 0    50   BiDi ~ 0
+CS
+Text GLabel 3650 3250 0    50   BiDi ~ 0
+MOSI_DQ0
+Text Notes 2950 4050 0    50   ~ 0
+The CS and DQ0 pins\nare repeated here\nbecause QMK seems to\nhave unknown\nproblems driving the\nNFC pins (even if\nthey are disabled)\n
+$Comp
+L Switch:SW_SPDT SW2
+U 1 1 5F5E2E4C
+P 3000 850
+F 0 "SW2" H 3000 1135 50  0000 C CNN
+F 1 "SW_SPDT" H 3000 1044 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 3000 850 50  0001 C CNN
+F 3 "~" H 3000 850 50  0001 C CNN
+	1    3000 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW4
+U 1 1 5F601FFF
+P 1300 1400
+F 0 "SW4" H 1300 1761 50  0000 C CNN
+F 1 "SW_PUSH" H 1300 1670 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQP7C" H 1300 1571 60  0000 C CNN
+F 3 "" H 1300 1400 60  0000 C CNN
+	1    1300 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 1400 2    50   Input ~ 0
+GND
+Text GLabel 1000 950  0    50   Input ~ 0
+RST
+Text GLabel 5050 2250 2    50   Input ~ 0
+MCU_RAW
+Text GLabel 2800 850  0    50   Input ~ 0
+MCU_RAW
+Text GLabel 3200 1400 2    50   Input ~ 0
+RAW
+$Comp
+L Switch:SW_SPDT SW3
+U 1 1 5F639CE8
+P 3000 1300
+F 0 "SW3" H 3000 1585 50  0000 C CNN
+F 1 "SW_SPDT" H 3000 1494 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 3000 1300 50  0001 C CNN
+F 3 "~" H 3000 1300 50  0001 C CNN
+	1    3000 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 1300 0    50   Input ~ 0
+MCU_RAW
+Text GLabel 5050 2150 2    50   Input ~ 0
+RAW
 $EndSCHEMATC

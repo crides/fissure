@@ -1,4 +1,4 @@
-18731116784611899
+18735930868869899
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -552,6 +552,13 @@ SMD SMT SPST EVQPUM EVQPUD
 0
 4
 2
+Button_Switch_SMD
+SW_B3U-1100P
+
+
+0
+3
+3
 Button_Switch_SMD
 SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin
 SMD 1x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x4.1mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
@@ -44303,6 +44310,13 @@ connector TE MATE-N-LOK top entry ATA PATA IDE 5.25 inch floppy drive power
 4
 4
 Connector_USB
+AMPHENOL_10118192-0001LF
+
+
+0
+11
+6
+Connector_USB
 USB3_A_Molex_48393-001
 USB 3.0, type A, right angle (http://www.molex.com/pdm_docs/sd/483930003_sd.pdf)
 USB 3.0 type A right angle
@@ -82331,7 +82345,7 @@ bridge
 
 
 0
-12
+4
 4
 fissure
 bridge-conn
@@ -82345,7 +82359,7 @@ feet
 
 
 0
-9
+3
 3
 fissure
 feet-conn
@@ -82487,6 +82501,13 @@ promicro ProMicro
 0
 24
 24
+steno
+LCD2.2in
+
+
+0
+10
+10
 steno
 OLED
 
