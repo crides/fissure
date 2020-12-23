@@ -465,7 +465,7 @@
     (library (logical keyboard_parts)
       (uri /home/steven/gitproj/fissure/pcb/fissure/../libs/KiCad_Libs-master/canadian_schematics/keyboard_parts.lib))
     (library (logical promicro)
-      (uri /home/steven/gitproj/fissure/pcb/fissure/../libs/ProMicroKiCad-master/promicro_library/promicro.lib)))
+      (uri /home/steven/gitproj/fissure/pcb/fissure/../libs/ProMicroKiCad/promicro_library/promicro.lib)))
   (nets
     (net (code 1) (name ROW1)
       (node (ref K4) (pin 1))
