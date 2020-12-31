@@ -3,10 +3,6 @@
 #include "eeconfig.h"
 #include "keymap_steno.h"
 
-#ifndef __AVR__
-#include "app_ble_func.h"
-#endif
-
 // Layers
 #define _BASE   0
 #define _LOWER 1
@@ -36,10 +32,6 @@ void set_hsv(uint8_t a, uint8_t b, uint8_t c) {
 
 void keyboard_pre_init_user(void) {
     set_hsv(HSV_TEAL);
-#ifndef __AVR__
-    set_usb_enabled(true);
-    debug_matrix=true;
-#endif
 }
 
 void suspend_power_down_user() {
@@ -59,20 +51,9 @@ uint32_t layer_state_set_user(uint32_t state) {
     }
     return state;
 }
-#ifdef __AVR__
-#else
-// Aliases
-#define C(kc) LCTL(kc)
-#define S(kc) LSFT(kc)
-#define A(kc) LALT(kc)
-#define G(kc) LGUI(kc)
-
-#endif
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    // If console is enabled, it will print the matrix position and status of each key pressed
 #ifdef CONSOLE_ENABLE
-    /* uprintf("KL: kc: %u, col: %u, row: %u, pressed: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed); */
     // For keylogging
     uprintf("[kl] %u:%u %c\n", record->event.key.row, record->event.key.col, record->event.pressed ? 'p' : 'P');
 #endif 
@@ -92,12 +73,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, KC_A,     KC_S,     KC_D,     KC_F,     KC_G,      KC_H,     KC_J,        KC_K,       KC_L,     KC_SCLN, XXXXXXX,
                  KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_N,     KC_M,     KC_COMM,     KC_DOT,     KC_SLSH,
                   DEL,      TAB,      ESC,      ENT,      SPC,     BKSP),
-
-    /* [_BASE] = KEYMAP( */
-    /*     KC_Q,  KC_W,  KC_F,  KC_P,  KC_B,   KC_J,  KC_L,     KC_U,    KC_Y,  KC_SCLN, */
-    /*     KC_A,  KC_R,  KC_S,  KC_T,  KC_G,   KC_M,  KC_N,     KC_E,    KC_I,     KC_O, */
-    /*     KC_Z,  KC_X,  KC_C,  KC_D,  KC_V,   KC_K,  KC_H,  KC_COMM,  KC_DOT,  KC_SLSH, */
-    /*      DEL,   TAB,   ESC,   ENT,   SPC,  BKSP), */
 
     [_LOWER] = KEYMAP(
         XXXXXXX, G(KC_1),  G(KC_2),  G(KC_3),  G(KC_4),  G(KC_5),   G(KC_6),  G(KC_7),  G(KC_8),  KC_F11,  KC_F12, XXXXXXX,
