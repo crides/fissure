@@ -13,128 +13,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	8650 1650 8550 1650
-Wire Wire Line
-	7950 1650 7850 1650
-Wire Wire Line
-	7250 1650 7150 1650
-Wire Wire Line
-	6500 1650 6400 1650
-Wire Wire Line
-	8650 2200 8550 2200
-Wire Wire Line
-	7950 2200 7850 2200
-Wire Wire Line
-	7250 2200 7150 2200
-Wire Wire Line
-	6500 2200 6400 2200
-Wire Wire Line
-	8650 2750 8550 2750
-Wire Wire Line
-	7950 2750 7850 2750
-Wire Wire Line
-	7250 2750 7150 2750
-Wire Wire Line
-	6500 2750 6400 2750
-Wire Wire Line
-	8000 5250 7900 5250
-Wire Wire Line
-	7100 5250 7000 5250
-Wire Wire Line
-	6200 5250 6100 5250
-Connection ~ 8750 2500
-Wire Wire Line
-	8750 2500 8750 1950
-Wire Wire Line
-	8750 3050 8750 2500
-Connection ~ 8050 2500
-Wire Wire Line
-	8050 2500 8050 1950
-Wire Wire Line
-	8050 3050 8050 2500
-Connection ~ 7350 2500
-Wire Wire Line
-	7350 2500 7350 1950
-Wire Wire Line
-	7350 3050 7350 2500
-Connection ~ 6600 2500
-Wire Wire Line
-	6600 2500 6600 1950
-Wire Wire Line
-	6600 3050 6600 2500
-Wire Wire Line
-	5700 5250 5700 5150
-Wire Wire Line
-	8150 2750 8150 2650
-Wire Wire Line
-	8150 2100 8150 2200
-Wire Wire Line
-	7450 2200 7450 2100
-Connection ~ 7450 2100
-Wire Wire Line
-	6750 2200 6750 2100
-Wire Wire Line
-	8150 1650 8150 1550
-Wire Wire Line
-	7450 1650 7450 1550
-Connection ~ 7450 1550
-Wire Wire Line
-	6750 1650 6750 1550
-Wire Wire Line
-	6750 2750 6750 2650
-Wire Wire Line
-	7450 2750 7450 2650
-Connection ~ 7450 2650
-Text GLabel 6600 3550 3    50   BiDi ~ 0
-COL2
 Text GLabel 1650 3200 2    50   Input ~ 0
 GND
 Text GLabel 1250 3550 0    50   Input ~ 0
 RST
-Wire Wire Line
-	6500 3250 6400 3250
-Wire Wire Line
-	7200 5050 7200 5550
-Wire Wire Line
-	6600 3550 6600 3050
-Connection ~ 6600 3050
-Wire Wire Line
-	6300 4400 6300 5550
-Wire Wire Line
-	7200 5050 6400 5050
-Wire Wire Line
-	6400 5050 6400 4400
-Wire Wire Line
-	6500 4400 6500 4950
-Wire Wire Line
-	6500 4950 8100 4950
-Wire Wire Line
-	8100 4950 8100 5550
-Wire Wire Line
-	6600 5150 6600 4400
-Connection ~ 6600 5150
-Wire Wire Line
-	7950 3150 7950 3500
-Wire Wire Line
-	7350 3500 7350 3050
-Connection ~ 7350 3050
-Wire Wire Line
-	7750 3200 8050 3200
-Wire Wire Line
-	8050 3200 8050 3050
-Connection ~ 8050 3050
-Wire Wire Line
-	8750 3250 8750 3050
-Connection ~ 8750 3050
-Text GLabel 7650 3800 3    50   BiDi ~ 0
+Text GLabel 6300 2800 1    50   BiDi ~ 0
 COL3
-Text GLabel 7850 3800 3    50   BiDi ~ 0
+Text GLabel 6500 2800 1    50   BiDi ~ 0
 COL5
-Text GLabel 7750 3800 3    50   BiDi ~ 0
+Text GLabel 6400 2800 1    50   BiDi ~ 0
 COL4
-Wire Wire Line
-	7650 3800 7650 3500
 $Comp
 L steno:MT25QL128ABA1ESE U2
 U 1 1 5F4AD307
@@ -247,36 +135,25 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x08 J7
 U 1 1 5FE63DE8
-P 6600 4200
-F 0 "J7" V 6564 3712 50  0000 R CNN
-F 1 "Conn_01x08" V 6473 3712 50  0000 R CNN
-F 2 "fissure:bridge-conn" H 6600 4200 50  0001 C CNN
-F 3 "~" H 6600 4200 50  0001 C CNN
-	1    6600 4200
+P 6600 3200
+F 0 "J7" V 6564 2712 50  0000 R CNN
+F 1 "Conn_01x08" V 6473 2712 50  0000 R CNN
+F 2 "fissure:bridge-conn" H 6600 3200 50  0001 C CNN
+F 3 "~" H 6600 3200 50  0001 C CNN
+	1    6600 3200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7850 3250 7850 3500
-Wire Wire Line
-	7750 3200 7750 3500
 $Comp
 L Connector_Generic:Conn_01x08 J6
 U 1 1 5FE8ACE5
-P 7950 3700
-F 0 "J6" V 7822 3212 50  0000 R CNN
-F 1 "Conn_01x08" V 7913 3212 50  0000 R CNN
-F 2 "fissure:bridge-conn" H 7950 3700 50  0001 C CNN
-F 3 "~" H 7950 3700 50  0001 C CNN
-	1    7950 3700
+P 6600 3000
+F 0 "J6" V 6472 2512 50  0000 R CNN
+F 1 "Conn_01x08" V 6563 2512 50  0000 R CNN
+F 2 "fissure:bridge-conn" H 6600 3000 50  0001 C CNN
+F 3 "~" H 6600 3000 50  0001 C CNN
+	1    6600 3000
 	0    -1   1    0   
 $EndComp
-Connection ~ 7650 3500
-Connection ~ 7750 3500
-Wire Wire Line
-	7750 3500 7750 3800
-Connection ~ 7850 3500
-Wire Wire Line
-	7850 3500 7850 3800
 $Comp
 L Connector_Generic:Conn_01x08 J3
 U 1 1 5FE92EA9
@@ -299,29 +176,29 @@ F 3 "~" H 1700 4950 50  0001 C CNN
 	1    1700 4950
 	0    -1   1    0   
 $EndComp
-Text GLabel 6800 4400 3    50   Output ~ 0
+Text GLabel 6800 3400 3    50   Output ~ 0
 thumb_SDA
-Text GLabel 6700 4400 3    50   Output ~ 0
+Text GLabel 6700 3400 3    50   Output ~ 0
 thumb_SCL
-Text GLabel 6900 4400 3    50   Input ~ 0
+Text GLabel 6900 3400 3    50   Input ~ 0
 thumb_VCC
-Text GLabel 7000 4400 3    50   Input ~ 0
+Text GLabel 7000 3400 3    50   Input ~ 0
 thumb_GND
-Text GLabel 6300 4400 3    50   Input ~ 0
+Text GLabel 6300 3400 3    50   Input ~ 0
 thumb_COL3
-Text GLabel 6400 4400 3    50   Input ~ 0
+Text GLabel 6400 3400 3    50   Input ~ 0
 thumb_COL4
-Text GLabel 6500 4400 3    50   Input ~ 0
+Text GLabel 6500 3400 3    50   Input ~ 0
 thumb_COL5
-Text GLabel 6600 4400 3    50   Input ~ 0
+Text GLabel 6600 3400 3    50   Input ~ 0
 thumb_ROW4
-Text GLabel 8050 3500 1    50   Output ~ 0
+Text GLabel 6700 2800 1    50   Output ~ 0
 SCL
-Text GLabel 8150 3500 1    50   Output ~ 0
+Text GLabel 6800 2800 1    50   Output ~ 0
 SDA
-Text GLabel 8250 3500 1    50   Input ~ 0
+Text GLabel 6900 2800 1    50   Input ~ 0
 VCC
-Text GLabel 8350 3500 1    50   Input ~ 0
+Text GLabel 7000 2800 1    50   Input ~ 0
 GND
 Text GLabel 3900 3750 0    50   Output ~ 0
 bridge_SDA
@@ -364,355 +241,8 @@ Text GLabel 1000 1400 0    50   Output ~ 0
 SCL
 Text GLabel 1000 1300 0    50   Output ~ 0
 SDA
-$Comp
-L Switch:SW_Push K2
-U 1 1 5FE6E955
-P 6200 1650
-F 0 "K2" H 6200 1935 50  0000 C CNN
-F 1 "SW_Push" H 6200 1844 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6200 1850 50  0001 C CNN
-F 3 "~" H 6200 1850 50  0001 C CNN
-	1    6200 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K3
-U 1 1 5FE6F132
-P 6950 1650
-F 0 "K3" H 6950 1935 50  0000 C CNN
-F 1 "SW_Push" H 6950 1844 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6950 1850 50  0001 C CNN
-F 3 "~" H 6950 1850 50  0001 C CNN
-	1    6950 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K4
-U 1 1 5FE6FA73
-P 7650 1650
-F 0 "K4" H 7650 1935 50  0000 C CNN
-F 1 "SW_Push" H 7650 1844 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7650 1850 50  0001 C CNN
-F 3 "~" H 7650 1850 50  0001 C CNN
-	1    7650 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K7
-U 1 1 5FE74004
-P 6200 2200
-F 0 "K7" H 6200 2485 50  0000 C CNN
-F 1 "SW_Push" H 6200 2394 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6200 2400 50  0001 C CNN
-F 3 "~" H 6200 2400 50  0001 C CNN
-	1    6200 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K8
-U 1 1 5FE74AAD
-P 6950 2200
-F 0 "K8" H 6950 2485 50  0000 C CNN
-F 1 "SW_Push" H 6950 2394 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6950 2400 50  0001 C CNN
-F 3 "~" H 6950 2400 50  0001 C CNN
-	1    6950 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K9
-U 1 1 5FE754C9
-P 7650 2200
-F 0 "K9" H 7650 2485 50  0000 C CNN
-F 1 "SW_Push" H 7650 2394 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7650 2400 50  0001 C CNN
-F 3 "~" H 7650 2400 50  0001 C CNN
-	1    7650 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K10
-U 1 1 5FE75FA9
-P 8350 2200
-F 0 "K10" H 8350 2485 50  0000 C CNN
-F 1 "SW_Push" H 8350 2394 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8350 2400 50  0001 C CNN
-F 3 "~" H 8350 2400 50  0001 C CNN
-	1    8350 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K15
-U 1 1 5FE76979
-P 8350 2750
-F 0 "K15" H 8350 3035 50  0000 C CNN
-F 1 "SW_Push" H 8350 2944 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8350 2950 50  0001 C CNN
-F 3 "~" H 8350 2950 50  0001 C CNN
-	1    8350 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K14
-U 1 1 5FE77098
-P 7650 2750
-F 0 "K14" H 7650 3035 50  0000 C CNN
-F 1 "SW_Push" H 7650 2944 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7650 2950 50  0001 C CNN
-F 3 "~" H 7650 2950 50  0001 C CNN
-	1    7650 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K13
-U 1 1 5FE77AEB
-P 6950 2750
-F 0 "K13" H 6950 3035 50  0000 C CNN
-F 1 "SW_Push" H 6950 2944 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6950 2950 50  0001 C CNN
-F 3 "~" H 6950 2950 50  0001 C CNN
-	1    6950 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K12
-U 1 1 5FE78519
-P 6200 2750
-F 0 "K12" H 6200 3035 50  0000 C CNN
-F 1 "SW_Push" H 6200 2944 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6200 2950 50  0001 C CNN
-F 3 "~" H 6200 2950 50  0001 C CNN
-	1    6200 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K17
-U 1 1 5FE7A774
-P 6200 3250
-F 0 "K17" H 6200 3535 50  0000 C CNN
-F 1 "SW_Push" H 6200 3444 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6200 3450 50  0001 C CNN
-F 3 "~" H 6200 3450 50  0001 C CNN
-	1    6200 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K18
-U 1 1 5FE81B3F
-P 5900 5250
-F 0 "K18" H 5900 5535 50  0000 C CNN
-F 1 "SW_Push" H 5900 5444 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 5900 5450 50  0001 C CNN
-F 3 "~" H 5900 5450 50  0001 C CNN
-	1    5900 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K19
-U 1 1 5FE828EA
-P 6800 5250
-F 0 "K19" H 6800 5535 50  0000 C CNN
-F 1 "SW_Push" H 6800 5444 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 6800 5450 50  0001 C CNN
-F 3 "~" H 6800 5450 50  0001 C CNN
-	1    6800 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K20
-U 1 1 5FE83597
-P 7700 5250
-F 0 "K20" H 7700 5535 50  0000 C CNN
-F 1 "SW_Push" H 7700 5444 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 7700 5450 50  0001 C CNN
-F 3 "~" H 7700 5450 50  0001 C CNN
-	1    7700 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 5150 6600 5150
-Wire Wire Line
-	7500 5150 7500 5250
-Wire Wire Line
-	6600 5150 7500 5150
-Wire Wire Line
-	6600 5150 6600 5250
-Connection ~ 6000 3150
-Connection ~ 6000 2650
-Connection ~ 6000 2100
-Connection ~ 6000 1550
-Connection ~ 6750 2650
-Connection ~ 6750 1550
-Connection ~ 6750 2100
-Wire Wire Line
-	6000 1550 5300 1550
-$Comp
-L Switch:SW_Push K16
-U 1 1 5FE79C89
-P 5500 3250
-F 0 "K16" H 5500 3535 50  0000 C CNN
-F 1 "SW_Push" H 5500 3444 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 5500 3450 50  0001 C CNN
-F 3 "~" H 5500 3450 50  0001 C CNN
-	1    5500 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K11
-U 1 1 5FE79065
-P 5500 2750
-F 0 "K11" H 5500 3035 50  0000 C CNN
-F 1 "SW_Push" H 5500 2944 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 5500 2950 50  0001 C CNN
-F 3 "~" H 5500 2950 50  0001 C CNN
-	1    5500 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K6
-U 1 1 5FE734F3
-P 5500 2200
-F 0 "K6" H 5500 2485 50  0000 C CNN
-F 1 "SW_Push" H 5500 2394 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 5500 2400 50  0001 C CNN
-F 3 "~" H 5500 2400 50  0001 C CNN
-	1    5500 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push K1
-U 1 1 5FE55935
-P 5500 1650
-F 0 "K1" H 5500 1935 50  0000 C CNN
-F 1 "SW_Push" H 5500 1844 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 5500 1850 50  0001 C CNN
-F 3 "~" H 5500 1850 50  0001 C CNN
-	1    5500 1650
-	1    0    0    -1  
-$EndComp
-Connection ~ 5900 3050
-Wire Wire Line
-	5900 3050 5900 3550
-Wire Wire Line
-	5300 3150 6000 3150
-Wire Wire Line
-	5800 3250 5700 3250
-Wire Wire Line
-	5300 2100 6000 2100
-Wire Wire Line
-	5300 2650 6000 2650
-Wire Wire Line
-	5300 3250 5300 3150
-Wire Wire Line
-	6000 3250 6000 3150
-Connection ~ 5900 2500
-Wire Wire Line
-	5900 2500 5900 3050
-Wire Wire Line
-	5800 2750 5700 2750
-Wire Wire Line
-	5300 2750 5300 2650
-Wire Wire Line
-	5300 2200 5300 2100
-Wire Wire Line
-	5300 1650 5300 1550
-Text GLabel 5900 3550 3    50   BiDi ~ 0
-COL1
-Text GLabel 5300 3150 0    50   BiDi ~ 0
-ROW4
-Text GLabel 5300 2650 0    50   BiDi ~ 0
-ROW3
-Text GLabel 5300 2100 0    50   BiDi ~ 0
-ROW2
-Text GLabel 5300 1550 0    50   BiDi ~ 0
-ROW1
-Wire Wire Line
-	6000 2750 6000 2650
-Wire Wire Line
-	6000 1650 6000 1550
-Wire Wire Line
-	6000 2200 6000 2100
-Wire Wire Line
-	5900 2500 5900 1950
-Wire Wire Line
-	5800 2200 5700 2200
-Wire Wire Line
-	5800 1650 5700 1650
-Wire Wire Line
-	6000 3150 7950 3150
-Wire Wire Line
-	6000 2650 6750 2650
-Wire Wire Line
-	6000 1550 6750 1550
-Wire Wire Line
-	6000 2100 6750 2100
 Text GLabel 1050 4700 3    50   Output ~ 0
 bridge_SCL
-Wire Wire Line
-	6750 2100 7450 2100
-Wire Wire Line
-	6750 1550 7450 1550
-Wire Wire Line
-	6750 2650 7450 2650
-Wire Wire Line
-	7650 3500 7350 3500
-Wire Wire Line
-	7450 2100 8150 2100
-Wire Wire Line
-	7450 1550 8150 1550
-Wire Wire Line
-	7450 2650 8150 2650
-Wire Wire Line
-	7850 3250 8750 3250
-$Comp
-L Switch:SW_Push K5
-U 1 1 5FF6A003
-P 8350 1650
-F 0 "K5" H 8350 1935 50  0000 C CNN
-F 1 "SW_Push" H 8350 1844 50  0000 C CNN
-F 2 "Keebio-Parts:Kailh-PG1350-1u-reversible-No-Clickhole" H 8350 1850 50  0001 C CNN
-F 3 "~" H 8350 1850 50  0001 C CNN
-	1    8350 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 1950 6500 1950
-Wire Wire Line
-	7150 1950 7250 1950
-Wire Wire Line
-	7850 1950 7950 1950
-Wire Wire Line
-	8550 1950 8650 1950
-Wire Wire Line
-	8550 2500 8650 2500
-Wire Wire Line
-	7850 2500 7950 2500
-Wire Wire Line
-	7150 2500 7250 2500
-Wire Wire Line
-	6400 2500 6500 2500
-Wire Wire Line
-	5700 2500 5800 2500
-Wire Wire Line
-	5700 3050 5800 3050
-Wire Wire Line
-	6400 3050 6500 3050
-Wire Wire Line
-	7150 3050 7250 3050
-Wire Wire Line
-	7850 3050 7950 3050
-Wire Wire Line
-	8550 3050 8650 3050
-Wire Wire Line
-	6400 3550 6500 3550
-Wire Wire Line
-	5700 3550 5800 3550
-Wire Wire Line
-	6100 5550 6200 5550
-Wire Wire Line
-	7000 5550 7100 5550
-Wire Wire Line
-	7900 5550 8000 5550
 $Comp
 L Connector:AudioJack4 J2
 U 1 1 5FFAB920
@@ -780,528 +310,6 @@ F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D D1
-U 1 1 5FFD240A
-P 5700 1800
-F 0 "D1" V 5746 1720 50  0000 R CNN
-F 1 "D" V 5655 1720 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5700 1800 50  0001 C CNN
-F 3 "~" H 5700 1800 50  0001 C CNN
-	1    5700 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D D2
-U 1 1 5FFD2786
-P 5800 1800
-F 0 "D2" V 5846 1720 50  0000 R CNN
-F 1 "D" V 5755 1720 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5800 1800 50  0001 C CNN
-F 3 "~" H 5800 1800 50  0001 C CNN
-	1    5800 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D D3
-U 1 1 5FFD3617
-P 6400 1800
-F 0 "D3" V 6446 1720 50  0000 R CNN
-F 1 "D" V 6355 1720 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 6400 1800 50  0001 C CNN
-F 3 "~" H 6400 1800 50  0001 C CNN
-	1    6400 1800
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D4
-U 1 1 5FFD361D
-P 6500 1800
-F 0 "D4" V 6546 1720 50  0000 R CNN
-F 1 "D" V 6455 1720 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 6500 1800 50  0001 C CNN
-F 3 "~" H 6500 1800 50  0001 C CNN
-	1    6500 1800
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D5
-U 1 1 5FFD7C12
-P 7150 1800
-F 0 "D5" V 7196 1720 50  0000 R CNN
-F 1 "D" V 7105 1720 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7150 1800 50  0001 C CNN
-F 3 "~" H 7150 1800 50  0001 C CNN
-	1    7150 1800
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D6
-U 1 1 5FFD7C18
-P 7250 1800
-F 0 "D6" V 7296 1720 50  0000 R CNN
-F 1 "D" V 7205 1720 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7250 1800 50  0001 C CNN
-F 3 "~" H 7250 1800 50  0001 C CNN
-	1    7250 1800
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D7
-U 1 1 5FFDD2DD
-P 7850 1800
-F 0 "D7" V 7896 1720 50  0000 R CNN
-F 1 "D" V 7805 1720 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7850 1800 50  0001 C CNN
-F 3 "~" H 7850 1800 50  0001 C CNN
-	1    7850 1800
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D8
-U 1 1 5FFDD2E3
-P 7950 1800
-F 0 "D8" V 7996 1720 50  0000 R CNN
-F 1 "D" V 7905 1720 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7950 1800 50  0001 C CNN
-F 3 "~" H 7950 1800 50  0001 C CNN
-	1    7950 1800
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D9
-U 1 1 5FFE21E2
-P 8550 1800
-F 0 "D9" V 8596 1720 50  0000 R CNN
-F 1 "D" V 8505 1720 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 8550 1800 50  0001 C CNN
-F 3 "~" H 8550 1800 50  0001 C CNN
-	1    8550 1800
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D10
-U 1 1 5FFE21E8
-P 8650 1800
-F 0 "D10" V 8696 1720 50  0000 R CNN
-F 1 "D" V 8605 1720 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 8650 1800 50  0001 C CNN
-F 3 "~" H 8650 1800 50  0001 C CNN
-	1    8650 1800
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D11
-U 1 1 5FFEBCD1
-P 5700 2350
-F 0 "D11" V 5746 2270 50  0000 R CNN
-F 1 "D" V 5655 2270 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5700 2350 50  0001 C CNN
-F 3 "~" H 5700 2350 50  0001 C CNN
-	1    5700 2350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D12
-U 1 1 5FFEBCD7
-P 5800 2350
-F 0 "D12" V 5846 2270 50  0000 R CNN
-F 1 "D" V 5755 2270 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5800 2350 50  0001 C CNN
-F 3 "~" H 5800 2350 50  0001 C CNN
-	1    5800 2350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D13
-U 1 1 5FFEBCDD
-P 6400 2350
-F 0 "D13" V 6446 2270 50  0000 R CNN
-F 1 "D" V 6355 2270 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 6400 2350 50  0001 C CNN
-F 3 "~" H 6400 2350 50  0001 C CNN
-	1    6400 2350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D14
-U 1 1 5FFEBCE3
-P 6500 2350
-F 0 "D14" V 6546 2270 50  0000 R CNN
-F 1 "D" V 6455 2270 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 6500 2350 50  0001 C CNN
-F 3 "~" H 6500 2350 50  0001 C CNN
-	1    6500 2350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D15
-U 1 1 5FFEBCE9
-P 7150 2350
-F 0 "D15" V 7196 2270 50  0000 R CNN
-F 1 "D" V 7105 2270 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7150 2350 50  0001 C CNN
-F 3 "~" H 7150 2350 50  0001 C CNN
-	1    7150 2350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D16
-U 1 1 5FFEBCEF
-P 7250 2350
-F 0 "D16" V 7296 2270 50  0000 R CNN
-F 1 "D" V 7205 2270 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7250 2350 50  0001 C CNN
-F 3 "~" H 7250 2350 50  0001 C CNN
-	1    7250 2350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D17
-U 1 1 5FFEBCF5
-P 7850 2350
-F 0 "D17" V 7896 2270 50  0000 R CNN
-F 1 "D" V 7805 2270 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7850 2350 50  0001 C CNN
-F 3 "~" H 7850 2350 50  0001 C CNN
-	1    7850 2350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D18
-U 1 1 5FFEBCFB
-P 7950 2350
-F 0 "D18" V 7996 2270 50  0000 R CNN
-F 1 "D" V 7905 2270 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7950 2350 50  0001 C CNN
-F 3 "~" H 7950 2350 50  0001 C CNN
-	1    7950 2350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D19
-U 1 1 5FFEBD01
-P 8550 2350
-F 0 "D19" V 8596 2270 50  0000 R CNN
-F 1 "D" V 8505 2270 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 8550 2350 50  0001 C CNN
-F 3 "~" H 8550 2350 50  0001 C CNN
-	1    8550 2350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D20
-U 1 1 5FFEBD07
-P 8650 2350
-F 0 "D20" V 8696 2270 50  0000 R CNN
-F 1 "D" V 8605 2270 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 8650 2350 50  0001 C CNN
-F 3 "~" H 8650 2350 50  0001 C CNN
-	1    8650 2350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D21
-U 1 1 5FFF1B34
-P 5700 2900
-F 0 "D21" V 5746 2820 50  0000 R CNN
-F 1 "D" V 5655 2820 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5700 2900 50  0001 C CNN
-F 3 "~" H 5700 2900 50  0001 C CNN
-	1    5700 2900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D22
-U 1 1 5FFF1B3A
-P 5800 2900
-F 0 "D22" V 5846 2820 50  0000 R CNN
-F 1 "D" V 5755 2820 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5800 2900 50  0001 C CNN
-F 3 "~" H 5800 2900 50  0001 C CNN
-	1    5800 2900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D23
-U 1 1 5FFF1B40
-P 6400 2900
-F 0 "D23" V 6446 2820 50  0000 R CNN
-F 1 "D" V 6355 2820 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 6400 2900 50  0001 C CNN
-F 3 "~" H 6400 2900 50  0001 C CNN
-	1    6400 2900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D24
-U 1 1 5FFF1B46
-P 6500 2900
-F 0 "D24" V 6546 2820 50  0000 R CNN
-F 1 "D" V 6455 2820 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 6500 2900 50  0001 C CNN
-F 3 "~" H 6500 2900 50  0001 C CNN
-	1    6500 2900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D25
-U 1 1 5FFF1B4C
-P 7150 2900
-F 0 "D25" V 7196 2820 50  0000 R CNN
-F 1 "D" V 7105 2820 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7150 2900 50  0001 C CNN
-F 3 "~" H 7150 2900 50  0001 C CNN
-	1    7150 2900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D26
-U 1 1 5FFF1B52
-P 7250 2900
-F 0 "D26" V 7296 2820 50  0000 R CNN
-F 1 "D" V 7205 2820 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7250 2900 50  0001 C CNN
-F 3 "~" H 7250 2900 50  0001 C CNN
-	1    7250 2900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D27
-U 1 1 5FFF1B58
-P 7850 2900
-F 0 "D27" V 7896 2820 50  0000 R CNN
-F 1 "D" V 7805 2820 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7850 2900 50  0001 C CNN
-F 3 "~" H 7850 2900 50  0001 C CNN
-	1    7850 2900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D28
-U 1 1 5FFF1B5E
-P 7950 2900
-F 0 "D28" V 7996 2820 50  0000 R CNN
-F 1 "D" V 7905 2820 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7950 2900 50  0001 C CNN
-F 3 "~" H 7950 2900 50  0001 C CNN
-	1    7950 2900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D29
-U 1 1 5FFF1B64
-P 8550 2900
-F 0 "D29" V 8596 2820 50  0000 R CNN
-F 1 "D" V 8505 2820 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 8550 2900 50  0001 C CNN
-F 3 "~" H 8550 2900 50  0001 C CNN
-	1    8550 2900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D30
-U 1 1 5FFF1B6A
-P 8650 2900
-F 0 "D30" V 8696 2820 50  0000 R CNN
-F 1 "D" V 8605 2820 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 8650 2900 50  0001 C CNN
-F 3 "~" H 8650 2900 50  0001 C CNN
-	1    8650 2900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D31
-U 1 1 60001E21
-P 5700 3400
-F 0 "D31" V 5746 3320 50  0000 R CNN
-F 1 "D" V 5655 3320 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5700 3400 50  0001 C CNN
-F 3 "~" H 5700 3400 50  0001 C CNN
-	1    5700 3400
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D32
-U 1 1 60001E27
-P 5800 3400
-F 0 "D32" V 5846 3320 50  0000 R CNN
-F 1 "D" V 5755 3320 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 5800 3400 50  0001 C CNN
-F 3 "~" H 5800 3400 50  0001 C CNN
-	1    5800 3400
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D33
-U 1 1 60006C24
-P 6400 3400
-F 0 "D33" V 6446 3320 50  0000 R CNN
-F 1 "D" V 6355 3320 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 6400 3400 50  0001 C CNN
-F 3 "~" H 6400 3400 50  0001 C CNN
-	1    6400 3400
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D34
-U 1 1 60006C2A
-P 6500 3400
-F 0 "D34" V 6546 3320 50  0000 R CNN
-F 1 "D" V 6455 3320 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 6500 3400 50  0001 C CNN
-F 3 "~" H 6500 3400 50  0001 C CNN
-	1    6500 3400
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D35
-U 1 1 6000E413
-P 6100 5400
-F 0 "D35" V 6146 5320 50  0000 R CNN
-F 1 "D" V 6055 5320 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 6100 5400 50  0001 C CNN
-F 3 "~" H 6100 5400 50  0001 C CNN
-	1    6100 5400
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D36
-U 1 1 6000E419
-P 6200 5400
-F 0 "D36" V 6246 5320 50  0000 R CNN
-F 1 "D" V 6155 5320 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 6200 5400 50  0001 C CNN
-F 3 "~" H 6200 5400 50  0001 C CNN
-	1    6200 5400
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D37
-U 1 1 60012EAE
-P 7000 5400
-F 0 "D37" V 7046 5320 50  0000 R CNN
-F 1 "D" V 6955 5320 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7000 5400 50  0001 C CNN
-F 3 "~" H 7000 5400 50  0001 C CNN
-	1    7000 5400
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D38
-U 1 1 60012EB4
-P 7100 5400
-F 0 "D38" V 7146 5320 50  0000 R CNN
-F 1 "D" V 7055 5320 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7100 5400 50  0001 C CNN
-F 3 "~" H 7100 5400 50  0001 C CNN
-	1    7100 5400
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D39
-U 1 1 60017DC1
-P 7900 5400
-F 0 "D39" V 7946 5320 50  0000 R CNN
-F 1 "D" V 7855 5320 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 7900 5400 50  0001 C CNN
-F 3 "~" H 7900 5400 50  0001 C CNN
-	1    7900 5400
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D40
-U 1 1 60017DC7
-P 8000 5400
-F 0 "D40" V 8046 5320 50  0000 R CNN
-F 1 "D" V 7955 5320 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 8000 5400 50  0001 C CNN
-F 3 "~" H 8000 5400 50  0001 C CNN
-	1    8000 5400
-	0    -1   1    0   
-$EndComp
-Connection ~ 5700 1650
-Wire Wire Line
-	5700 1950 5800 1950
-Connection ~ 5800 1950
-Wire Wire Line
-	5800 1950 5900 1950
-Connection ~ 6500 1950
-Wire Wire Line
-	6500 1950 6600 1950
-Connection ~ 6400 1650
-Connection ~ 7150 1650
-Connection ~ 7250 1950
-Wire Wire Line
-	7250 1950 7350 1950
-Connection ~ 7850 1650
-Connection ~ 7950 1950
-Wire Wire Line
-	7950 1950 8050 1950
-Connection ~ 8550 1650
-Connection ~ 8650 1950
-Wire Wire Line
-	8650 1950 8750 1950
-Connection ~ 8650 2500
-Wire Wire Line
-	8650 2500 8750 2500
-Connection ~ 8550 2200
-Connection ~ 7950 2500
-Wire Wire Line
-	7950 2500 8050 2500
-Connection ~ 7850 2200
-Connection ~ 7250 2500
-Wire Wire Line
-	7250 2500 7350 2500
-Connection ~ 7150 2200
-Connection ~ 6500 2500
-Wire Wire Line
-	6500 2500 6600 2500
-Connection ~ 6400 2200
-Connection ~ 5800 2500
-Wire Wire Line
-	5800 2500 5900 2500
-Connection ~ 5700 2200
-Connection ~ 5700 2750
-Connection ~ 5800 3050
-Wire Wire Line
-	5800 3050 5900 3050
-Connection ~ 6400 2750
-Connection ~ 6500 3050
-Wire Wire Line
-	6500 3050 6600 3050
-Connection ~ 7250 3050
-Wire Wire Line
-	7250 3050 7350 3050
-Connection ~ 7150 2750
-Connection ~ 7850 2750
-Connection ~ 7950 3050
-Wire Wire Line
-	7950 3050 8050 3050
-Connection ~ 8650 3050
-Wire Wire Line
-	8650 3050 8750 3050
-Connection ~ 8550 2750
-Connection ~ 6500 3550
-Wire Wire Line
-	6500 3550 6600 3550
-Connection ~ 6400 3250
-Connection ~ 5800 3550
-Wire Wire Line
-	5800 3550 5900 3550
-Connection ~ 5700 3250
-Connection ~ 6200 5550
-Wire Wire Line
-	6200 5550 6300 5550
-Connection ~ 6100 5250
-Connection ~ 7000 5250
-Connection ~ 7100 5550
-Wire Wire Line
-	7100 5550 7200 5550
-Connection ~ 7900 5250
-Connection ~ 8000 5550
-Wire Wire Line
-	8000 5550 8100 5550
-$Comp
 L Switch:SW_Push SW1
 U 1 1 5FE5A6E1
 P 1450 3200
@@ -1339,4 +347,356 @@ Text GLabel 4450 1000 2    50   Input ~ 0
 bridge_VCC
 Text GLabel 4450 1300 2    50   Input ~ 0
 bridge_GND
+$Comp
+L pg1350:PG1350 K1
+U 1 1 60424327
+P 5550 850
+F 0 "K1" H 5500 850 50  0000 L CNN
+F 1 "PG1350" H 5400 800 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 5550 1000 50  0001 C CNN
+F 3 "" H 5550 1000 50  0001 C CNN
+	1    5550 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 750  0    50   BiDi ~ 0
+ROW1
+Text GLabel 5400 1000 3    50   BiDi ~ 0
+COL1
+$Comp
+L pg1350:PG1350 K2
+U 1 1 60453568
+P 5950 850
+F 0 "K2" H 5900 850 50  0000 L CNN
+F 1 "PG1350" H 5800 800 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 5950 1000 50  0001 C CNN
+F 3 "" H 5950 1000 50  0001 C CNN
+	1    5950 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L pg1350:PG1350 K3
+U 1 1 60459949
+P 6350 850
+F 0 "K3" H 6300 850 50  0000 L CNN
+F 1 "PG1350" H 6200 800 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 6350 1000 50  0001 C CNN
+F 3 "" H 6350 1000 50  0001 C CNN
+	1    6350 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L pg1350:PG1350 K4
+U 1 1 6045FC72
+P 6750 850
+F 0 "K4" H 6700 850 50  0000 L CNN
+F 1 "PG1350" H 6600 800 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 6750 1000 50  0001 C CNN
+F 3 "" H 6750 1000 50  0001 C CNN
+	1    6750 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L pg1350:PG1350 K5
+U 1 1 60466169
+P 7150 850
+F 0 "K5" H 7100 850 50  0000 L CNN
+F 1 "PG1350" H 7000 800 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 7150 1000 50  0001 C CNN
+F 3 "" H 7150 1000 50  0001 C CNN
+	1    7150 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 1000 3    50   BiDi ~ 0
+COL2
+Text GLabel 6200 1000 3    50   BiDi ~ 0
+COL3
+Text GLabel 7000 1000 3    50   BiDi ~ 0
+COL5
+Text GLabel 6600 1000 3    50   BiDi ~ 0
+COL4
+Text GLabel 6600 2800 1    50   BiDi ~ 0
+ROW4
+Wire Wire Line
+	5350 750  5750 750 
+Wire Wire Line
+	6950 750  6950 850 
+Wire Wire Line
+	6550 850  6550 750 
+Connection ~ 6550 750 
+Wire Wire Line
+	6550 750  6950 750 
+Wire Wire Line
+	6150 850  6150 750 
+Connection ~ 6150 750 
+Wire Wire Line
+	6150 750  6550 750 
+Wire Wire Line
+	5750 850  5750 750 
+Connection ~ 5750 750 
+Wire Wire Line
+	5750 750  6150 750 
+Wire Wire Line
+	5350 850  5350 750 
+$Comp
+L pg1350:PG1350 K6
+U 1 1 604CF34F
+P 5550 1450
+F 0 "K6" H 5500 1450 50  0000 L CNN
+F 1 "PG1350" H 5400 1400 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 5550 1600 50  0001 C CNN
+F 3 "" H 5550 1600 50  0001 C CNN
+	1    5550 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 1600 3    50   BiDi ~ 0
+COL1
+$Comp
+L pg1350:PG1350 K7
+U 1 1 604CF357
+P 5950 1450
+F 0 "K7" H 5900 1450 50  0000 L CNN
+F 1 "PG1350" H 5800 1400 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 5950 1600 50  0001 C CNN
+F 3 "" H 5950 1600 50  0001 C CNN
+	1    5950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pg1350:PG1350 K8
+U 1 1 604CF35D
+P 6350 1450
+F 0 "K8" H 6300 1450 50  0000 L CNN
+F 1 "PG1350" H 6200 1400 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 6350 1600 50  0001 C CNN
+F 3 "" H 6350 1600 50  0001 C CNN
+	1    6350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pg1350:PG1350 K9
+U 1 1 604CF363
+P 6750 1450
+F 0 "K9" H 6700 1450 50  0000 L CNN
+F 1 "PG1350" H 6600 1400 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 6750 1600 50  0001 C CNN
+F 3 "" H 6750 1600 50  0001 C CNN
+	1    6750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pg1350:PG1350 K10
+U 1 1 604CF369
+P 7150 1450
+F 0 "K10" H 7100 1450 50  0000 L CNN
+F 1 "PG1350" H 7000 1400 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 7150 1600 50  0001 C CNN
+F 3 "" H 7150 1600 50  0001 C CNN
+	1    7150 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 1600 3    50   BiDi ~ 0
+COL2
+Text GLabel 6200 1600 3    50   BiDi ~ 0
+COL3
+Text GLabel 7000 1600 3    50   BiDi ~ 0
+COL5
+Text GLabel 6600 1600 3    50   BiDi ~ 0
+COL4
+Wire Wire Line
+	5350 1350 5750 1350
+Wire Wire Line
+	6950 1350 6950 1450
+Wire Wire Line
+	6550 1450 6550 1350
+Connection ~ 6550 1350
+Wire Wire Line
+	6550 1350 6950 1350
+Wire Wire Line
+	6150 1450 6150 1350
+Connection ~ 6150 1350
+Wire Wire Line
+	6150 1350 6550 1350
+Wire Wire Line
+	5750 1450 5750 1350
+Connection ~ 5750 1350
+Wire Wire Line
+	5750 1350 6150 1350
+Wire Wire Line
+	5350 1450 5350 1350
+$Comp
+L pg1350:PG1350 K11
+U 1 1 604D25DD
+P 5550 2050
+F 0 "K11" H 5500 2050 50  0000 L CNN
+F 1 "PG1350" H 5400 2000 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 5550 2200 50  0001 C CNN
+F 3 "" H 5550 2200 50  0001 C CNN
+	1    5550 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 2200 3    50   BiDi ~ 0
+COL1
+$Comp
+L pg1350:PG1350 K12
+U 1 1 604D25E5
+P 5950 2050
+F 0 "K12" H 5900 2050 50  0000 L CNN
+F 1 "PG1350" H 5800 2000 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 5950 2200 50  0001 C CNN
+F 3 "" H 5950 2200 50  0001 C CNN
+	1    5950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pg1350:PG1350 K13
+U 1 1 604D25EB
+P 6350 2050
+F 0 "K13" H 6300 2050 50  0000 L CNN
+F 1 "PG1350" H 6200 2000 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 6350 2200 50  0001 C CNN
+F 3 "" H 6350 2200 50  0001 C CNN
+	1    6350 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pg1350:PG1350 K14
+U 1 1 604D25F1
+P 6750 2050
+F 0 "K14" H 6700 2050 50  0000 L CNN
+F 1 "PG1350" H 6600 2000 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 6750 2200 50  0001 C CNN
+F 3 "" H 6750 2200 50  0001 C CNN
+	1    6750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pg1350:PG1350 K15
+U 1 1 604D25F7
+P 7150 2050
+F 0 "K15" H 7100 2050 50  0000 L CNN
+F 1 "PG1350" H 7000 2000 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 7150 2200 50  0001 C CNN
+F 3 "" H 7150 2200 50  0001 C CNN
+	1    7150 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 2200 3    50   BiDi ~ 0
+COL2
+Text GLabel 6200 2200 3    50   BiDi ~ 0
+COL3
+Text GLabel 7000 2200 3    50   BiDi ~ 0
+COL5
+Text GLabel 6600 2200 3    50   BiDi ~ 0
+COL4
+Wire Wire Line
+	5350 1950 5750 1950
+Wire Wire Line
+	6950 1950 6950 2050
+Wire Wire Line
+	6550 2050 6550 1950
+Connection ~ 6550 1950
+Wire Wire Line
+	6550 1950 6950 1950
+Wire Wire Line
+	6150 2050 6150 1950
+Connection ~ 6150 1950
+Wire Wire Line
+	6150 1950 6550 1950
+Wire Wire Line
+	5750 2050 5750 1950
+Connection ~ 5750 1950
+Wire Wire Line
+	5750 1950 6150 1950
+Wire Wire Line
+	5350 2050 5350 1950
+$Comp
+L pg1350:PG1350 K16
+U 1 1 604D73BF
+P 5550 2650
+F 0 "K16" H 5500 2650 50  0000 L CNN
+F 1 "PG1350" H 5400 2600 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 5550 2800 50  0001 C CNN
+F 3 "" H 5550 2800 50  0001 C CNN
+	1    5550 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 2800 3    50   BiDi ~ 0
+COL1
+$Comp
+L pg1350:PG1350 K17
+U 1 1 604D73C7
+P 5950 2650
+F 0 "K17" H 5900 2650 50  0000 L CNN
+F 1 "PG1350" H 5800 2600 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 5950 2800 50  0001 C CNN
+F 3 "" H 5950 2800 50  0001 C CNN
+	1    5950 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 2800 3    50   BiDi ~ 0
+COL2
+Wire Wire Line
+	5350 2550 5750 2550
+Wire Wire Line
+	5750 2650 5750 2550
+Wire Wire Line
+	5350 2650 5350 2550
+Text GLabel 5350 1350 0    50   BiDi ~ 0
+ROW2
+Text GLabel 5350 1950 0    50   BiDi ~ 0
+ROW3
+Text GLabel 5350 2550 0    50   BiDi ~ 0
+ROW4
+$Comp
+L pg1350:PG1350 K18
+U 1 1 60502B76
+P 6250 4200
+F 0 "K18" H 6200 4200 50  0000 L CNN
+F 1 "PG1350" H 6100 4150 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 6250 4350 50  0001 C CNN
+F 3 "" H 6250 4350 50  0001 C CNN
+	1    6250 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 4100 0    50   Input ~ 0
+thumb_ROW4
+$Comp
+L pg1350:PG1350 K19
+U 1 1 60511017
+P 6650 4200
+F 0 "K19" H 6600 4200 50  0000 L CNN
+F 1 "PG1350" H 6500 4150 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 6650 4350 50  0001 C CNN
+F 3 "" H 6650 4350 50  0001 C CNN
+	1    6650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L pg1350:PG1350 K20
+U 1 1 6051141E
+P 7050 4200
+F 0 "K20" H 7000 4200 50  0000 L CNN
+F 1 "PG1350" H 6900 4150 50  0000 L CNN
+F 2 "pg1350:PG1350-reversible-rev" H 7050 4350 50  0001 C CNN
+F 3 "" H 7050 4350 50  0001 C CNN
+	1    7050 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 4350 3    50   Input ~ 0
+thumb_COL3
+Text GLabel 6500 4350 3    50   Input ~ 0
+thumb_COL4
+Text GLabel 6900 4350 3    50   Input ~ 0
+thumb_COL5
+Wire Wire Line
+	6050 4100 6450 4100
+Wire Wire Line
+	6850 4100 6850 4200
+Wire Wire Line
+	6450 4200 6450 4100
+Connection ~ 6450 4100
+Wire Wire Line
+	6450 4100 6850 4100
+Wire Wire Line
+	6050 4200 6050 4100
 $EndSCHEMATC

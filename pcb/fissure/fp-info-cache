@@ -1,4 +1,4 @@
-19175157926659418
+19060465872197632
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -55188,6 +55188,13 @@ CUI_SJ-43614-SMT
 4
 4
 Keebio-Parts
+C_0402
+Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)
+capacitor 0402
+0
+2
+2
+Keebio-Parts
 C_0603
 SMT, 1608, 0603
 SMT, 1608, 0603
@@ -55202,19 +55209,33 @@ Cherry-MX-Low-Profile
 2
 2
 Keebio-Parts
-Chi_Keyboard
-
-
+Crystal_SMD_2520-4pin_2.5x2.0mm
+SMD Crystal SERIES SMD2520/4 http://www.newxtal.com/UploadFiles/Images/2012-11-12-09-29-09-776.pdf, 2.5x2.0mm^2 package
+SMD SMT crystal
 0
-0
-0
+4
+4
 Keebio-Parts
-Cowboy_Bebop_Keyboard
+Crystal_SMD_3225-4pin_3.2x2.5mm
+SMD Crystal SERIES SMD3225/4 http://www.txccrystal.com/images/pdf/7m-accuracy.pdf, 3.2x2.5mm^2 package
+SMD SMT crystal
+0
+4
+4
+Keebio-Parts
+D_0805
 
 
 0
+2
+2
+Keebio-Parts
+D_SOD-323
+SOD-323
+SOD-323
 0
-0
+2
+2
 Keebio-Parts
 D_SOD123
 
@@ -55279,12 +55300,47 @@ Elite-C-ZigZag
 29
 29
 Keebio-Parts
+Elite-C-castellated-24pin
+
+
+0
+24
+24
+Keebio-Parts
+Elite-C-castellated-24pin-holes
+
+
+0
+48
+24
+Keebio-Parts
+Elite-C-castellated-29pin
+
+
+0
+29
+29
+Keebio-Parts
+Elite-C-castellated-29pin-holes
+
+
+0
+58
+29
+Keebio-Parts
 Epson_TSX-3225
 
 
 0
 4
 4
+Keebio-Parts
+Fuse_0805
+SMT, 2012, 0805
+SMT, 2012, 0805
+0
+2
+2
 Keebio-Parts
 HRO-TYPE-C-31-M-12-Assembly
 
@@ -55293,229 +55349,26 @@ HRO-TYPE-C-31-M-12-Assembly
 16
 13
 Keebio-Parts
-Hybrid_PCB_100H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_PCB_100H_Dual_hole
-
-
-0
-16
-2
-Keebio-Parts
-Hybrid_PCB_100H_Dual_hole-LED
-
-
-0
-14
-4
-Keebio-Parts
-Hybrid_PCB_100H_Dual_hole-LEDflip
-
-
-0
-18
-4
-Keebio-Parts
-Hybrid_PCB_100H_Dual_hole-flip
-
-
-0
-16
-2
-Keebio-Parts
-Hybrid_PCB_100H_Dual_hole-nosilk
-
-
-0
-12
-2
-Keebio-Parts
-Hybrid_PCB_100H_Dual_hole-nosilk-flip
-
-
-0
-12
-2
-Keebio-Parts
-Hybrid_PCB_100H_hole
-
-
+Header-6-Pin-ZigZag
+Through hole straight socket strip, 1x06, 2.54mm pitch, single row
+Through hole socket strip THT 1x06 2.54mm single row
 0
 6
-2
-Keebio-Parts
-Hybrid_PCB_100H_no-silk
-
-
-0
 6
-2
 Keebio-Parts
-Hybrid_PCB_125H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_PCB_125H_Dual_hole-nosilk
-
-
+Header-12-Pin-ZigZag
+Through hole straight socket strip, 1x06, 2.54mm pitch, single row
+Through hole socket strip THT 1x06 2.54mm single row
 0
 12
-2
+12
 Keebio-Parts
-Hybrid_PCB_150H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_PCB_175H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_PCB_200H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_PCB_200H-dual
-
-
-0
-4
-2
-Keebio-Parts
-Hybrid_PCB_200H-dual-LED
-
-
-0
-14
-4
-Keebio-Parts
-Hybrid_PCB_200H-dual-nosilk
-
-
+Header-12-Pin-ZigZag-Square
+Through hole straight socket strip, 1x06, 2.54mm pitch, single row
+Through hole socket strip THT 1x06 2.54mm single row
 0
 12
-2
-Keebio-Parts
-Hybrid_PCB_200V
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_PCB_225H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_PCB_275H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_PCB_625H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_Plate_100H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_Plate_125H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_Plate_150H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_Plate_175H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_Plate_200H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_Plate_200H-dual
-
-
-0
-4
-2
-Keebio-Parts
-Hybrid_Plate_200H-dual-nosilk
-
-
-0
 12
-2
-Keebio-Parts
-Hybrid_Plate_200V
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_Plate_225H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_Plate_275H
-
-
-0
-2
-2
-Keebio-Parts
-Hybrid_Plate_625H
-
-
-0
-2
-2
 Keebio-Parts
 ICSP-Header
 Through hole straight socket strip, 1x06, 2.54mm pitch, single row
@@ -55536,6 +55389,13 @@ JUMPER_SMD_2DUB
 
 0
 12
+2
+Keebio-Parts
+KLJ-1102
+
+
+0
+2
 2
 Keebio-Parts
 Kailh-PG1350-1.5u
@@ -55567,6 +55427,13 @@ Kailh-PG1350-1u
 4
 Keebio-Parts
 Kailh-PG1350-1u-No-Clickhole
+
+
+0
+2
+2
+Keebio-Parts
+Kailh-PG1350-1u-NoLED
 
 
 0
@@ -55608,26 +55475,19 @@ Kailh-PG1350-2u
 4
 4
 Keebio-Parts
-Keebio
+Kailh-PG1350-2u-NoLED
 
 
 0
-0
-0
+2
+2
 Keebio-Parts
-KeebioSite
+Kailh-PG1350-2u-Vert-NoLED
 
 
 0
-0
-0
-Keebio-Parts
-KeebioWebsite
-
-
-0
-0
-0
+2
+2
 Keebio-Parts
 LED_3mm
 
@@ -55636,12 +55496,12 @@ LED_3mm
 2
 2
 Keebio-Parts
-LongOvalCut
-
-
+LQFP-48_7x7mm_Pitch0.5mm
+48 LEAD LQFP 7x7mm (see MICREL LQFP7x7-48LD-PL-1.pdf)
+QFP 0.5
 0
-0
-0
+48
+48
 Keebio-Parts
 Low-Profile-Choc-MX
 
@@ -55699,6 +55559,13 @@ MX-Alps-Choc-2U-StabFlip
 8
 4
 Keebio-Parts
+MX-Alps_DMask
+
+
+0
+2
+1
+Keebio-Parts
 MX-Alps_FMask
 
 
@@ -55748,147 +55615,42 @@ MX-Alps_Switch_Cutout-3u-wide
 0
 0
 Keebio-Parts
+MX-Quad
+MX/Alps footprint
+
+0
+8
+2
+Keebio-Parts
+MX_FMask
+
+
+0
+2
+1
+Keebio-Parts
+MX_FMask-2u
+
+
+0
+3
+1
+Keebio-Parts
+MX_FMask-2u-with-cutout
+
+
+0
+2
+1
+Keebio-Parts
+MX_FMask-with-cutout
+
+
+0
+2
+1
+Keebio-Parts
 MX_LED
-
-
-0
-2
-2
-Keebio-Parts
-MX_PCB_100H
-
-
-0
-2
-2
-Keebio-Parts
-MX_PCB_125H
-
-
-0
-2
-2
-Keebio-Parts
-MX_PCB_150H
-
-
-0
-2
-2
-Keebio-Parts
-MX_PCB_175H
-
-
-0
-2
-2
-Keebio-Parts
-MX_PCB_200H
-
-
-0
-2
-2
-Keebio-Parts
-MX_PCB_200V
-
-
-0
-2
-2
-Keebio-Parts
-MX_PCB_225H
-
-
-0
-2
-2
-Keebio-Parts
-MX_PCB_275H
-
-
-0
-2
-2
-Keebio-Parts
-MX_PCB_625H
-
-
-0
-2
-2
-Keebio-Parts
-MX_PCB_700H
-
-
-0
-2
-2
-Keebio-Parts
-MX_Plate_100H
-
-
-0
-2
-2
-Keebio-Parts
-MX_Plate_125H
-
-
-0
-2
-2
-Keebio-Parts
-MX_Plate_150H
-
-
-0
-2
-2
-Keebio-Parts
-MX_Plate_175H
-
-
-0
-2
-2
-Keebio-Parts
-MX_Plate_200H
-
-
-0
-2
-2
-Keebio-Parts
-MX_Plate_200V
-
-
-0
-2
-2
-Keebio-Parts
-MX_Plate_225H
-
-
-0
-2
-2
-Keebio-Parts
-MX_Plate_275H
-
-
-0
-2
-2
-Keebio-Parts
-MX_Plate_625H
-
-
-0
-2
-2
-Keebio-Parts
-MX_Plate_700H
 
 
 0
@@ -55930,20 +55692,6 @@ Mini-USB
 7
 6
 Keebio-Parts
-Mooninite-craft
-
-
-0
-0
-0
-Keebio-Parts
-Mooninites
-
-
-0
-0
-0
-Keebio-Parts
 MountingHole
 
 
@@ -55951,26 +55699,47 @@ MountingHole
 1
 0
 Keebio-Parts
-Nyquist
-
-
+QFN-44-1EP_7x7mm_Pitch0.5mm
+UK Package; 44-Lead Plastic QFN (7mm x 7mm); (see Linear Technology QFN_44_05-08-1763.pdf)
+QFN 0.5
 0
-0
-0
+60
+45
 Keebio-Parts
-NyquistPlot
-
-
-0
-0
-0
-Keebio-Parts
-RGBW_LED_5mm
+RGB-6028
 
 
 0
 4
 4
+Keebio-Parts
+RGB_3528_Blue_Notch
+RGB LED 3.2x2.7mm http://www.avagotech.com/docs/AV02-0610EN
+LED 3227
+0
+4
+4
+Keebio-Parts
+RGB_3528_Blue_Notch-MX
+RGB LED 3.2x2.7mm http://www.avagotech.com/docs/AV02-0610EN
+LED 3227
+0
+4
+4
+Keebio-Parts
+RGB_3528_Blue_Notch-MX-Flip
+RGB LED 3.2x2.7mm http://www.avagotech.com/docs/AV02-0610EN
+LED 3227
+0
+4
+4
+Keebio-Parts
+R_0402
+Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 0402
+0
+2
+2
 Keebio-Parts
 R_0603
 SMT, 1608, 0603
@@ -56032,8 +55801,22 @@ RotaryEncoder_EC11
 Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
 rotary encoder
 0
-7
-6
+5
+5
+Keebio-Parts
+RotaryEncoder_EC11-no-legs
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
+0
+5
+5
+Keebio-Parts
+SK6812-MINI-E
+
+
+0
+4
+4
 Keebio-Parts
 SM0805D
 
@@ -56049,6 +55832,13 @@ SOIC 1.27
 8
 8
 Keebio-Parts
+SOT-23
+SOT-23, Standard
+SOT-23
+0
+3
+3
+Keebio-Parts
 SOT-23_Handsoldering
 SOT-23, Handsoldering
 SOT-23
@@ -56063,19 +55853,26 @@ SOT143B
 4
 4
 Keebio-Parts
-SS-Aliasing
-
-
+SOT-363_SC-70-6
+SOT-363, SC-70-6
+SOT-363 SC-70-6
 0
-0
-0
+6
+6
 Keebio-Parts
-SS-DigitalLPF
-
-
+SW_SPST_3x3
+Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf
+SPST Tactile Switch
 0
+4
+2
+Keebio-Parts
+SW_SPST_TL3342
+Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf
+SPST Tactile Switch
 0
-0
+4
+2
 Keebio-Parts
 SW_Tactile_SPST_Angled_MJTP1117
 tactile switch SPST right angle, PTS645VL39-2 LFS
@@ -56147,12 +55944,19 @@ mounting hole 2.2mm m2
 2
 1
 Keebio-Parts
-SquirtleSquadLeader
-
-
+TQFP-44_10x10mm_Pitch0.8mm
+44-Lead Plastic Thin Quad Flatpack (PT) - 10x10x1.0 mm Body [TQFP] (see Microchip Packaging Specification 00000049BS.pdf)
+QFP 0.8
 0
+44
+44
+Keebio-Parts
+TQFP-48_7x7mm_Pitch0.5mm
+48 LEAD TQFP 7x7mm (see MICREL TQFP7x7-48LD-PL-1.pdf)
+QFP 0.5
 0
-0
+48
+48
 Keebio-Parts
 TRRS-PJ-320A
 
@@ -56181,6 +55985,20 @@ TRRS-PJ-320D
 0
 4
 4
+Keebio-Parts
+TRRS-PJ-605
+
+
+0
+6
+6
+Keebio-Parts
+TRRS-PJ-606
+
+
+0
+6
+6
 Keebio-Parts
 TRRS_Jack
 
@@ -56266,13 +56084,6 @@ USB miniB hirose
 9
 9
 Keebio-Parts
-Untitled
-
-
-0
-0
-0
-Keebio-Parts
 VIA-0.6mm
 
 
@@ -56308,26 +56119,12 @@ breakaway-mousebites
 0
 0
 Keebio-Parts
-keebio-tag
-
-
-0
-0
-0
-Keebio-Parts
 solder_jumper
 
 
 0
 2
 2
-Keebio-Parts
-trs
-
-
-0
-7
-7
 LED_SMD
 LED-APA102-2020
 http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf
@@ -83012,377 +82809,27 @@ varistor SIOV
 0
 2
 2
-canadian_footprints
-4pin35mmAudio
+fissure
+SOD-123-dual-side
 
 
 0
-4
-4
-canadian_footprints
-4pin35mmAudio-dualsided
+0
+0
+fissure
+bridge
 
 
-0
-6
-4
-canadian_footprints
-D_SOD123_ThroughHole
-
-
-0
-2
-2
-canadian_footprints
-D_SOD123_axial
-
-
-0
-6
-2
-canadian_footprints
-D_SOD123_axial-dual
-
-
-0
-10
-2
-canadian_footprints
-Mx_Alps_100
-MXALPS
-MXALPS
-0
-2
-2
-canadian_footprints
-Mx_Alps_100-dualside
-MXALPS
-MXALPS
-0
-4
-2
-canadian_footprints
-Mx_Alps_125
-MXALPS
-MXALPS
-0
-2
-2
-canadian_footprints
-Mx_Alps_150
-MXALPS
-MXALPS
-0
-2
-2
-canadian_footprints
-Mx_Alps_150-dualsided
-MXALPS
-MXALPS
-0
-4
-2
-canadian_footprints
-Mx_Alps_175
-MXALPS
-MXALPS
-0
-2
-2
-canadian_footprints
-Mx_Alps_175-dualside
-MXALPS
-MXALPS
-0
-4
-2
-canadian_footprints
-Mx_Alps_200
-MXALPS
-MXALPS
-0
-2
-2
-canadian_footprints
-Mx_Alps_200-dualside
-MXALPS
-MXALPS
-0
-4
-2
-canadian_footprints
-Mx_Alps_225
-MXALPS
-MXALPS
-0
-2
-2
-canadian_footprints
-Mx_Alps_275
-MXALPS
-MXALPS
-0
-2
-2
-canadian_footprints
-Mx_Alps_625
-MXALPS
-MXALPS
-0
-2
-2
-canadian_footprints
-Pro_Micro
-
-
-0
-24
-24
-canadian_footprints
-SIngle_Pad
-
-
-0
-1
-1
-canadian_footprints
-SO-8_IR_IRF7413TR
-8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
-SOIC 1.27
 0
 8
 8
-canadian_footprints
-SOLDER_JUMPER_3
-
-solder jumper bridge configuration
-0
-3
-3
-canadian_footprints
-SW_TACT_ALPS_SKQGABE010
-Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf
-SPST Tactile Switch
-0
-4
-2
-canadian_footprints
-SW_TACT_ALPS_SKRPABE010
-C&K Components, PTS 810 Series, Microminiature SMT Top Actuated, http://www.ckswitches.com/media/1476/pts810.pdf
-SPST Button Switch
-0
-4
-2
-canadian_footprints
-SolderWirePad_single_0-8mmDrill
+fissure
+bridge-conn
 
 
 0
-1
-1
-canadian_footprints
-Teensy_20
-
-
-0
-31
-31
-canadian_footprints
-maple-4mm
-
-
-0
-0
-0
-canadian_footprints
-maple-5mm
-
-
-0
-0
-0
-canadian_footprints
-maple-8mm
-
-
-0
-0
-0
-canadian_footprints
-maple-inv
-
-
-0
-0
-0
-keyswitches
-Kailh_socket
-MX-style keyswitch with Kailh socket mount
-MX,cherry,gateron,kailh,pg1511,socket
-0
-2
-2
-keyswitches
-Kailh_socket_optional
-MX-style keyswitch with support for optional Kailh socket
-MX,cherry,gateron,kailh,pg1511,socket
-0
-4
-2
-keyswitches
-Kailh_socket_optional_reversible
-MX-style keyswitch with support for reversible optional Kailh socket
-MX,cherry,gateron,kailh,pg1511,socket
-0
+40
 8
-2
-keyswitches
-Kailh_socket_reversible
-MX-style keyswitch with reversible Kailh socket mount
-MX,cherry,gateron,kailh,pg1511,socket
-0
-4
-2
-keyswitches
-MX
-MX-style keyswitch
-MX,cherry,gateron,kailh
-0
-2
-2
-keyswitches
-MX_Stabilizer_2u
-MX-style stabilizer mount
-MX,cherry,gateron,kailh,pg1511,stabilizer,stab
-0
-0
-0
-keyswitches
-MX_reversible
-MX-style keyswitch, reversible
-MX,cherry,gateron,kailh
-0
-4
-2
-keyswitches
-MX_reversible_minimal
-MX-style keyswitch, reversible, without pcb-mount holes
-MX,cherry,gateron,kailh
-0
-4
-2
-keyswitches
-PG1350
-Kailh "Choc" PG1350 keyswitch
-kailh,choc
-0
-2
-2
-keyswitches
-PG1350_optional-socket
-Kailh "Choc" PG1350 keyswitch with optional socket mount
-kailh,choc
-0
-4
-2
-keyswitches
-PG1350_optional-socket_reversible
-Kailh "Choc" PG1350 keyswitch with optional socket mount, reversible
-kailh,choc
-0
-7
-2
-keyswitches
-PG1350_reversible
-Kailh "Choc" PG1350 keyswitch, able to be mounted on front or back of PCB
-kailh,choc
-0
-3
-2
-keyswitches
-PG1350_rotatable
-Kailh "Choc" PG1350 keyswitch, able to be mounted on front or back of PCB and/or rotated 90 degrees (see README)
-kailh,choc
-0
-6
-2
-keyswitches
-PG1350_socket
-Kailh "Choc" PG1350 keyswitch socket mount
-kailh,choc
-0
-2
-2
-keyswitches
-PG1350_socket_reversible
-Kailh "Choc" PG1350 keyswitch reversible socket mount
-kailh,choc
-0
-4
-2
-misc
-1806dual
-Diode SMD 1806 (4516 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.modelithics.com/models/Vendor/MuRata/BLM41P.pdf), generated with kicad-footprint-generator
-diode
-0
-4
-2
-misc
-ABM8AIG8000MHZ1ZT
-ABM8AIG-8.000MHZ-1Z-T-1
-Crystal or Oscillator
-0
-4
-4
-misc
-BATHLD001THM
-BAT-HLD-001-THM-1
-Undefined or Miscellaneous
-0
-5
-5
-misc
-CEM-1203(42)
-
-
-0
-2
-2
-misc
-HC-05
-
-
-0
-34
-34
-misc
-HC06
-Through hole straight pin header, 1x06, 2.54mm pitch, single row
-Through hole pin header THT 1x06 2.54mm single row
-0
-4
-4
-misc
-LEDC3227X110N
-150121M153000-1
-LED
-0
-2
-2
-misc
-MOLEX_503182-1852
-
-
-0
-15
-15
-misc
-batwings
-
-
-0
-0
-0
 nice-nano-kicad
 nice_nano
 
@@ -83390,38 +82837,38 @@ nice_nano
 0
 29
 29
-promicro
-ProMicro
-Pro Micro footprint
-promicro ProMicro
-0
-24
-24
-steno
-LCD2.2in
-
-
-0
-14
-14
-steno
-OLED
-
-
-0
-4
-4
-steno
+pg1350
 PG1350
 
 
 0
-4
-4
-steno
-SOIC-8
+5
+3
+pg1350
+PG1350-no-diode
 
 
 0
-8
-8
+2
+2
+pg1350
+PG1350-reversible
+
+
+0
+7
+3
+pg1350
+PG1350-reversible-no-diode
+
+
+0
+4
+2
+pg1350
+PG1350-reversible-rev
+
+
+0
+0
+0

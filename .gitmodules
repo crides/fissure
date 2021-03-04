@@ -10,3 +10,6 @@
 [submodule "pcb/libs/Keebio-Parts.pretty"]
 	path = pcb/libs/Keebio-Parts.pretty
 	url = https://github.com/keebio/Keebio-Parts.pretty
+[submodule "pcb/libs/pg1350"]
+	path = pcb/libs/pg1350
+	url = https://github.com/crides/pg1350
