@@ -221,17 +221,6 @@ Text GLabel 3100 2350 0    50   BiDi ~ 0
 RGB
 Text GLabel 4100 2350 0    50   BiDi ~ 0
 RGB
-$Comp
-L Connector:AudioJack4 J1
-U 1 1 5E2F9701
-P 3200 1100
-F 0 "J1" H 3157 1425 50  0000 C CNN
-F 1 "AudioJack4" H 3157 1334 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320D" H 3200 1100 50  0001 C CNN
-F 3 "~" H 3200 1100 50  0001 C CNN
-	1    3200 1100
-	1    0    0    -1  
-$EndComp
 Text GLabel 1250 3200 0    50   Input ~ 0
 RST
 Text GLabel 2400 900  2    50   Input ~ 0
@@ -310,14 +299,6 @@ F 3 "~" H 1700 4950 50  0001 C CNN
 	1    1700 4950
 	0    -1   1    0   
 $EndComp
-Text GLabel 3400 1200 2    50   Output ~ 0
-bridge_SDA
-Text GLabel 3400 1300 2    50   Output ~ 0
-bridge_SCL
-Text GLabel 3400 1100 2    50   Input ~ 0
-bridge_VCC
-Text GLabel 3400 1000 2    50   Input ~ 0
-bridge_GND
 Text GLabel 6800 4400 3    50   Output ~ 0
 thumb_SDA
 Text GLabel 6700 4400 3    50   Output ~ 0
@@ -342,14 +323,6 @@ Text GLabel 8250 3500 1    50   Input ~ 0
 VCC
 Text GLabel 8350 3500 1    50   Input ~ 0
 GND
-Text GLabel 4450 1200 2    50   Output ~ 0
-bridge_SDA
-Text GLabel 4450 1300 2    50   Output ~ 0
-bridge_SCL
-Text GLabel 4450 1100 2    50   Input ~ 0
-bridge_VCC
-Text GLabel 4450 1000 2    50   Input ~ 0
-bridge_GND
 Text GLabel 3900 3750 0    50   Output ~ 0
 bridge_SDA
 Text GLabel 3900 3850 0    50   Output ~ 0
@@ -1350,4 +1323,20 @@ F 3 "~" H 1450 3750 50  0001 C CNN
 	1    1450 3550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1800 4250 1800 4750
+Wire Wire Line
+	1900 4750 1900 4250
+Wire Wire Line
+	2000 4250 2000 4750
+Wire Wire Line
+	2100 4250 2100 4750
+Text GLabel 4450 1100 2    50   Output ~ 0
+bridge_SDA
+Text GLabel 4450 1200 2    50   Output ~ 0
+bridge_SCL
+Text GLabel 4450 1000 2    50   Input ~ 0
+bridge_VCC
+Text GLabel 4450 1300 2    50   Input ~ 0
+bridge_GND
 $EndSCHEMATC
