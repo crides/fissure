@@ -1,8 +1,8 @@
 (fp_lib_table
   (lib (name Keebio-Parts)(type KiCad)(uri ${KIPRJMOD}/../libs/Keebio-Parts.pretty)(options "")(descr ""))
-  (lib (name keyswitches)(type KiCad)(uri ${KIPRJMOD}/../libs/keyswitches.pretty)(options "")(descr ""))
   (lib (name ProMicroKiCad)(type KiCad)(uri ${KIPRJMOD}/../libs/ProMicroKiCad)(options "")(descr ""))
   (lib (name fissure)(type KiCad)(uri ${KIPRJMOD}/fissure.pretty)(options "")(descr ""))
   (lib (name nice-nano-kicad)(type KiCad)(uri ${KIPRJMOD}/../libs/nice-nano-kicad)(options "")(descr ""))
   (lib (name pg1350)(type KiCad)(uri /home/steven/gitproj/fissure/pcb/libs/pg1350)(options "")(descr ""))
+  (lib (name misc)(type KiCad)(uri /home/steven/gitproj/fissure/pcb/libs/misc)(options "")(descr ""))
 )
