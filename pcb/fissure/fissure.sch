@@ -15,12 +15,6 @@ Comment4 ""
 $EndDescr
 Text GLabel 3250 3000 0    50   Input ~ 0
 RST
-Text GLabel 8500 2800 1    50   BiDi ~ 0
-COL3
-Text GLabel 8300 2800 1    50   BiDi ~ 0
-COL5
-Text GLabel 8400 2800 1    50   BiDi ~ 0
-COL4
 $Comp
 L steno:MT25QL128ABA1ESE U2
 U 1 1 5F4AD307
@@ -47,38 +41,20 @@ VDD
 $Comp
 L Connector_Generic:Conn_01x04 J5
 U 1 1 5F52BEB4
-P 9200 5500
-F 0 "J5" H 9280 5492 50  0000 L CNN
-F 1 "OLED" H 9280 5401 50  0000 L CNN
-F 2 "misc:OLED" H 9200 5500 50  0001 C CNN
-F 3 "~" H 9200 5500 50  0001 C CNN
-	1    9200 5500
+P 9900 6250
+F 0 "J5" H 9980 6242 50  0000 L CNN
+F 1 "OLED" H 9980 6151 50  0000 L CNN
+F 2 "misc:OLED" H 9900 6250 50  0001 C CNN
+F 3 "~" H 9900 6250 50  0001 C CNN
+	1    9900 6250
 	1    0    0    1   
 $EndComp
 Text GLabel 1800 3600 3    50   BiDi ~ 0
 CS
-Text GLabel 950  2250 0    50   BiDi ~ 0
-COL1
 Text GLabel 1600 3600 3    50   BiDi ~ 0
 MOSI_DQ0
 Text GLabel 1400 3600 3    50   BiDi ~ 0
 RGB
-Text GLabel 950  2450 0    50   BiDi ~ 0
-COL3
-Text GLabel 950  2650 0    50   BiDi ~ 0
-COL5
-Text GLabel 950  2550 0    50   BiDi ~ 0
-COL4
-Text GLabel 950  2350 0    50   BiDi ~ 0
-COL2
-Text GLabel 950  1850 0    50   BiDi ~ 0
-ROW4
-Text GLabel 950  1950 0    50   BiDi ~ 0
-ROW3
-Text GLabel 950  2050 0    50   BiDi ~ 0
-ROW2
-Text GLabel 950  2150 0    50   BiDi ~ 0
-ROW1
 Text GLabel 1200 3600 3    50   Input ~ 0
 VDD
 Text GLabel 5350 1600 3    50   Input ~ 0
@@ -103,14 +79,6 @@ Text GLabel 8700 3400 3    50   Input ~ 0
 thumb_BAT
 Text GLabel 8800 3400 3    50   Input ~ 0
 thumb_GND
-Text GLabel 8500 3400 3    50   Input ~ 0
-thumb_COL3
-Text GLabel 8400 3400 3    50   Input ~ 0
-thumb_COL4
-Text GLabel 8300 3400 3    50   Input ~ 0
-thumb_COL5
-Text GLabel 8600 3400 3    50   Input ~ 0
-thumb_ROW4
 Text GLabel 9900 2950 3    50   Input ~ 0
 bridge_BAT
 Text GLabel 10000 2950 3    50   Input ~ 0
@@ -130,7 +98,7 @@ Wire Wire Line
 Connection ~ 4550 1900
 Wire Wire Line
 	4550 1900 4750 1900
-Text GLabel 2550 2850 2    50   BiDi ~ 0
+Text GLabel 2450 2750 2    50   BiDi ~ 0
 SDA
 $Comp
 L Device:R R3
@@ -138,7 +106,7 @@ U 1 1 5FFB11ED
 P 4400 1800
 F 0 "R3" H 4470 1846 50  0000 L CNN
 F 1 "10k" H 4470 1755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 1800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4330 1800 50  0001 C CNN
 F 3 "~" H 4400 1800 50  0001 C CNN
 	1    4400 1800
 	0    -1   1    0   
@@ -191,358 +159,6 @@ Wire Wire Line
 	9900 2950 9900 3450
 Wire Wire Line
 	10000 2950 10000 3450
-$Comp
-L pg1350:PG1350 K1
-U 1 1 60424327
-P 7550 850
-F 0 "K1" H 7500 850 50  0000 L CNN
-F 1 "PG1350" H 7400 800 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 7550 1000 50  0001 C CNN
-F 3 "" H 7550 1000 50  0001 C CNN
-	1    7550 850 
-	1    0    0    -1  
-$EndComp
-Text GLabel 7350 750  0    50   BiDi ~ 0
-ROW1
-Text GLabel 7400 1000 3    50   BiDi ~ 0
-COL1
-$Comp
-L pg1350:PG1350 K2
-U 1 1 60453568
-P 7950 850
-F 0 "K2" H 7900 850 50  0000 L CNN
-F 1 "PG1350" H 7800 800 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 7950 1000 50  0001 C CNN
-F 3 "" H 7950 1000 50  0001 C CNN
-	1    7950 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L pg1350:PG1350 K3
-U 1 1 60459949
-P 8350 850
-F 0 "K3" H 8300 850 50  0000 L CNN
-F 1 "PG1350" H 8200 800 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 8350 1000 50  0001 C CNN
-F 3 "" H 8350 1000 50  0001 C CNN
-	1    8350 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L pg1350:PG1350 K4
-U 1 1 6045FC72
-P 8750 850
-F 0 "K4" H 8700 850 50  0000 L CNN
-F 1 "PG1350" H 8600 800 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 8750 1000 50  0001 C CNN
-F 3 "" H 8750 1000 50  0001 C CNN
-	1    8750 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L pg1350:PG1350 K5
-U 1 1 60466169
-P 9150 850
-F 0 "K5" H 9100 850 50  0000 L CNN
-F 1 "PG1350" H 9000 800 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 9150 1000 50  0001 C CNN
-F 3 "" H 9150 1000 50  0001 C CNN
-	1    9150 850 
-	1    0    0    -1  
-$EndComp
-Text GLabel 7800 1000 3    50   BiDi ~ 0
-COL2
-Text GLabel 8200 1000 3    50   BiDi ~ 0
-COL3
-Text GLabel 9000 1000 3    50   BiDi ~ 0
-COL5
-Text GLabel 8600 1000 3    50   BiDi ~ 0
-COL4
-Text GLabel 8600 2800 1    50   BiDi ~ 0
-ROW4
-Wire Wire Line
-	7350 750  7750 750 
-Wire Wire Line
-	8950 750  8950 850 
-Wire Wire Line
-	8550 850  8550 750 
-Connection ~ 8550 750 
-Wire Wire Line
-	8550 750  8950 750 
-Wire Wire Line
-	8150 850  8150 750 
-Connection ~ 8150 750 
-Wire Wire Line
-	8150 750  8550 750 
-Wire Wire Line
-	7750 850  7750 750 
-Connection ~ 7750 750 
-Wire Wire Line
-	7750 750  8150 750 
-Wire Wire Line
-	7350 850  7350 750 
-$Comp
-L pg1350:PG1350 K6
-U 1 1 604CF34F
-P 7550 1450
-F 0 "K6" H 7500 1450 50  0000 L CNN
-F 1 "PG1350" H 7400 1400 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 7550 1600 50  0001 C CNN
-F 3 "" H 7550 1600 50  0001 C CNN
-	1    7550 1450
-	1    0    0    -1  
-$EndComp
-Text GLabel 7400 1600 3    50   BiDi ~ 0
-COL1
-$Comp
-L pg1350:PG1350 K7
-U 1 1 604CF357
-P 7950 1450
-F 0 "K7" H 7900 1450 50  0000 L CNN
-F 1 "PG1350" H 7800 1400 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 7950 1600 50  0001 C CNN
-F 3 "" H 7950 1600 50  0001 C CNN
-	1    7950 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L pg1350:PG1350 K8
-U 1 1 604CF35D
-P 8350 1450
-F 0 "K8" H 8300 1450 50  0000 L CNN
-F 1 "PG1350" H 8200 1400 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 8350 1600 50  0001 C CNN
-F 3 "" H 8350 1600 50  0001 C CNN
-	1    8350 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L pg1350:PG1350 K9
-U 1 1 604CF363
-P 8750 1450
-F 0 "K9" H 8700 1450 50  0000 L CNN
-F 1 "PG1350" H 8600 1400 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 8750 1600 50  0001 C CNN
-F 3 "" H 8750 1600 50  0001 C CNN
-	1    8750 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L pg1350:PG1350 K10
-U 1 1 604CF369
-P 9150 1450
-F 0 "K10" H 9100 1450 50  0000 L CNN
-F 1 "PG1350" H 9000 1400 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 9150 1600 50  0001 C CNN
-F 3 "" H 9150 1600 50  0001 C CNN
-	1    9150 1450
-	1    0    0    -1  
-$EndComp
-Text GLabel 7800 1600 3    50   BiDi ~ 0
-COL2
-Text GLabel 8200 1600 3    50   BiDi ~ 0
-COL3
-Text GLabel 9000 1600 3    50   BiDi ~ 0
-COL5
-Text GLabel 8600 1600 3    50   BiDi ~ 0
-COL4
-Wire Wire Line
-	7350 1350 7750 1350
-Wire Wire Line
-	8950 1350 8950 1450
-Wire Wire Line
-	8550 1450 8550 1350
-Connection ~ 8550 1350
-Wire Wire Line
-	8550 1350 8950 1350
-Wire Wire Line
-	8150 1450 8150 1350
-Connection ~ 8150 1350
-Wire Wire Line
-	8150 1350 8550 1350
-Wire Wire Line
-	7750 1450 7750 1350
-Connection ~ 7750 1350
-Wire Wire Line
-	7750 1350 8150 1350
-Wire Wire Line
-	7350 1450 7350 1350
-$Comp
-L pg1350:PG1350 K11
-U 1 1 604D25DD
-P 7550 2050
-F 0 "K11" H 7500 2050 50  0000 L CNN
-F 1 "PG1350" H 7400 2000 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 7550 2200 50  0001 C CNN
-F 3 "" H 7550 2200 50  0001 C CNN
-	1    7550 2050
-	1    0    0    -1  
-$EndComp
-Text GLabel 7400 2200 3    50   BiDi ~ 0
-COL1
-$Comp
-L pg1350:PG1350 K12
-U 1 1 604D25E5
-P 7950 2050
-F 0 "K12" H 7900 2050 50  0000 L CNN
-F 1 "PG1350" H 7800 2000 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 7950 2200 50  0001 C CNN
-F 3 "" H 7950 2200 50  0001 C CNN
-	1    7950 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L pg1350:PG1350 K13
-U 1 1 604D25EB
-P 8350 2050
-F 0 "K13" H 8300 2050 50  0000 L CNN
-F 1 "PG1350" H 8200 2000 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 8350 2200 50  0001 C CNN
-F 3 "" H 8350 2200 50  0001 C CNN
-	1    8350 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L pg1350:PG1350 K14
-U 1 1 604D25F1
-P 8750 2050
-F 0 "K14" H 8700 2050 50  0000 L CNN
-F 1 "PG1350" H 8600 2000 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 8750 2200 50  0001 C CNN
-F 3 "" H 8750 2200 50  0001 C CNN
-	1    8750 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L pg1350:PG1350 K15
-U 1 1 604D25F7
-P 9150 2050
-F 0 "K15" H 9100 2050 50  0000 L CNN
-F 1 "PG1350" H 9000 2000 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 9150 2200 50  0001 C CNN
-F 3 "" H 9150 2200 50  0001 C CNN
-	1    9150 2050
-	1    0    0    -1  
-$EndComp
-Text GLabel 7800 2200 3    50   BiDi ~ 0
-COL2
-Text GLabel 8200 2200 3    50   BiDi ~ 0
-COL3
-Text GLabel 9000 2200 3    50   BiDi ~ 0
-COL5
-Text GLabel 8600 2200 3    50   BiDi ~ 0
-COL4
-Wire Wire Line
-	7350 1950 7750 1950
-Wire Wire Line
-	8950 1950 8950 2050
-Wire Wire Line
-	8550 2050 8550 1950
-Connection ~ 8550 1950
-Wire Wire Line
-	8550 1950 8950 1950
-Wire Wire Line
-	8150 2050 8150 1950
-Connection ~ 8150 1950
-Wire Wire Line
-	8150 1950 8550 1950
-Wire Wire Line
-	7750 2050 7750 1950
-Connection ~ 7750 1950
-Wire Wire Line
-	7750 1950 8150 1950
-Wire Wire Line
-	7350 2050 7350 1950
-$Comp
-L pg1350:PG1350 K16
-U 1 1 604D73BF
-P 7550 2650
-F 0 "K16" H 7500 2650 50  0000 L CNN
-F 1 "PG1350" H 7400 2600 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 7550 2800 50  0001 C CNN
-F 3 "" H 7550 2800 50  0001 C CNN
-	1    7550 2650
-	1    0    0    -1  
-$EndComp
-Text GLabel 7400 2800 3    50   BiDi ~ 0
-COL1
-$Comp
-L pg1350:PG1350 K17
-U 1 1 604D73C7
-P 7950 2650
-F 0 "K17" H 7900 2650 50  0000 L CNN
-F 1 "PG1350" H 7800 2600 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 7950 2800 50  0001 C CNN
-F 3 "" H 7950 2800 50  0001 C CNN
-	1    7950 2650
-	1    0    0    -1  
-$EndComp
-Text GLabel 7800 2800 3    50   BiDi ~ 0
-COL2
-Wire Wire Line
-	7350 2550 7750 2550
-Wire Wire Line
-	7750 2650 7750 2550
-Wire Wire Line
-	7350 2650 7350 2550
-Text GLabel 7350 1350 0    50   BiDi ~ 0
-ROW2
-Text GLabel 7350 1950 0    50   BiDi ~ 0
-ROW3
-Text GLabel 7350 2550 0    50   BiDi ~ 0
-ROW4
-$Comp
-L pg1350:PG1350 K18
-U 1 1 60502B76
-P 8250 4200
-F 0 "K18" H 8200 4200 50  0000 L CNN
-F 1 "PG1350" H 8100 4150 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 8250 4350 50  0001 C CNN
-F 3 "" H 8250 4350 50  0001 C CNN
-	1    8250 4200
-	1    0    0    -1  
-$EndComp
-Text GLabel 8050 4100 0    50   Input ~ 0
-thumb_ROW4
-$Comp
-L pg1350:PG1350 K19
-U 1 1 60511017
-P 8650 4200
-F 0 "K19" H 8600 4200 50  0000 L CNN
-F 1 "PG1350" H 8500 4150 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 8650 4350 50  0001 C CNN
-F 3 "" H 8650 4350 50  0001 C CNN
-	1    8650 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L pg1350:PG1350 K20
-U 1 1 6051141E
-P 9050 4200
-F 0 "K20" H 9000 4200 50  0000 L CNN
-F 1 "PG1350" H 8900 4150 50  0000 L CNN
-F 2 "pg1350:PG1350-reversible-rev" H 9050 4350 50  0001 C CNN
-F 3 "" H 9050 4350 50  0001 C CNN
-	1    9050 4200
-	1    0    0    -1  
-$EndComp
-Text GLabel 8100 4350 3    50   Input ~ 0
-thumb_COL3
-Text GLabel 8500 4350 3    50   Input ~ 0
-thumb_COL4
-Text GLabel 8900 4350 3    50   Input ~ 0
-thumb_COL5
-Wire Wire Line
-	8050 4100 8450 4100
-Wire Wire Line
-	8850 4100 8850 4200
-Wire Wire Line
-	8450 4200 8450 4100
-Connection ~ 8450 4100
-Wire Wire Line
-	8450 4100 8850 4100
-Wire Wire Line
-	8050 4200 8050 4100
 $Comp
 L holyiot_18010:Holyiot_18010 U1
 U 1 1 604232F6
@@ -680,7 +296,7 @@ Text GLabel 2000 3600 3    50   Input ~ 0
 VBUS
 Text GLabel 1900 3600 3    50   Input ~ 0
 RST
-Text GLabel 2550 2750 2    50   BiDi ~ 0
+Text GLabel 2450 2850 2    50   BiDi ~ 0
 SCL
 Text GLabel 1500 3600 3    50   BiDi ~ 0
 SCLK
@@ -825,7 +441,7 @@ BAT_MEAS
 Wire Wire Line
 	3900 4350 3800 4350
 Connection ~ 3800 4350
-Text GLabel 950  2750 0    50   Input ~ 0
+Text GLabel 950  2950 0    50   Input ~ 0
 BAT_MEAS
 $Comp
 L Transistor_FET:AO3401A Q2
@@ -1009,30 +625,6 @@ F 3 "~" H 5200 6400 50  0001 C CNN
 $EndComp
 Text GLabel 5200 6400 1    50   Input ~ 0
 VBUS
-$Comp
-L Connector:Conn_01x04_Female J1
-U 1 1 605E4791
-P 3450 3700
-F 0 "J1" H 3478 3676 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 3478 3585 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 3700 50  0001 C CNN
-F 3 "~" H 3450 3700 50  0001 C CNN
-	1    3450 3700
-	1    0    0    -1  
-$EndComp
-Text GLabel 3250 3600 0    50   Input ~ 0
-VDD
-$Comp
-L power:GND #PWR0115
-U 1 1 605E77BE
-P 3250 3700
-F 0 "#PWR0115" H 3250 3450 50  0001 C CNN
-F 1 "GND" V 3255 3572 50  0000 R CNN
-F 2 "" H 3250 3700 50  0001 C CNN
-F 3 "" H 3250 3700 50  0001 C CNN
-	1    3250 3700
-	0    1    1    0   
-$EndComp
 Text GLabel 2450 2350 2    50   BiDi ~ 0
 SWD
 Text GLabel 2450 2250 2    50   Input ~ 0
@@ -1052,7 +644,7 @@ F 3 "~" V 10500 3360 50  0001 C CNN
 	1    10500 3300
 	1    0    0    -1  
 $EndComp
-Text GLabel 9000 5500 0    50   Input ~ 0
+Text GLabel 9700 6250 0    50   Input ~ 0
 EXT_VCC
 Text GLabel 6350 1000 1    50   Input ~ 0
 EXT_VCC
@@ -1061,12 +653,12 @@ EXT_VCC
 $Comp
 L power:GND #PWR0117
 U 1 1 6075BC9C
-P 9000 5600
-F 0 "#PWR0117" H 9000 5350 50  0001 C CNN
-F 1 "GND" V 9005 5472 50  0000 R CNN
-F 2 "" H 9000 5600 50  0001 C CNN
-F 3 "" H 9000 5600 50  0001 C CNN
-	1    9000 5600
+P 9700 6350
+F 0 "#PWR0117" H 9700 6100 50  0001 C CNN
+F 1 "GND" V 9705 6222 50  0000 R CNN
+F 2 "" H 9700 6350 50  0001 C CNN
+F 3 "" H 9700 6350 50  0001 C CNN
+	1    9700 6350
 	0    1    1    0   
 $EndComp
 Text GLabel 8700 2800 1    50   Input ~ 0
@@ -1124,9 +716,9 @@ Wire Wire Line
 Wire Wire Line
 	2300 5650 2300 5750
 NoConn ~ 1400 6650
-Text GLabel 9000 5300 0    50   BiDi ~ 0
+Text GLabel 9700 6050 0    50   BiDi ~ 0
 SDA
-Text GLabel 9000 5400 0    50   BiDi ~ 0
+Text GLabel 9700 6150 0    50   BiDi ~ 0
 SCL
 $Comp
 L Device:LED D5
@@ -1197,8 +789,462 @@ Text GLabel 4200 1000 2    50   Input ~ 0
 BAT
 Text GLabel 3800 4050 1    50   Input ~ 0
 MCU_BAT
-Text GLabel 5550 4350 2    50   Input ~ 0
-MCU_BAT
 Text GLabel 3650 1050 0    50   Input ~ 0
 MCU_BAT
+$Comp
+L Switch:SW_Push K8
+U 1 1 6047B332
+P 9500 1150
+F 0 "K8" H 9500 1250 50  0000 C CNN
+F 1 "KEY" H 9500 1150 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 9500 1350 50  0001 C CNN
+F 3 "~" H 9500 1350 50  0001 C CNN
+	1    9500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K9
+U 1 1 604AA404
+P 9500 1350
+F 0 "K9" H 9500 1450 50  0000 C CNN
+F 1 "KEY" H 9500 1350 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 9500 1550 50  0001 C CNN
+F 3 "~" H 9500 1550 50  0001 C CNN
+	1    9500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K10
+U 1 1 604AAADC
+P 9500 1550
+F 0 "K10" H 9500 1650 50  0000 C CNN
+F 1 "KEY" H 9500 1550 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 9500 1750 50  0001 C CNN
+F 3 "~" H 9500 1750 50  0001 C CNN
+	1    9500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K1
+U 1 1 604B0DBB
+P 8650 750
+F 0 "K1" H 8650 850 50  0000 C CNN
+F 1 "KEY" H 8650 750 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 8650 950 50  0001 C CNN
+F 3 "~" H 8650 950 50  0001 C CNN
+	1    8650 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K2
+U 1 1 604B388E
+P 8650 950
+F 0 "K2" H 8650 1050 50  0000 C CNN
+F 1 "KEY" H 8650 950 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 8650 1150 50  0001 C CNN
+F 3 "~" H 8650 1150 50  0001 C CNN
+	1    8650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K3
+U 1 1 604B3B09
+P 8650 1150
+F 0 "K3" H 8650 1250 50  0000 C CNN
+F 1 "KEY" H 8650 1150 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 8650 1350 50  0001 C CNN
+F 3 "~" H 8650 1350 50  0001 C CNN
+	1    8650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K4
+U 1 1 604B3D37
+P 8650 1350
+F 0 "K4" H 8650 1450 50  0000 C CNN
+F 1 "KEY" H 8650 1350 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 8650 1550 50  0001 C CNN
+F 3 "~" H 8650 1550 50  0001 C CNN
+	1    8650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K5
+U 1 1 604B3FBF
+P 8650 1550
+F 0 "K5" H 8650 1650 50  0000 C CNN
+F 1 "KEY" H 8650 1550 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 8650 1750 50  0001 C CNN
+F 3 "~" H 8650 1750 50  0001 C CNN
+	1    8650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 604B53B6
+P 8850 1550
+F 0 "#PWR0118" H 8850 1300 50  0001 C CNN
+F 1 "GND" V 8855 1422 50  0000 R CNN
+F 2 "" H 8850 1550 50  0001 C CNN
+F 3 "" H 8850 1550 50  0001 C CNN
+	1    8850 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8850 1550 8850 1350
+Connection ~ 8850 1550
+Connection ~ 8850 950 
+Wire Wire Line
+	8850 950  8850 750 
+Connection ~ 8850 1150
+Wire Wire Line
+	8850 1150 8850 950 
+Connection ~ 8850 1350
+Wire Wire Line
+	8850 1350 8850 1150
+Text GLabel 8450 750  0    50   Input ~ 0
+K1
+Text GLabel 8450 950  0    50   Input ~ 0
+K2
+Text GLabel 8450 1150 0    50   Input ~ 0
+K3
+Text GLabel 8450 1350 0    50   Input ~ 0
+K4
+Text GLabel 8450 1550 0    50   Input ~ 0
+K5
+$Comp
+L Switch:SW_Push K11
+U 1 1 604D6C4C
+P 10350 750
+F 0 "K11" H 10350 850 50  0000 C CNN
+F 1 "KEY" H 10350 750 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 10350 950 50  0001 C CNN
+F 3 "~" H 10350 950 50  0001 C CNN
+	1    10350 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K12
+U 1 1 604D6C52
+P 10350 950
+F 0 "K12" H 10350 1050 50  0000 C CNN
+F 1 "KEY" H 10350 950 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 10350 1150 50  0001 C CNN
+F 3 "~" H 10350 1150 50  0001 C CNN
+	1    10350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K13
+U 1 1 604D6C58
+P 10350 1150
+F 0 "K13" H 10350 1250 50  0000 C CNN
+F 1 "KEY" H 10350 1150 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 10350 1350 50  0001 C CNN
+F 3 "~" H 10350 1350 50  0001 C CNN
+	1    10350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K14
+U 1 1 604D6C5E
+P 10350 1350
+F 0 "K14" H 10350 1450 50  0000 C CNN
+F 1 "KEY" H 10350 1350 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 10350 1550 50  0001 C CNN
+F 3 "~" H 10350 1550 50  0001 C CNN
+	1    10350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K15
+U 1 1 604D6C64
+P 10350 1550
+F 0 "K15" H 10350 1650 50  0000 C CNN
+F 1 "KEY" H 10350 1550 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 10350 1750 50  0001 C CNN
+F 3 "~" H 10350 1750 50  0001 C CNN
+	1    10350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 604D6C6A
+P 9700 1550
+F 0 "#PWR0119" H 9700 1300 50  0001 C CNN
+F 1 "GND" V 9705 1422 50  0000 R CNN
+F 2 "" H 9700 1550 50  0001 C CNN
+F 3 "" H 9700 1550 50  0001 C CNN
+	1    9700 1550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9300 750  0    50   Input ~ 0
+K6
+Text GLabel 9300 950  0    50   Input ~ 0
+K7
+Text GLabel 9300 1150 0    50   Input ~ 0
+K8
+Text GLabel 9300 1350 0    50   Input ~ 0
+K9
+Text GLabel 9300 1550 0    50   Input ~ 0
+K10
+$Comp
+L Switch:SW_Push K16
+U 1 1 604D8604
+P 8650 1800
+F 0 "K16" H 8650 1900 50  0000 C CNN
+F 1 "KEY" H 8650 1800 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 8650 2000 50  0001 C CNN
+F 3 "~" H 8650 2000 50  0001 C CNN
+	1    8650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K17
+U 1 1 604D860A
+P 8650 2000
+F 0 "K17" H 8650 2100 50  0000 C CNN
+F 1 "KEY" H 8650 2000 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 8650 2200 50  0001 C CNN
+F 3 "~" H 8650 2200 50  0001 C CNN
+	1    8650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K18
+U 1 1 604D8610
+P 8800 4600
+F 0 "K18" H 8800 4700 50  0000 C CNN
+F 1 "KEY" H 8800 4600 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 8800 4800 50  0001 C CNN
+F 3 "~" H 8800 4800 50  0001 C CNN
+	1    8800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K19
+U 1 1 604D8616
+P 8800 4800
+F 0 "K19" H 8800 4900 50  0000 C CNN
+F 1 "KEY" H 8800 4800 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 8800 5000 50  0001 C CNN
+F 3 "~" H 8800 5000 50  0001 C CNN
+	1    8800 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K20
+U 1 1 604D861C
+P 8800 5000
+F 0 "K20" H 8800 5100 50  0000 C CNN
+F 1 "KEY" H 8800 5000 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 8800 5200 50  0001 C CNN
+F 3 "~" H 8800 5200 50  0001 C CNN
+	1    8800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 604D8622
+P 10550 1550
+F 0 "#PWR0120" H 10550 1300 50  0001 C CNN
+F 1 "GND" V 10555 1422 50  0000 R CNN
+F 2 "" H 10550 1550 50  0001 C CNN
+F 3 "" H 10550 1550 50  0001 C CNN
+	1    10550 1550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10150 750  0    50   Input ~ 0
+K11
+Text GLabel 10150 950  0    50   Input ~ 0
+K12
+Text GLabel 10150 1150 0    50   Input ~ 0
+K13
+Text GLabel 10150 1350 0    50   Input ~ 0
+K14
+Text GLabel 10150 1550 0    50   Input ~ 0
+K15
+$Comp
+L Switch:SW_Push K7
+U 1 1 604DA1C2
+P 9500 950
+F 0 "K7" H 9500 1050 50  0000 C CNN
+F 1 "KEY" H 9500 950 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 9500 1150 50  0001 C CNN
+F 3 "~" H 9500 1150 50  0001 C CNN
+	1    9500 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 604DA1C8
+P 8850 2000
+F 0 "#PWR0121" H 8850 1750 50  0001 C CNN
+F 1 "GND" V 8855 1872 50  0000 R CNN
+F 2 "" H 8850 2000 50  0001 C CNN
+F 3 "" H 8850 2000 50  0001 C CNN
+	1    8850 2000
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8450 1800 0    50   Input ~ 0
+K16
+Text GLabel 8450 2000 0    50   Input ~ 0
+K17
+Wire Wire Line
+	8850 2000 8850 1800
+$Comp
+L Switch:SW_Push K6
+U 1 1 604DA1BC
+P 9500 750
+F 0 "K6" H 9500 850 50  0000 C CNN
+F 1 "KEY" H 9500 750 50  0000 C CNN
+F 2 "pg1350:PG1350-reversible-no-diode" H 9500 950 50  0001 C CNN
+F 3 "~" H 9500 950 50  0001 C CNN
+	1    9500 750 
+	1    0    0    -1  
+$EndComp
+Text GLabel 8300 2800 1    50   Input ~ 0
+K18
+Text GLabel 8400 2800 1    50   Input ~ 0
+K19
+Text GLabel 8500 2800 1    50   Input ~ 0
+K20
+Text GLabel 8300 3400 3    50   Input ~ 0
+thumb_K18
+Text GLabel 8400 3400 3    50   Input ~ 0
+thumb_K19
+Text GLabel 8500 3400 3    50   Input ~ 0
+thumb_K20
+Text GLabel 8600 4600 0    50   Input ~ 0
+thumb_K18
+Text GLabel 8600 4800 0    50   Input ~ 0
+thumb_K19
+Text GLabel 8600 5000 0    50   Input ~ 0
+thumb_K20
+Wire Wire Line
+	10550 750  10550 950 
+Connection ~ 10550 950 
+Wire Wire Line
+	10550 950  10550 1150
+Connection ~ 10550 1150
+Wire Wire Line
+	10550 1150 10550 1350
+Connection ~ 10550 1350
+Wire Wire Line
+	10550 1350 10550 1550
+Connection ~ 10550 1550
+Wire Wire Line
+	9700 750  9700 950 
+Connection ~ 9700 950 
+Wire Wire Line
+	9700 950  9700 1150
+Connection ~ 8850 2000
+Connection ~ 9700 1150
+Wire Wire Line
+	9700 1150 9700 1350
+Connection ~ 9700 1350
+Wire Wire Line
+	9700 1350 9700 1550
+Connection ~ 9700 1550
+Wire Wire Line
+	9000 4600 9000 4800
+Connection ~ 9000 4800
+Wire Wire Line
+	9000 4800 9000 5000
+Text GLabel 9000 4800 2    50   Input ~ 0
+thumb_GND
+Text GLabel 950  1600 0    50   Input ~ 0
+K1
+Text GLabel 950  2850 0    50   Input ~ 0
+K2
+Text GLabel 950  2750 0    50   Input ~ 0
+K3
+Text GLabel 950  2650 0    50   Input ~ 0
+K4
+Text GLabel 950  2550 0    50   Input ~ 0
+K5
+Text GLabel 950  800  0    50   Input ~ 0
+K16
+Text GLabel 950  1850 0    50   Input ~ 0
+K17
+Text GLabel 950  2050 0    50   Input ~ 0
+K6
+Text GLabel 950  1500 0    50   Input ~ 0
+K7
+Text GLabel 950  1400 0    50   Input ~ 0
+K8
+Text GLabel 950  1300 0    50   Input ~ 0
+K9
+Text GLabel 950  1200 0    50   Input ~ 0
+K10
+Text GLabel 950  1950 0    50   Input ~ 0
+K11
+Text GLabel 950  2150 0    50   Input ~ 0
+K12
+Text GLabel 950  2450 0    50   Input ~ 0
+K13
+Text GLabel 950  2350 0    50   Input ~ 0
+K14
+Text GLabel 950  2250 0    50   Input ~ 0
+K15
+Text GLabel 950  900  0    50   Input ~ 0
+K18
+Text GLabel 950  1000 0    50   Input ~ 0
+K19
+Text GLabel 950  1100 0    50   Input ~ 0
+K20
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 6067F3D2
+P 9900 5800
+F 0 "J8" H 9980 5792 50  0000 L CNN
+F 1 "OLED" H 9980 5701 50  0000 L CNN
+F 2 "misc:OLED" H 9900 5800 50  0001 C CNN
+F 3 "~" H 9900 5800 50  0001 C CNN
+	1    9900 5800
+	1    0    0    1   
+$EndComp
+Text GLabel 9700 5800 0    50   Input ~ 0
+EXT_VCC
+$Comp
+L power:GND #PWR0116
+U 1 1 6067F3D9
+P 9700 5900
+F 0 "#PWR0116" H 9700 5650 50  0001 C CNN
+F 1 "GND" V 9705 5772 50  0000 R CNN
+F 2 "" H 9700 5900 50  0001 C CNN
+F 3 "" H 9700 5900 50  0001 C CNN
+	1    9700 5900
+	0    1    1    0   
+$EndComp
+Text GLabel 9700 5600 0    50   BiDi ~ 0
+SDA
+Text GLabel 9700 5700 0    50   BiDi ~ 0
+SCL
+Text GLabel 5550 4350 2    50   Input ~ 0
+BAT
+$Comp
+L power:GND #PWR0115
+U 1 1 605E77BE
+P 3250 3700
+F 0 "#PWR0115" H 3250 3450 50  0001 C CNN
+F 1 "GND" V 3255 3572 50  0000 R CNN
+F 2 "" H 3250 3700 50  0001 C CNN
+F 3 "" H 3250 3700 50  0001 C CNN
+	1    3250 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 605E4791
+P 3450 3700
+F 0 "J1" H 3478 3676 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 3478 3585 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 3700 50  0001 C CNN
+F 3 "~" H 3450 3700 50  0001 C CNN
+	1    3450 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 3600 0    50   Input ~ 0
+VDD
 $EndSCHEMATC
