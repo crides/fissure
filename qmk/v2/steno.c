@@ -272,7 +272,7 @@ void oled_task_user(void) {
     }
 #endif
 
-    oled_set_contrast(80);
+    /* oled_set_contrast(80); */
 #ifdef __AVR__
 #ifdef HAS_BATTERY
     char buf[32];

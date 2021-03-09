@@ -33,7 +33,7 @@
 #define LOCKING_RESYNC_ENABLE
 #define PREVENT_STUCK_MODIFIERS
 #define COMBO_COUNT 28
-#define COMBO_TERM 50
+#define COMBO_TERM 60
 
 // Steno stuff
 #define CUSTOM_STENO

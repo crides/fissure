@@ -59,7 +59,7 @@ void trackball_set_hsv(uint8_t hue, uint8_t sat, uint8_t brightness) {
 }
 
 void set_hsv(uint8_t a, uint8_t b, uint8_t c) {
-    rgblight_sethsv_noeeprom(a, b, (uint8_t) c * 0.15);
+    rgblight_sethsv(a, b, (uint8_t) c * 0.15);
     trackball_set_hsv(a, b, c);
 }
 
@@ -116,7 +116,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RAISE] = KEYMAP(
         XXXXXXX, KC_BRID,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_BRIU,     KC_HOME,     KC_PGDN,   KC_PGUP,       KC_END,  KC_PSCR, XXXXXXX,
-        XXXXXXX, XXXXXXX,  TG(_STENO),  XXXXXXX,  XXXXXXX,  XXXXXXX,     KC_LEFT,     KC_DOWN,     KC_UP,     KC_RIGHT,  XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX,  TG(_STENO),  TG(_MOUSE),  XXXXXXX,  XXXXXXX,     KC_LEFT,     KC_DOWN,     KC_UP,     KC_RIGHT,  XXXXXXX, XXXXXXX,
                  XXXXXXX,  KC_MPRV,  KC_MPLY,  KC_MNXT,  XXXXXXX,  C(KC_LEFT),  C(KC_DOWN),  C(KC_UP),  C(KC_RIGHT),  XXXXXXX,
                  _______,  _______,  _______,  _______,  _______,    _______),
 
@@ -127,10 +127,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
               TG(_STENO),  STN_A,   STN_O,   STN_E,   STN_U,  STN_N2),
 
     [_MOUSE] = KEYMAP(
-		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BTN1, KC_BTN3, KC_BTN2, XXXXXXX, XXXXXXX,
-		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BTN1, KC_BTN3, KC_BTN2, MO(_RAISE), XXXXXXX,
+		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BTN4, XXXXXXX, KC_BTN5, XXXXXXX, XXXXXXX,
                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
-                 _______,  _______,  _______,  _______,  _______,    _______),
+                 TG(_MOUSE),  _______,  _______,  _______,  _______,    _______),
 };
 
 const uint16_t PROGMEM combos[COMBO_COUNT][3] = {
@@ -232,13 +232,15 @@ bool has_report_changed(report_mouse_t first, report_mouse_t second) {
 void pointing_device_task(void) {
     static bool     debounce;
     static uint16_t debounce_timer;
+    static report_mouse_t mouse, old_mouse;
+    static bool old_click, click;
     uint8_t         state[5] = {};
     if (i2c_readReg(TRACKBALL_WRITE, 0x04, state, 5, I2C_TIMEOUT) == I2C_STATUS_SUCCESS) {
         if (!state[4] && !debounce) {
             const int16_t y = state[1] - state[0];
             const int16_t x = state[2] - state[3];
-            const int16_t x_diff = x * x * SIGN(x) * 5;
-            const int16_t y_diff = y * y * SIGN(y) * 5;
+            const int16_t x_diff = x * x * x * 3;
+            const int16_t y_diff = y * y * y * 3;
             if (layer_state_is(_RAISE)) {
                 v_offset -= y;
             } else {
@@ -255,26 +257,18 @@ void pointing_device_task(void) {
 
     if (timer_elapsed(debounce_timer) > MOUSE_DEBOUNCE) debounce = false;
 
-    report_mouse_t mouse = pointing_device_get_report();
-    const bool pressed = state[4] & 0x80;
-    if (layer_state_is(_RAISE)) {
-        if (pressed) {
-            mouse.buttons |= MOUSE_BTN2;
-        } else {
-            mouse.buttons &= ~MOUSE_BTN2;
-        }
-    } else {
-        if (pressed) {
-            mouse.buttons |= MOUSE_BTN1;
-        } else {
-            mouse.buttons &= ~MOUSE_BTN1;
-        }
+    old_click = click;
+    click = state[4] & 0x80;
+    if (click && !old_click) {
+        layer_invert(_MOUSE);
     }
+    old_mouse = mouse;
+    mouse = pointing_device_get_report();
     update_member(&mouse.x, &x_offset);
     update_member(&mouse.y, &y_offset);
     update_member(&mouse.v, &v_offset);
     pointing_device_set_report(mouse);
-    if (has_report_changed(mouse, pointing_device_get_report())) {
+    if (has_report_changed(mouse, old_mouse)) {
         pointing_device_send();
     }
 }

@@ -7,7 +7,7 @@ SPLIT_KEYBOARD = yes
 
 SRC += flash.c hist.c stroke.c steno.c
 
-MOUSEKEY_ENABLE = no
+MOUSEKEY_ENABLE = yes
 EXTRAKEY_ENABLE = yes
 CONSOLE_ENABLE = no
 COMBO_ENABLE = yes
