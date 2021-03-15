@@ -1,6 +1,6 @@
 (sym_lib_table
   (lib (name promicro)(type Legacy)(uri ${KIPRJMOD}/../libs/ProMicroKiCad/promicro_library/promicro.lib)(options "")(descr ""))
-  (lib (name nice_nano)(type Legacy)(uri /home/steven/gitproj/fissure/pcb/libs/nice-nano-kicad/nice_nano.lib)(options "")(descr ""))
-  (lib (name pg1350)(type Legacy)(uri /home/steven/gitproj/fissure/pcb/libs/pg1350/pg1350.lib)(options "")(descr ""))
-  (lib (name holyiot_18010)(type Legacy)(uri /home/steven/gitproj/fissure/pcb/libs/misc/holyiot_18010.lib)(options "")(descr ""))
+  (lib (name nice_nano)(type Legacy)(uri ${KIPRJMOD}/../libs/nice-nano-kicad/nice_nano.lib)(options "")(descr ""))
+  (lib (name pg1350)(type Legacy)(uri ${KIPRJMOD}/../libs/pg1350/pg1350.lib)(options "")(descr ""))
+  (lib (name holyiot_18010)(type Legacy)(uri ${KIPRJMOD}/../libs/misc/holyiot_18010.lib)(options "")(descr ""))
 )
