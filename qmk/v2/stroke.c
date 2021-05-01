@@ -1,82 +1,22 @@
 // To deal with operations related with strokes, and the file system
+#include <string.h>
+
 #include "stroke.h"
 #include "hist.h"
 #include "stdbool.h"
 
-#include "flash.h"
+#include "store.h"
 
-header_t _header;
-child_t _child;
-char _buf[128];
-static uint32_t flash_addr = 0;
+uint8_t kvpair_buf[128];
 
-void seek(uint32_t addr) {
-#ifdef STENO_DEBUG_FLASH
-    steno_debug_ln("seek: %X -> %X", flash_addr, addr);
-#endif
-    flash_addr = addr;
-}
-
-void read_string(void) {
-    flash_read(flash_addr, (uint8_t *) _buf, _header.entry_len);
-    _buf[_header.entry_len] = 0;
-}
-
-void read_header(void) {
-#ifdef STENO_DEBUG_FLASH
-    steno_debug("read_header()");
-#endif
-    flash_read(flash_addr, (uint8_t *) &_header, sizeof(header_t));
-    seek(flash_addr + sizeof(header_t));
-
-#ifdef STENO_DEBUG_FLASH
-    steno_debug(" -> .node_num = %X, .entry_len = %u", _header.node_num, _header.entry_len);
-#endif
-}
-
-void read_child(void) {
-    flash_read(flash_addr, (uint8_t *) &_child, sizeof(child_t));
-    seek(flash_addr + sizeof(child_t));
-}
-
-uint32_t hash_stroke(uint32_t stroke) {
-    uint32_t hash = 0x811c9dc5;
-    hash *= 0x01000193;
-    hash ^= (stroke) & 0xFF;
-    hash *= 0x01000193;
-    hash ^= (stroke >> 8) & 0xFF;
-    hash *= 0x01000193;
-    hash ^= (stroke >> 16) & 0xFF;
-    hash *= 0x01000193;
-    /* hash ^= (stroke >> 24) & 0xFF; */
-    return hash;
-}
-
-// Find a stroke in the children of a specific node
-uint32_t node_find_stroke(uint32_t header_ptr, uint32_t stroke) {
-    seek(header_ptr);
-    read_header();
-    uint8_t max_collisions;
-    uint32_t children_ptr = header_ptr + sizeof(header_t) + _header.entry_len;
-    if (_header.node_num < MAX_COLLISIONS) {
-        seek(children_ptr);
-        max_collisions = _header.node_num;
-    } else {
-        uint32_t child_ptr = children_ptr + (hash_stroke(stroke) % _header.node_num) * sizeof(child_t);
-        seek(child_ptr);
-        max_collisions = MAX_COLLISIONS;
-    }
-
-    for (uint8_t collisions = 0; collisions < max_collisions; collisions ++) {
-        read_child();
-        if (stroke == _child.stroke) {
-            return _child.addr;
-        }
-        if (_child.stroke == 0xffffff) {
-            return 0;
-        }
-    }
-    return 0;
+void hash_stroke_ptr(uint32_t *hash, const uint8_t *stroke) {
+    *hash *= FNV_FACTOR;
+    *hash ^= stroke[0];
+    *hash *= FNV_FACTOR;
+    *hash ^= stroke[1];
+    *hash *= FNV_FACTOR;
+    *hash ^= stroke[2];
+    *hash *= FNV_FACTOR;
 }
 
 // Returns if the stroke contains only digits
@@ -101,7 +41,7 @@ bool stroke_to_string(uint32_t stroke, char *buf, uint8_t *ret_len) {
         return true;
     }
 
-    char *KEYS = "#STKPWHRAO*EUFRPBLGTSDZ";
+    const char *KEYS = "#STKPWHRAO*EUFRPBLGTSDZ";
     bool has_mid = false;
     for (int8_t i = 22; i >= 0; i --) {
         if (stroke & ((uint32_t) 1 << i)) {
@@ -125,75 +65,120 @@ bool stroke_to_string(uint32_t stroke, char *buf, uint8_t *ret_len) {
     return false;
 }
 
-uint32_t qmk_chord_to_stroke(uint8_t chord[6]) {
-    uint32_t keys = ((uint32_t) chord[5] & 1)
-        | ((uint32_t) chord[4] & 0x7F) << 1
-        | ((uint32_t) chord[3] & 0x3F) << 8
-        | ((uint32_t) chord[2] & 0x7F) << (14 - 2)
-        | ((uint32_t) chord[1] & 0x7F) << 19
-        | ((uint32_t) chord[0] & 0x30) << (26 - 4);
-
-    uint32_t stroke = keys & 0xFFF;
-    if (keys & 0xF000) {    // Asterisk
-        stroke |= 0x1000;
-    }
-    stroke |= (keys >> 3) & 0x1FE000; // Left side of asterisk
-    if (keys & 0x3000000) { // S-
-        stroke |= 0x200000;
-    }
-    if (keys & 0xC000000) { // #
-        stroke |= 0x400000;
-    }
-    return stroke;
-}
-
-// Searches on multiple nodes, for use with the top level, and tries to find the longest match
-void search_on_nodes(search_node_t *nodes, uint8_t *size, uint32_t stroke, uint32_t *max_level_node, uint8_t *max_level) {
+uint32_t find_strokes(const uint8_t *strokes, const uint8_t len, const uint8_t free) {
 #ifdef STENO_DEBUG_STROKE
-    steno_debug_ln("search_on_nodes()");
+    steno_debug("  find_strokes(%u):\n    ", free);
 #endif
-    uint8_t _size = *size;
-    *size = 0;
-    for (uint8_t i = 0; i <= _size; i ++) {
-        bool last = i == _size;
-        // Search root node at the end
-        uint32_t node = last ? 0 : nodes[i].node;
-        uint32_t next_node = node_find_stroke(node, stroke);
+    uint32_t hash = FNV_SEED;
+    for (uint8_t i = 0; i < len; i ++) {
 #ifdef STENO_DEBUG_STROKE
-        char buf[24];
-        stroke_to_string(stroke, buf, NULL);
-        steno_debug_ln("  %lX + %s -> %lX", node, nrf_log_push(buf), next_node);
+        steno_debug("%02X%02X%02X, ", strokes[STROKE_SIZE * i + 2], strokes[STROKE_SIZE * i + 1], strokes[STROKE_SIZE * i]);
 #endif
-        if (!next_node) {
-            if (!last) {
-                i = _size - 1;
+        hash_stroke_ptr(&hash, strokes + STROKE_SIZE * i);
+    }
+    uint32_t bucket_ind = BUCKET_SIZE * (hash & 0xFFFFF);   // Lower 20 bits, mul 4 to byte address
+#ifdef STENO_DEBUG_STROKE
+    steno_debug_ln("");
+    steno_debug_ln("    hash: %08lX, bucket_ind: %06lX", hash, bucket_ind);
+#endif
+    uint32_t bucket;
+    for (; ; bucket_ind += BUCKET_SIZE) {
+        store_read(bucket_ind, (uint8_t *) &bucket, BUCKET_SIZE);
+#ifdef STENO_DEBUG_STROKE
+        steno_debug_ln("    bucket: %08lX", bucket);
+#endif
+        if (free) {
+            if (bucket == 0xFFFFFFFF) {
+                return bucket_ind;
+            } else {
+                continue;
             }
+        }
+        const uint8_t entry_stroke_len = BUCKET_GET_STROKES_LEN(bucket);
+        if (entry_stroke_len == 0 || entry_stroke_len == 0xF) {
+            return 0;
+        }
+        if (entry_stroke_len != len) {
             continue;
         }
-        seek(next_node);
-        read_header();
-        uint32_t node_num = _header.node_num;
-        uint8_t next_level = last ? 1 : nodes[i].level + 1;
-        if (_header.attrs.present && next_level > *max_level) {
-            *max_level = next_level;
-            *max_level_node = next_node;
-        }
+        const uint8_t byte_len = STROKE_SIZE * len;
+        const uint32_t byte_ptr = BUCKET_GET_ADDR(bucket);
+        store_read(byte_ptr, kvpair_buf, byte_len);
 #ifdef STENO_DEBUG_STROKE
-        steno_debug_ln("    node_num: %lu, next_level: %u", node_num, next_level);
+        steno_debug("      strokes: ");
+        for (uint8_t i = 0; i < len; i ++) {
+            steno_debug("%02X%02X%02X, ", kvpair_buf[STROKE_SIZE * i + 2], kvpair_buf[STROKE_SIZE * i + 1], kvpair_buf[STROKE_SIZE * i]);
+        }
+        steno_debug_ln("");
 #endif
-        if (node_num) {
-            nodes[*size].node = next_node;
-            nodes[*size].level = next_level;
-            (*size)++;
-            if (*size >= SEARCH_NODES_SIZE) {
-                steno_error_ln("Search nodes full!");
-                return;
-            }
+        if (memcmp(strokes, kvpair_buf, byte_len) == 0) {
+            const uint8_t entry_len = BUCKET_GET_ENTRY_LEN(bucket);
+            store_read(byte_ptr + byte_len, kvpair_buf + byte_len, entry_len + 1);
+            return bucket;
         } else {
-            return;
+            continue;
         }
     }
+}
+
+// Searches the dictionary for the appropriate entry to output, and places result in the corresponding history entry.
+uint32_t search_entry(const uint8_t h_ind) {
 #ifdef STENO_DEBUG_STROKE
-    steno_debug_ln("  -> max_level: %u, max_level_node: %lX", *max_level, *max_level_node);
+    steno_debug_ln("search_entry(%d):", h_ind);
 #endif
+    uint8_t max_strokes_len = 0;
+    if (stroke_start_ind == 0xFF) {
+        max_strokes_len = MAX_STROKE_NUM;
+    } else if (stroke_start_ind <= h_ind) {
+        max_strokes_len = h_ind - stroke_start_ind + 1;
+    } else {
+        max_strokes_len = h_ind + HIST_SIZE - stroke_start_ind + 1;
+    }
+    uint32_t max_bucket = 0;
+    uint8_t strokes[STROKE_SIZE * max_strokes_len];
+    for (uint8_t i = 0; i < max_strokes_len; i ++) {
+        history_t const *old_hist = hist_get(HIST_LIMIT(h_ind - i));
+        const uint8_t strokes_len = BUCKET_GET_STROKES_LEN(old_hist->bucket);
+#ifdef STENO_DEBUG_STROKE
+        steno_debug_ln("  hist[%d].strokes_len = %d", HIST_LIMIT(h_ind - i), strokes_len);
+#endif
+        const uint32_t stroke = old_hist->stroke;
+#ifdef STENO_DEBUG_STROKE
+        steno_debug_ln("  [%d] = %06lX", i, stroke);
+#endif
+        if (stroke == 0) {
+            break;
+        }
+        uint8_t *strokes_start = &strokes[STROKE_SIZE * (max_strokes_len - 1 - i)];
+        memcpy(strokes_start, &stroke, STROKE_SIZE);
+        if (i > 0 && strokes_len > 1) {
+            i += strokes_len - 2;
+            continue;
+        }
+        const uint32_t bucket = find_strokes(strokes_start, i + 1, 0);
+        if (bucket != 0) {
+            max_bucket = bucket;
+#ifdef STENO_DEBUG_STROKE
+            steno_debug_ln("  bucket: %08lX", bucket);
+#endif
+        }
+    }
+    return max_bucket;
+}
+
+void read_entry(const uint32_t bucket, uint8_t *const buf) {
+    const uint32_t byte_ptr = BUCKET_GET_ADDR(bucket);
+    const uint8_t entry_len = BUCKET_GET_ENTRY_LEN(bucket);
+    const uint8_t strokes_len = BUCKET_GET_STROKES_LEN(bucket);
+    store_read(byte_ptr, buf, strokes_len * STROKE_SIZE + 1 + entry_len);
+}
+
+void print_strokes(const uint8_t *strokes, const uint8_t len) {
+    for (uint8_t i = 0; i < len; i++) {
+        const uint32_t stroke = STROKE_FROM_PTR(&strokes[STROKE_SIZE * i]);
+        char buf[24];
+        stroke_to_string(stroke, buf, NULL);
+        steno_debug("%s/", buf);
+    }
+    steno_debug_ln("");
 }

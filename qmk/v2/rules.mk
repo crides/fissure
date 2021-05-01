@@ -1,3 +1,59 @@
+THIS_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+include $(THIS_DIR)/config.mk
+
+SRC += hist.c stroke.c orthography.c steno.c
+SRC += impl/qmk/hooks.c impl/qmk/spi.c impl/qmk/flash.c
+ifeq ($(STENO_NOUI),yes)
+	STENO_READONLY = yes
+	CFLAGS += -DSTENO_NOUI
+else
+	SRC += impl/qmk/disp.c impl/qmk/lcd.c impl/qmk/lcd_font.c
+endif
+
+ifeq ($(STENO_READONLY),yes)
+	CFLAGS += -DSTENO_READONLY
+else
+	SRC += dict_editing.c freemap.c
+endif
+
+ifeq ($(STENO_NOMSD),yes)
+	CFLAGS += -DSTENO_NOMSD
+	MSC_ENABLE = no
+else
+	SRC += scsi.c ghostfat.c
+	MSC_ENABLE = yes
+endif
+
+ifeq ($(STENO_STROKE_DISPLAY),yes)
+	CFLAGS += -DSTENO_STROKE_DISPLAY
+endif
+
+ifeq ($(STENO_NOUNICODE), yes)
+	CFLAGS += -DSTENO_NOUNICODE
+endif
+
+STENO_DEBUG := $(filter hist stroke flash dicted, $(STENO_DEBUG))
+
+ifneq (, $(findstring hist, $(STENO_DEBUG)))
+	CFLAGS += -DSTENO_DEBUG_HIST
+endif
+
+ifneq (, $(findstring stroke, $(STENO_DEBUG)))
+	CFLAGS += -DSTENO_DEBUG_STROKE
+endif
+
+ifneq (, $(findstring flash, $(STENO_DEBUG)))
+	CFLAGS += -DSTENO_DEBUG_FLASH
+endif
+
+ifneq (, $(findstring dicted, $(STENO_DEBUG)))
+	CFLAGS += -DSTENO_DEBUG_DICTED
+endif
+
+ifneq (, $(STENO_DEBUG))
+	CONSOLE_ENABLE = yes
+endif
+
 MCU = atmega32u4
 F_CPU = 8000000
 ARCH = AVR8
@@ -5,20 +61,13 @@ F_USB = $(F_CPU)
 BOOTLOADER = caterina
 SPLIT_KEYBOARD = yes
 
-SRC += flash.c hist.c stroke.c steno.c
-
-MOUSEKEY_ENABLE = yes
 EXTRAKEY_ENABLE = yes
-CONSOLE_ENABLE = no
 COMBO_ENABLE = yes
 RGBLIGHT_ENABLE = yes
+UNICODE_ENABLE = yes
 
-# Steno
-OLED_DRIVER_ENABLE = yes
-VIRTSER_ENABLE = no
-STENO_ENABLE = yes
-RAW_ENABLE = no
 EXTRAFLAGS += -flto
 LTO_ENABLE = yes
-
-POINTING_DEVICE_ENABLE = yes
+GRAVE_ESC_ENABLE = no
+MAGIC_ENABLE = no
+SPACE_CADET_ENABLE = no

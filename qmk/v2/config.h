@@ -35,19 +35,4 @@
 #define COMBO_COUNT 28
 #define COMBO_TERM 60
 
-// Steno stuff
-#define CUSTOM_STENO
-
-/* #define STENO_DEBUG */
-/* #define DEBUG_FLASH */
-/* #define DEBUG_STROKE */
-/* #define DEBUG_HIST */
-
-#define RAW_USAGE_PAGE  0xFF60
-#define RAW_USAGE_ID    0x61
-
-#ifdef CUSTOM_STENO
-#undef VIRTSER_ENABLE
-#endif
-
 #endif
