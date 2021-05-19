@@ -35,4 +35,6 @@
 #define COMBO_COUNT 28
 #define COMBO_TERM 60
 
+#define STENO_DICT_MSC_PIN D4
+
 #endif
