@@ -27,6 +27,10 @@
 #define MATRIX_ROW_PINS { E6, B4, B5, D7 }
 #define MATRIX_COL_PINS { D3, D2, F4, F5, F6 }
 
+#ifdef STENO_DEBUG
+#undef NO_PRINT
+#endif
+
 #define DIODE_DIRECTION COL2ROW
 #define DEBOUNCING_DELAY 5
 #define LOCKING_SUPPORT_ENABLE

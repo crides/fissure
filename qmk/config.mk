@@ -6,7 +6,9 @@ STENO_NOUI = yes
 STENO_NOMSD = no
 # Graphical stroke display for demos
 STENO_STROKE_DISPLAY = no
-STENO_NOUNICODE = yes
+STENO_NOUNICODE = no
 
-STENO_DEBUG = # hist stroke flash dicted
-STENO_FLASH_LOGGING = yes
+STENO_DEBUG = hist # stroke flash dicted
+STENO_LOG_BACKEND = flash # console
+# Disables the internal orthography engine
+STENO_NOORTHOGRAPHY = no
