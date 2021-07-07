@@ -41,4 +41,10 @@
 
 #define STENO_DICT_MSC_PIN D4
 
+#define LAYER_STATE_8BIT
+#define NO_RESET
+#define NO_ACTION_ONESHOT
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
+
 #endif

@@ -1,4 +1,4 @@
-19066931994839857
+19187842485420555
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82831,6 +82831,13 @@ bridge-conn
 30
 6
 fissure
+debug-port
+
+
+0
+4
+4
+fissure
 tooling hole
 
 
@@ -82891,10 +82898,38 @@ PG1350-reversible-no-diode
 
 
 0
-4
+3
+2
+pg1350
+PG1350-reversible-no-diode-short
+
+
+0
+3
+2
+pg1350
+PG1350-reversible-no-diode-short-offcenter
+
+
+0
+3
+2
+pg1350
+PG1350-reversible-no-diode-short-offcenter-outer
+
+
+0
+3
 2
 pg1350
 PG1350-reversible-rev
+
+
+0
+7
+3
+pg1350
+PG1350-reversible-short
 
 
 0

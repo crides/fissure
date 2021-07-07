@@ -42,7 +42,7 @@ void suspend_wakeup_init_user() {
     set_hsv(0, 0, 0);
 }
 
-uint32_t layer_state_set_user(uint32_t state) {
+layer_state_t layer_state_set_user(layer_state_t state) {
     switch (biton32(state)) {
     case _LOWER: set_hsv(HSV_GREEN); break;
     case _RAISE: set_hsv(HSV_CYAN); break;
