@@ -2,6 +2,14 @@
 
 ## Version 3 - low profile?
 
+### Version 3.1
+
+The PCB construction on v3.0 is too complex for having 2 different vertical supports, and prone to unbalancing. In 3.1 this was changed to only 1 long vertical support, so that there are fewer PCB pieces needed, and balancing becomes much easier. The connector has been changed to flat solder-only connectors, as it's hard for pegs and holes to be aligned, connected, and be clean on the outside. The tenting has also been increased to 20mm instead of 15mm. I also attempted to make the board more compact by moving the TRRS connector and OLED screen. The latter was moved to the board connector in the middle as a experiment. The promicro has been moved below the board, as there are more room there, making it look better on the outside.
+
+![](pics/v3.1.jpg)
+
+### Version 3.0
+
 As I find tented boards to be more comfortable (my palms have never been horizontal when I type), this is an attempt at a board that "automatically tents" and have different heights for the thumb and fingers. I also integrated [embedded steno](https://github.com/crides/steno) and thus the 2 added pinky switches (they are only used on the right side, as you can tell from the pictures) and the OLED for displaying the current stroke.
 
 ![](pics/v3.0.jpg)
