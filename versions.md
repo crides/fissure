@@ -2,6 +2,10 @@
 
 ## Version 3 - low profile?
 
+Technically none of the version 3 boards are truly 36 key, as they are 20 key reversible PCBs. However only the 2 extra on the right side are meant to be used, and they are only for stenography. So practically this can be considered a 36 key.
+
+For v3.1 and above I have written a [build guide](build-v3.1+.md) as the design is not exactly focused on the ease to build.
+
 ### Version 3.1
 
 The PCB construction on v3.0 is too complex for having 2 different vertical supports, and prone to unbalancing. In 3.1 this was changed to only 1 long vertical support, so that there are fewer PCB pieces needed, and balancing becomes much easier. The connector has been changed to flat solder-only connectors, as it's hard for pegs and holes to be aligned, connected, and be clean on the outside. The tenting has also been increased to 20mm instead of 15mm. I also attempted to make the board more compact by moving the TRRS connector and OLED screen. The latter was moved to the board connector in the middle as a experiment. The promicro has been moved below the board, as there are more room there, making it look better on the outside.
