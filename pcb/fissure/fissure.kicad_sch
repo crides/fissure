@@ -1,4 +1,4 @@
-(kicad_sch (version 20210621) (generator eeschema)
+(kicad_sch (version 20210406) (generator eeschema)
 
   (uuid 523304b3-2e58-4f0f-99fa-4309bc45eb51)
 
@@ -3525,7 +3525,7 @@
     (uuid 00000000-0000-0000-0000-0000604b0dbb)
     (property "Reference" "K1" (id 0) (at 219.71 16.51 0))
     (property "Value" "KEY" (id 1) (at 219.71 19.05 0))
-    (property "Footprint" "pg1350:PG1350-reversible-no-diode-short" (id 2) (at 219.71 13.97 0)
+    (property "Footprint" "pg1350:PG1350-reversible-no-diode-short-offcenter-outer" (id 2) (at 219.71 13.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 219.71 13.97 0)
@@ -3600,7 +3600,7 @@
     (uuid 00000000-0000-0000-0000-0000604d8604)
     (property "Reference" "K16" (id 0) (at 219.71 43.18 0))
     (property "Value" "KEY" (id 1) (at 219.71 45.72 0))
-    (property "Footprint" "pg1350:PG1350-reversible-no-diode-short" (id 2) (at 219.71 40.64 0)
+    (property "Footprint" "pg1350:PG1350-reversible-no-diode-short-offcenter" (id 2) (at 219.71 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 219.71 40.64 0)
@@ -3615,7 +3615,7 @@
     (uuid 00000000-0000-0000-0000-0000604d860a)
     (property "Reference" "K17" (id 0) (at 219.71 48.26 0))
     (property "Value" "KEY" (id 1) (at 219.71 50.8 0))
-    (property "Footprint" "pg1350:PG1350-reversible-no-diode-short" (id 2) (at 219.71 45.72 0)
+    (property "Footprint" "pg1350:PG1350-reversible-no-diode-short-offcenter" (id 2) (at 219.71 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 219.71 45.72 0)
@@ -3675,7 +3675,7 @@
     (uuid 00000000-0000-0000-0000-0000604da1bc)
     (property "Reference" "K6" (id 0) (at 241.3 16.51 0))
     (property "Value" "KEY" (id 1) (at 241.3 19.05 0))
-    (property "Footprint" "pg1350:PG1350-reversible-no-diode-short" (id 2) (at 241.3 13.97 0)
+    (property "Footprint" "pg1350:PG1350-reversible-no-diode-short-offcenter-outer" (id 2) (at 241.3 13.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 241.3 13.97 0)
@@ -4378,7 +4378,7 @@
       (reference "JP8") (unit 1) (value "SolderJumper_2_Open") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
     )
     (path "/00000000-0000-0000-0000-0000604b0dbb"
-      (reference "K1") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short")
+      (reference "K1") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short-offcenter-outer")
     )
     (path "/00000000-0000-0000-0000-0000604b388e"
       (reference "K2") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short")
@@ -4393,7 +4393,7 @@
       (reference "K5") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short-offcenter-outer")
     )
     (path "/00000000-0000-0000-0000-0000604da1bc"
-      (reference "K6") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short")
+      (reference "K6") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short-offcenter-outer")
     )
     (path "/00000000-0000-0000-0000-0000604da1c2"
       (reference "K7") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short")
@@ -4423,10 +4423,10 @@
       (reference "K15") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short-offcenter-outer")
     )
     (path "/00000000-0000-0000-0000-0000604d8604"
-      (reference "K16") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short")
+      (reference "K16") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short-offcenter")
     )
     (path "/00000000-0000-0000-0000-0000604d860a"
-      (reference "K17") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short")
+      (reference "K17") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short-offcenter")
     )
     (path "/00000000-0000-0000-0000-0000604d8610"
       (reference "K18") (unit 1) (value "KEY") (footprint "pg1350:PG1350-reversible-no-diode-short")
