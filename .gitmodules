@@ -1,9 +1,3 @@
-[submodule "pcb/libs/nice-nano-kicad"]
-	path = pcb/libs/nice-nano-kicad
-	url = https://github.com/bstiq/nice-nano-kicad
-[submodule "pcb/libs/ProMicroKiCad"]
-	path = pcb/libs/ProMicroKiCad
-	url = https://github.com/Biacco42/ProMicroKiCad
 [submodule "pcb/libs/keyswitches.pretty"]
 	path = pcb/libs/keyswitches.pretty
 	url = https://github.com/daprice/keyswitches.pretty
@@ -13,3 +7,9 @@
 [submodule "pcb/libs/pg1350"]
 	path = pcb/libs/pg1350
 	url = https://github.com/crides/pg1350
+[submodule "pcb/libs/kleeb"]
+	path = pcb/libs/kleeb
+	url = git@github.com:crides/kleeb
+[submodule "pcb/libs/marbastlib"]
+	path = pcb/libs/marbastlib
+	url = https://github.com/ebastler/marbastlib.git
