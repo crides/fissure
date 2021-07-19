@@ -1,13 +1,10 @@
 #include "fissure.h"
-#include "steno.h"
 #include "action_layer.h"
 
 // Layers
 #define _BASE  0
 #define _LOWER 1
 #define _RAISE 2
-#define _STENO 3
-#define _MOUSE 4
 
 #define KEYMAP( \
     L40, L10, L11, L12, L13, L14,                 R10, R11, R12, R13, R14, R44, \
@@ -46,8 +43,6 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     switch (biton32(state)) {
     case _LOWER: set_hsv(HSV_GREEN); break;
     case _RAISE: set_hsv(HSV_CYAN); break;
-    case _STENO: set_hsv(HSV_ORANGE); break;
-    case _MOUSE: set_hsv(HSV_RED); break;
     default: set_hsv(0, 0, 0); break;
     }
     return state;
@@ -75,21 +70,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RAISE] = KEYMAP(
         XXXXXXX, KC_BRID,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_BRIU,     KC_HOME,     KC_PGDN,   KC_PGUP,       KC_END,  KC_PSCR, XXXXXXX,
-        XXXXXXX, XXXXXXX,  TG(_STENO),  TG(_MOUSE),  XXXXXXX,  XXXXXXX,     KC_LEFT,     KC_DOWN,     KC_UP,     KC_RIGHT,  XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,     KC_LEFT,     KC_DOWN,     KC_UP,     KC_RIGHT,  XXXXXXX, XXXXXXX,
                  XXXXXXX,  KC_MPRV,  KC_MPLY,  KC_MNXT,  XXXXXXX,  C(KC_LEFT),  C(KC_DOWN),  C(KC_UP),  C(KC_RIGHT),  XXXXXXX,
                  _______,  _______,  _______,  _______,  _______,    _______),
-
-    [_STENO] = KEYMAP(
-		XXXXXXX,  STN_S_,  STN_T_,  STN_P_,  STN_H_,  STN_STAR,  STN_STAR,  STN__F,  STN__P,  STN__L,  STN__T,  STN__D,
-		XXXXXXX,  STN_S_,  STN_K_,  STN_W_,  STN_R_,  STN_STAR,  STN_STAR,  STN__R,  STN__B,  STN__G,  STN__S,  STN__Z,
-                 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
-              TG(_STENO),  STN_A,   STN_O,   STN_E,   STN_U,  STN_NUM),
-
-    [_MOUSE] = KEYMAP(
-		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BTN1, KC_BTN3, KC_BTN2, MO(_RAISE), XXXXXXX,
-		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BTN4, XXXXXXX, KC_BTN5, XXXXXXX, XXXXXXX,
-                 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
-                 TG(_MOUSE),  _______,  _______,  _______,  _______,    _______),
 };
 
 const uint16_t PROGMEM combos[COMBO_COUNT][3] = {
