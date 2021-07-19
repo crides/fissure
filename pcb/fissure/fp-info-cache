@@ -1,4 +1,4 @@
-19187903584519859
+19189530605365825
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82821,14 +82821,21 @@ bridge
 
 
 0
-6
-6
+5
+5
 fissure
 bridge-conn
 
 
 0
-30
+25
+5
+fissure
+bridge-test
+
+
+0
+8
 6
 fissure
 debug-port
