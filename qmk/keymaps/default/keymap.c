@@ -1,5 +1,5 @@
-/* #include "fissure.h" */
-/* #include "action_layer.h" */
+#include "fissure.h"
+#include "action_layer.h"
 
 // Layers
 #define _BASE  0
