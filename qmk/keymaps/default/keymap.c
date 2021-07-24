@@ -1,5 +1,5 @@
-#include "fissure.h"
-#include "action_layer.h"
+/* #include "fissure.h" */
+/* #include "action_layer.h" */
 
 // Layers
 #define _BASE  0
@@ -76,36 +76,34 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 const uint16_t PROGMEM combos[COMBO_COUNT][3] = {
-#define K(r, c) (keymaps[0][r][c])
-    {K(0, 1), K(0, 2), COMBO_END},
-    {K(0, 2), K(0, 3), COMBO_END},
-    {K(1, 0), K(1, 1), COMBO_END},
-    {K(1, 1), K(1, 2), COMBO_END},
-    {K(1, 2), K(1, 3), COMBO_END},
-    {K(2, 0), K(2, 1), COMBO_END},
-    {K(2, 1), K(2, 2), COMBO_END},
-    {K(2, 2), K(2, 3), COMBO_END},
-    {K(0, 1), K(1, 1), COMBO_END},
-    {K(1, 1), K(2, 1), COMBO_END},
-    {K(0, 2), K(1, 2), COMBO_END},
-    {K(1, 2), K(2, 2), COMBO_END},
-    {K(0, 3), K(1, 3), COMBO_END},
-    {K(1, 3), K(2, 3), COMBO_END},
-    {K(4, 3), K(4, 2), COMBO_END},
-    {K(4, 2), K(4, 1), COMBO_END},
-    {K(5, 3), K(5, 2), COMBO_END},
-    {K(5, 2), K(5, 1), COMBO_END},
-    {K(5, 1), K(5, 0), COMBO_END},
-    {K(6, 3), K(6, 2), COMBO_END},
-    {K(6, 2), K(6, 1), COMBO_END},
-    {K(4, 3), K(5, 3), COMBO_END},
-    {K(5, 3), K(6, 3), COMBO_END},
-    {K(4, 2), K(5, 2), COMBO_END},
-    {K(5, 2), K(6, 2), COMBO_END},
-    {K(4, 1), K(5, 1), COMBO_END},
-    {K(5, 1), K(6, 1), COMBO_END},
-    {K(6, 1), K(6, 0), COMBO_END},
-#undef K
+    {KC_W, KC_E, COMBO_END},
+    {KC_E, KC_R, COMBO_END},
+    {KC_A, KC_S, COMBO_END},
+    {KC_S, KC_D, COMBO_END},
+    {KC_D, KC_F, COMBO_END},
+    {KC_Z, KC_X, COMBO_END},
+    {KC_X, KC_C, COMBO_END},
+    {KC_C, KC_V, COMBO_END},
+    {KC_W, KC_S, COMBO_END},
+    {KC_S, KC_X, COMBO_END},
+    {KC_E, KC_D, COMBO_END},
+    {KC_D, KC_C, COMBO_END},
+    {KC_R, KC_F, COMBO_END},
+    {KC_F, KC_V, COMBO_END},
+    {KC_U, KC_I, COMBO_END},
+    {KC_I, KC_O, COMBO_END},
+    {KC_J, KC_K, COMBO_END},
+    {KC_K, KC_L, COMBO_END},
+    {KC_L, KC_SCLN, COMBO_END},
+    {KC_M, KC_COMM, COMBO_END},
+    {KC_COMM, KC_DOT, COMBO_END},
+    {KC_U, KC_J, COMBO_END},
+    {KC_J, KC_M, COMBO_END},
+    {KC_I, KC_K, COMBO_END},
+    {KC_K, KC_COMM, COMBO_END},
+    {KC_O, KC_L, COMBO_END},
+    {KC_L, KC_DOT, COMBO_END},
+    {KC_DOT, KC_SLSH, COMBO_END},
 };
 
 combo_t key_combos[COMBO_COUNT] = {
