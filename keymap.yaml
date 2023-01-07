@@ -1,0 +1,116 @@
+layout:
+  split: true
+  rows: 3
+  columns: 6
+  thumbs: 3
+layers:
+  BASE:
+    left:
+      - [" ", Q, W, E, R, T]
+      - [" ", A, S, D, F, G]
+      - [" ", Z, X, C, V, " "]
+    right:
+      - [Y, U, I, O, P, " "]
+      - [H, N, K, L, B, " "]
+      - [" ", M, ",", ., J, " "]
+    left_thumbs: &left_thumbs
+      - hold: Win
+        tap: Del
+      - hold: Ctrl
+        tap: Tab
+      - hold: LOWER
+        tap: Esc
+    right_thumbs: &right_thumbs
+      - hold: RAISE
+        tap: Enter
+      - hold: Shift
+        tap: Space
+      - hold: Alt
+        tap: Bspc
+    combos: &combos
+      - {positions: [1, 2], key: "%"}
+      - {positions: [2, 3], key: "\\"}
+      - {positions: [3, 4], key: "["}
+      - {positions: [7, 8], key: "]"}
+      - {positions: [8, 9], key: "="}
+      - {positions: [9, 10], key: "+"}
+      - {positions: [13, 14], key: "^"}
+      - {positions: [14, 15], key: "$"}
+      - {positions: [15, 16], key: "("}
+      - {positions: [19, 20], key: ")"}
+      - {positions: [20, 21], key: ";"}
+      - {positions: [21, 22], key: ":"}
+      - {positions: [25, 26], key: "!"}
+      - {positions: [26, 27], key: "@"}
+      - {positions: [27, 28], key: "{"}
+      - {positions: [31, 32], key: "}"}
+      - {positions: [32, 33], key: "/"}
+      - {positions: [33, 34], key: "?"}
+      - {positions: [2, 14], key: "`"}
+      - {positions: [3, 15], key: "&"}
+      - {positions: [4, 16], key: "*"}
+      - {positions: [7, 19], key: "_"}
+      - {positions: [8, 20], key: "\""}
+      - {positions: [9, 21], key: "'"}
+      - {positions: [14, 26], key: "~"}
+      - {positions: [15, 27], key: "|"}
+      - {positions: [16, 28], key: "#"}
+      - {positions: [19, 31], key: "-"}
+      - {positions: [20, 32], key: "<"}
+      - {positions: [21, 33], key: ">"}
+  COLEMAK:
+    left:
+      - [" ", Q, W, L, M, K]
+      - [" ", A, R, S, T, G]
+      - [" ", Z, B, C, D, " "]
+    right:
+      - [J, P, U, Y, V, " "]
+      - [F, N, E, I, O, " "]
+      - [" ", H, ",", ., X, " "]
+    left_thumbs: *left_thumbs
+    right_thumbs: *right_thumbs
+    combos: *combos
+  RAISE:
+    left:
+      - [" ", "🖵1", "🖵2", "🖵3", "🖵4", "🖵5"]
+      - [" ", "1", "2", "3", "4", "5"]
+      - [" ", F1, F2, F3, F4, F5]
+    right:
+      - ["🖵6", "🖵7", "🖵8", F11, F12, " "]
+      - ["6", "7", "8", "9", "0", " "]
+      - [F6, F7, F8, F9, F10, " "]
+    left_thumbs: *left_thumbs
+    right_thumbs: *right_thumbs
+  LOWER:
+    left:
+      - [COLEMAK, "🌣-", "🕨", "🕩", "🕪", "🌣+"]
+      - [GAME, "🛜", STENO, "🛜0", "🛜1", "🛜2"]
+      - [" ", "🔌", ⏮, ⏯, ⏭, "🛜🚫"]
+    right:
+      - [Home, PgDn, PgUp, End, PrtScr, " "]
+      - ["⭠", "⭣", "⭡", "⭢", " ", "  "]
+      - ["C⭠", "C⭣", "C⭡", "C⭢", " ", "  "]
+    left_thumbs: *left_thumbs
+    right_thumbs: *right_thumbs
+  GAME:
+    left:
+      - [Space, Q, W, E, R, T]
+      - [Tab, A, S, D, F, G]
+      - [" ", Z, X, C, V, B]
+    right:
+      - [Y, U, I, O, P, " "]
+      - [H, J, K, L, ;, BASE]
+      - [N, M, ",", ., /, " "]
+    left_thumbs: [Alt, Ctrl, Esc]
+    right_thumbs: [" ", " ", " "]
+  STENO:
+    left:
+      - [" ", S, T, P, H, "*"]
+      - [" ", S, K, W, R, "*"]
+      - [" ", "  ", " ", "  ", " ", "  "]
+    right:
+      - ["*", F, P, L, T, D]
+      - ["*", R, B, G, S, Z]
+      - [" ", "  ", " ", "  ", " ", "  "]
+    left_thumbs: [Reset, A, O]
+    right_thumbs: [E, U, "#"]
