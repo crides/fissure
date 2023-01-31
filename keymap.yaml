@@ -1,116 +1,87 @@
-layout:
-  split: true
-  rows: 3
-  columns: 6
-  thumbs: 3
 layers:
-  BASE:
-    left:
-      - [" ", Q, W, E, R, T]
-      - [" ", A, S, D, F, G]
-      - [" ", Z, X, C, V, " "]
-    right:
-      - [Y, U, I, O, P, " "]
-      - [H, N, K, L, B, " "]
-      - [" ", M, ",", ., J, " "]
-    left_thumbs: &left_thumbs
-      - hold: Win
-        tap: Del
-      - hold: Ctrl
-        tap: Tab
-      - hold: LOWER
-        tap: Esc
-    right_thumbs: &right_thumbs
-      - hold: RAISE
-        tap: Enter
-      - hold: Shift
-        tap: Space
-      - hold: Alt
-        tap: Bspc
-    combos: &combos
-      - {positions: [1, 2], key: "%"}
-      - {positions: [2, 3], key: "\\"}
-      - {positions: [3, 4], key: "["}
-      - {positions: [7, 8], key: "]"}
-      - {positions: [8, 9], key: "="}
-      - {positions: [9, 10], key: "+"}
-      - {positions: [13, 14], key: "^"}
-      - {positions: [14, 15], key: "$"}
-      - {positions: [15, 16], key: "("}
-      - {positions: [19, 20], key: ")"}
-      - {positions: [20, 21], key: ";"}
-      - {positions: [21, 22], key: ":"}
-      - {positions: [25, 26], key: "!"}
-      - {positions: [26, 27], key: "@"}
-      - {positions: [27, 28], key: "{"}
-      - {positions: [31, 32], key: "}"}
-      - {positions: [32, 33], key: "/"}
-      - {positions: [33, 34], key: "?"}
-      - {positions: [2, 14], key: "`"}
-      - {positions: [3, 15], key: "&"}
-      - {positions: [4, 16], key: "*"}
-      - {positions: [7, 19], key: "_"}
-      - {positions: [8, 20], key: "\""}
-      - {positions: [9, 21], key: "'"}
-      - {positions: [14, 26], key: "~"}
-      - {positions: [15, 27], key: "|"}
-      - {positions: [16, 28], key: "#"}
-      - {positions: [19, 31], key: "-"}
-      - {positions: [20, 32], key: "<"}
-      - {positions: [21, 33], key: ">"}
-  COLEMAK:
-    left:
-      - [" ", Q, W, L, M, K]
-      - [" ", A, R, S, T, G]
-      - [" ", Z, B, C, D, " "]
-    right:
-      - [J, P, U, Y, V, " "]
-      - [F, N, E, I, O, " "]
-      - [" ", H, ",", ., X, " "]
-    left_thumbs: *left_thumbs
-    right_thumbs: *right_thumbs
-    combos: *combos
-  RAISE:
-    left:
-      - [" ", "🖵1", "🖵2", "🖵3", "🖵4", "🖵5"]
-      - [" ", "1", "2", "3", "4", "5"]
-      - [" ", F1, F2, F3, F4, F5]
-    right:
-      - ["🖵6", "🖵7", "🖵8", F11, F12, " "]
-      - ["6", "7", "8", "9", "0", " "]
-      - [F6, F7, F8, F9, F10, " "]
-    left_thumbs: *left_thumbs
-    right_thumbs: *right_thumbs
-  LOWER:
-    left:
-      - [COLEMAK, "🌣-", "🕨", "🕩", "🕪", "🌣+"]
-      - [GAME, "🛜", STENO, "🛜0", "🛜1", "🛜2"]
-      - [" ", "🔌", ⏮, ⏯, ⏭, "🛜🚫"]
-    right:
-      - [Home, PgDn, PgUp, End, PrtScr, " "]
-      - ["⭠", "⭣", "⭡", "⭢", " ", "  "]
-      - ["C⭠", "C⭣", "C⭡", "C⭢", " ", "  "]
-    left_thumbs: *left_thumbs
-    right_thumbs: *right_thumbs
-  GAME:
-    left:
-      - [Space, Q, W, E, R, T]
-      - [Tab, A, S, D, F, G]
-      - [" ", Z, X, C, V, B]
-    right:
-      - [Y, U, I, O, P, " "]
-      - [H, J, K, L, ;, BASE]
-      - [N, M, ",", ., /, " "]
-    left_thumbs: [Alt, Ctrl, Esc]
-    right_thumbs: [" ", " ", " "]
-  STENO:
-    left:
-      - [" ", S, T, P, H, "*"]
-      - [" ", S, K, W, R, "*"]
-      - [" ", "  ", " ", "  ", " ", "  "]
-    right:
-      - ["*", F, P, L, T, D]
-      - ["*", R, B, G, S, Z]
-      - [" ", "  ", " ", "  ", " ", "  "]
-    left_thumbs: [Reset, A, O]
-    right_thumbs: [E, U, "#"]
+    base:
+    - ['', Q, W, E, R, T, Y, U, I, O, P, '']
+    - ['', A, S, D, F, G, H, N, K, L, B, '']
+    - [Z, X, C, V, '', '', M, ',', ., J]
+    -   - {t: DEL, h: LGUI}
+        - {t: TAB, h: LCTRL}
+        - {t: ESC, h: raise}
+        - {t: RET, h: lower}
+        - {t: SPC, h: LSHFT}
+        - {t: BSPC, h: LALT}
+    colemak:
+    - ['', Q, W, L, D, K, J, H, U, Y, V, '']
+    - ['', A, R, S, T, G, F, N, E, I, O, '']
+    - [Z, B, C, P, '', '', M, ',', ., X]
+    -   - {t: DEL, h: LGUI}
+        - {t: TAB, h: LCTRL}
+        - {t: ESC, h: raise}
+        - {t: RET, h: lower}
+        - {t: SPC, h: LSHFT}
+        - {t: BSPC, h: LALT}
+    lower:
+    - ["", "🖵1", "🖵2", "🖵3", "🖵4", "🖵5", "🖵6", "🖵7", "🖵8", F11, F12, ""]
+    - ['', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '']
+    - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10]
+    -   - {t: DEL, h: LGUI}
+        - {t: TAB, h: LCTRL}
+        - {t: ESC, h: raise}
+        - {t: RET, h: lower, type: held}
+        - {t: SPC, h: LSHFT}
+        - {t: BSPC, h: LALT}
+    raise:
+    - [COLEMAK, "🌣-", "🕨", "🕩", "🕪", "🌣+", Home, PgDn, PgUp, End, PrtScr, QGAME]
+    - [GAME, "🛜", STENO, "🛜0", "🛜1", "🛜2", "⭠", "⭣", "⭡", "⭢", "", ""]
+    - ["", "🔌", ⏮, ⏯, ⏭, "🛜🚫", "C⭠", "C⭣", "C⭡", "C⭢"]
+    -   - {t: DEL, h: LGUI}
+        - {t: TAB, h: LCTRL}
+        - {t: ESC, h: raise, type: held}
+        - {t: RET, h: lower}
+        - {t: SPC, h: LSHFT}
+        - {t: BSPC, h: LALT}
+    game:
+    - [SPC, Q, W, E, R, T, Y, U, I, O, P, RESET]
+    - [TAB, A, S, D, F, G, H, J, K, L, ;, RET]
+    - [Z, X, C, V, B, N, M, ',', ., /]
+    - [LALT, LCTRL, ESC, '', '', '']
+    qgame:
+    - [SPC, ESC, Q, W, E, R, Y, U, I, O, P, RESET]
+    - [TAB, TAB, A, S, D, F, H, J, K, L, ;, RET]
+    - [LSHFT, Z, X, C, V, N, M, ',', ., /]
+    - [LALT, LCTRL, ESC, '', '', '']
+    steno:
+    - ["", S, T, P, H, "*", "*", F, P, L, T, D]
+    - ["", S, K, W, R, "*", "*", R, B, G, S, Z]
+    - ['', '', '', '', '', '', '', '', '', '']
+    - [RESET, A, O, E, U, '#']
+combos:
+- { p: [1, 2], k: '%', l: [base, colemak], d: true }
+- { p: [2, 3], k: \, l: [base, colemak] }
+- { p: [3, 4], k: '[', l: [base, colemak] }
+- { p: [7, 8], k: ']', l: [base, colemak] }
+- { p: [8, 9], k: '=', l: [base, colemak] }
+- { p: [9, 10], k: +, l: [base, colemak], d: true }
+- { p: [13, 14], k: ^, l: [base, colemak], d: true }
+- { p: [14, 15], k: $, l: [base, colemak] }
+- { p: [15, 16], k: (, l: [base, colemak] }
+- { p: [19, 20], k: ), l: [base, colemak] }
+- { p: [20, 21], k: ;, l: [base, colemak] }
+- { p: [21, 22], k: ':', l: [base, colemak], d: true }
+- { p: [24, 25], k: '!', l: [base, colemak], d: true }
+- { p: [25, 26], k: '@', l: [base, colemak] }
+- { p: [26, 27], k: '{', l: [base, colemak] }
+- { p: [30, 31], k: '}', l: [base, colemak] }
+- { p: [31, 32], k: /, l: [base, colemak] }
+- { p: [32, 33], k: '?', l: [base, colemak], d: true }
+- { p: [2, 14], k: '`', l: [base, colemak] }
+- { p: [3, 15], k: '&', l: [base, colemak] }
+- { p: [4, 16], k: '*', l: [base, colemak] }
+- { p: [7, 19], k: _, l: [base, colemak] }
+- { p: [8, 20], k: '"', l: [base, colemak] }
+- { p: [9, 21], k: '''', l: [base, colemak] }
+- { p: [14, 25], k: '~', l: [base, colemak] }
+- { p: [15, 26], k: '|', l: [base, colemak] }
+- { p: [16, 27], k: '#', l: [base, colemak] }
+- { p: [19, 30], k: '-', l: [base, colemak] }
+- { p: [20, 31], k: <, l: [base, colemak] }
+- { p: [21, 32], k: '>', l: [base, colemak] }

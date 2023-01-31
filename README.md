@@ -15,6 +15,6 @@ For a list of past keymaps, you'll have to do it manually as Keyboard Layout Edi
 
 ## Latest Keymap
 
-(generated using <https://github.com/caksoylar/keymap>, source is in [keymap.yaml](./keymap.yaml). Note the existence of the lower outer pinky keys is a limitation of the graphic generator. [equivalent version on KLE](http://www.keyboard-layout-editor.com/#/gists/99409a249d886554bd60af15782b2d50))
+(generated using <https://github.com/caksoylar/keymap-drawer> with tweaked colors, source is in [keymap.yaml](./keymap.yaml). Note the existence of the lower outer pinky keys is a limitation of the graphic generator. [equivalent version on KLE](http://www.keyboard-layout-editor.com/#/gists/99409a249d886554bd60af15782b2d50))
 
 ![](pics/keymap.svg)
