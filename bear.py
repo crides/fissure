@@ -1,9 +1,9 @@
 import cadquery as cq
 import math
 
-ball_r = 34 / 2
+ball_r = 25 / 2
 gap_r = 1
-wall_t = 3
+wall_t = 2.5
 bear_r = 4.3 / 2
 lens_dist = 2.4
 pcb_lens_dist = 2
@@ -16,7 +16,7 @@ def polar(r, theta, phi):
     return cq.Vector(xy * math.cos(theta), xy * math.sin(theta), math.cos(phi) * r)
 
 # pts = [polar(59/2, math.radians(t + p), math.radians(p)) for t in [0, 120, 240] for p in [60, 120]]
-phis = list(map(math.radians, [75, 120]))
+phis = list(map(math.radians, [75, 135]))
 pts = [polar(ball_out_r, math.radians(t * 90 + (1-p) * 45), phis[p]) for t in range(4) for p in range(2)]
 # print(pts)
 bears = (cq.Workplane()
@@ -40,7 +40,7 @@ holder = (cq.Workplane()
           .rect(9, 17).extrude(-pcb_lens_dist, combine="s")  # TODO actual size and location
           .slot2D(9, 6, 90).cutThruAll() # TODO actual size and location
           .faces("<Z[2]")
-          .workplane(offset=-ball_r * 0.35)
+          .workplane(offset=-ball_r * 0.65)
           .split(keepTop=True, keepBottom=True)
           )
 holder_top = holder.solids(">Z")
@@ -56,11 +56,12 @@ bot_wires = sorted(top_shroud.faces(">Z").wires().vals(), key=lambda e: e.Boundi
 top_wires = sorted(holder_top.faces("<Z").wires().vals(), key=lambda e: e.BoundingBox().xlen)
 adapter = cq.Workplane().add(cq.Solid.makeLoft([top_wires[1], bot_wires[1]])).cut(cq.Solid.makeLoft([top_wires[0], bot_wires[0]]))
 holder_top += adapter + top_shroud
-holder_top = holder_top.translate((0, 0, bottom)) + cq.Workplane().rarray(41, 28.8, 2, 2).cylinder(7, 3, centered=(True, True, False)) - cq.Workplane().rarray(41, 28.8, 2, 2).cylinder(5, 3.5 / 2, centered=(True, True, False))
-bot_holes = [(-15, 0), (15, 0), (0, 15), (0, -15)]
-holder_bot = holder_bot.translate((0, 0, bottom)) + cq.Workplane().pushPoints(bot_holes).cylinder(7, 3, centered=(True, True, False)) - cq.Workplane().pushPoints(bot_holes).cylinder(5, 3.5 / 2, centered=(True, True, False))
+print(holder_top.val().BoundingBox().xlen)
+holder_top = holder_top.translate((0, 0, bottom)) + cq.Workplane().rarray(31.2, 23, 2, 2).cylinder(7, 3, centered=(True, True, False)) - cq.Workplane().rarray(31.2, 23, 2, 2).cylinder(5, 3.5 / 2, centered=(True, True, False))
+holder_bot = holder_bot.translate((0, 0, bottom)) - cq.Workplane().polarArray(12, 15, 360, 3).cylinder(4, 3.5 / 2, centered=(True, True, False)) - cq.Workplane().box(9.6 * 2, 9 * 2, 2, centered=(True, True, False))
 
 ball = cq.Workplane().sphere(ball_r).translate((0, 0, bottom))
+print(bottom + ball_r * 2)
 
 whole = (cq.Assembly()
          .add(holder_top, name="holder_top")

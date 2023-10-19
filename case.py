@@ -66,7 +66,7 @@ sk_sk = lambda: board.layer(pcbnew.User_1).reset().vertices().fillet(sw_fr)
 sks = cq.Workplane().placeSketch(sk_sk().reset().wires().offset(sk_cl + sk_w)).extrude(sk_top_h) - cq.Workplane().placeSketch(sk_sk().reset().wires().offset(sk_cl)).extrude(sk_top_h)
 l_base = lalf_b.add([l_mid_col, l_side_cols, l_pink_clus, l_ind_out]).cutThruAll() + lalf_edge
 lalf = l_base + sks.solids("<X") - comp_hole.intersect(lalf_b)
-ralf = mirror(l_base) + sks.solids(">X") - comp_hole.intersect(ralf_b) - cq.Workplane().placeSketch(board.layer(pcbnew.User_4)).extrude(-10)
+ralf = mirror(l_base) + sks.solids(">X") - comp_hole.intersect(ralf_b) - cq.Workplane().placeSketch(board.layer(pcbnew.User_4)).extrude(-10) - cq.Workplane().placeSketch(board.layer(pcbnew.User_5)).extrude(2)
 
 lcon, rcon = board.pos("J3"), board.pos("J12")
 
@@ -106,7 +106,7 @@ ralf -= cq.Workplane().pushPoints([board.pos("D2")]).cylinder(10, 1)
 ralf -= cq.Workplane().placeSketch(board.layer(pcbnew.User_3)).extrude(10)
 
 lalf_bot = lalf_bot.transformed(offset=(l_mid_k[0], lcon[1], -bot_h)).circle(8).circle(9 / 2).extrude(-8).translate((0, 0, -pcb_thik))
-ralf_bot = ralf_bot.transformed(offset=(r_mid_k[0], rcon[1], -bot_h)).circle(8).circle(9 / 2).extrude(-8).translate((0, 0, -pcb_thik))
+ralf_bot = ralf_bot.transformed(offset=(r_mid_k[0], rcon[1], -bot_h)).circle(8).circle(9 / 2).extrude(-8).translate((0, 0, -pcb_thik)) - cq.Workplane().placeSketch(board.layer(pcbnew.User_4)).extrude(-10)
 
 cq.exporters.export(lalf, "pcb/fissure/left-case.step")
 cq.exporters.export(lalf_bot, "pcb/fissure/left-case-bot.step")
