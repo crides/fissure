@@ -22,7 +22,7 @@
       "keepouts": true,
       "lockedItems": true,
       "otherItems": true,
-      "pads": true,
+      "pads": false,
       "text": true,
       "tracks": true,
       "vias": true,
@@ -65,7 +65,7 @@
       35,
       36
     ],
-    "visible_layers": "7feffff_80000001",
+    "visible_layers": "7fcffff_80000001",
     "zone_display_mode": 0
   },
   "meta": {

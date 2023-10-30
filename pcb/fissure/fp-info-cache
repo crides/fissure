@@ -1,4 +1,4 @@
-22024924851948299
+22020138157573261
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -89964,13 +89964,6 @@ varistor
 2
 2
 fissure
-SOD-123-dual-side
-
-
-0
-0
-0
-fissure
 bridge
 
 
@@ -89985,26 +89978,12 @@ bridge-conn
 48
 12
 fissure
-bridge-test
+github
 
 
 0
-8
-6
-fissure
-debug-port
-
-
 0
-4
-4
-fissure
-tooling hole
-
-
 0
-1
-1
 ic
 CMM4030D
 
@@ -91060,61 +91039,61 @@ M1
 
 
 0
-1
+2
 1
 soldered-nuts
 M1.2
 
 
 0
-1
+2
 1
 soldered-nuts
 M1.4
 
 
 0
-1
+2
 1
 soldered-nuts
 M1.6
 
 
 0
-1
+2
 1
 soldered-nuts
 M2
 
 
 0
-1
+2
 1
 soldered-nuts
 M2.5
 
 
 0
-1
+2
 1
 soldered-nuts
 M3
 
 
 0
-1
+2
 1
 soldered-nuts
 M3.5
 
 
 0
-1
+2
 1
 soldered-nuts
 M4
 
 
 0
-1
+2
 1

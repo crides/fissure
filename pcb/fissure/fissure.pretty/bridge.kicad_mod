@@ -1,5 +1,6 @@
 (footprint "bridge" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
+  (attr exclude_from_pos_files exclude_from_bom)
   (fp_text reference "REF**" (at -0.8 9.95) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp ceb0b586-7e71-4c56-9f16-4b01e3e78a76)
